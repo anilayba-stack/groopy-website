@@ -14,7 +14,7 @@ export const SITE = {
     "Groopy is a software company offering website and software development, SEO + GEO strategy, and social media management. Based in Istanbul, serving Turkey and abroad.",
 
   /** Kanonik üretim adresi. */
-  url: "https://www.groopyagency.com",
+  url: "https://groopyagency.com",
   domain: "groopyagency.com",
 
   locales: ["tr", "en"] as const,
