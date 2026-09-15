@@ -19,6 +19,7 @@ export const metadata: Metadata = buildMetadata({
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": `${SITE.url}/#founder`,
   name: SITE.founder.name,
   jobTitle: SITE.founder.role,
   worksFor: { "@id": `${SITE.url}/#organization` },
@@ -39,6 +40,7 @@ export default function AboutPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Hakkımızda"
           title="Groopy bir yazılım şirketi"
           description="Groopy, İstanbul merkezli bir yazılım şirketidir; Türkiye ve yurt dışındaki işletmelere hizmet verir. Ajans değil, mühendislik odaklı bir yapı benimsenir."

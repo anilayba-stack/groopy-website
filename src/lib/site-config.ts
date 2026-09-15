@@ -49,6 +49,7 @@ export const SITE = {
   founder: {
     name: "Anıl Ay",
     role: "Kurucu",
+    roleEn: "Founder",
   },
 
 } as const;

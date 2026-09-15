@@ -99,7 +99,7 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
 
 type JsonLd = Record<string, unknown>;
 
-export function organizationSchema(): JsonLd {
+export function organizationSchema(locale: "tr" | "en" = "tr"): JsonLd {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -108,23 +108,32 @@ export function organizationSchema(): JsonLd {
     legalName: SITE.legalName,
     url: BASE,
     logo: `${BASE}/icon.png`,
-    description: SITE.descriptionTr,
+    description: locale === "en" ? SITE.descriptionEn : SITE.descriptionTr,
+    inLanguage: locale === "en" ? "en" : "tr-TR",
     email: SITE.contact.email,
     telephone: SITE.contact.phone,
     areaServed: SITE.areaServed,
-    founder: { "@type": "Person", name: SITE.founder.name },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: SITE.contact.email,
+      telephone: SITE.contact.phone,
+      contactType: "customer service",
+      areaServed: SITE.areaServed,
+      availableLanguage: ["Turkish", "English"],
+    },
+    founder: { "@id": `${BASE}/#founder` },
     sameAs: Object.values(SITE.social),
   };
 }
 
-export function websiteSchema(): JsonLd {
+export function websiteSchema(locale: "tr" | "en" = "tr"): JsonLd {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${BASE}/#website`,
     url: BASE,
     name: SITE.name,
-    inLanguage: "tr-TR",
+    inLanguage: locale === "en" ? "en" : "tr-TR",
     publisher: { "@id": `${BASE}/#organization` },
   };
 }
@@ -186,7 +195,10 @@ export function blogPostingSchema(
     url,
     datePublished: meta.publishedAt,
     dateModified: meta.updatedAt ?? meta.publishedAt,
-    author: { "@type": "Person", name: meta.author },
+    author:
+      meta.author === SITE.founder.name
+        ? { "@id": `${BASE}/#founder` }
+        : { "@type": "Person", name: meta.author },
     publisher: { "@id": `${BASE}/#organization` },
     inLanguage: locale === "en" ? "en" : "tr-TR",
     mainEntityOfPage: url,
@@ -223,7 +235,7 @@ export function softwareApplicationSchema(input: {
     name: input.name,
     description: input.description,
     url: `${BASE}${input.path}`,
-    applicationCategory: "SEO Tool",
+    applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     inLanguage: locale === "en" ? "en" : "tr-TR",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

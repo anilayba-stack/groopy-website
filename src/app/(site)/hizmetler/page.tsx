@@ -37,6 +37,7 @@ export default function ServicesPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Hizmetler"
           title="Ne yapıyoruz"
           description="Üç ana hizmetimiz — web sitesi ve yazılım geliştirme, SEO + GEO, sosyal medya yönetimi — birbirinden bağımsızdır; ayrı ayrı ya da bütünleşik biçimde sunulur."

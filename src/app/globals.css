@@ -66,6 +66,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -74,6 +75,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 /* ---- Rafine efekt yardımcıları ---- */
@@ -207,6 +209,9 @@ body {
 }
 
 /* ---- Hero altı marka şeridi (soldan sağa akar) ---- */
+.marquee {
+  overflow-x: hidden;
+}
 .marquee__mask {
   overflow: hidden;
   -webkit-mask-image: linear-gradient(

@@ -92,5 +92,5 @@ export const seoVeGeo: Service = {
         "Bu hizmet organik görünürlüğe odaklıdır. Ücretli reklam ihtiyacınız varsa görüşmede değerlendirilebilir.",
     },
   ],
-  relatedPosts: ["geo-nedir", "web-sitesi-maliyeti-2026"],
+  relatedPosts: ["web-sitesi-maliyeti-2026"],
 };

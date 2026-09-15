@@ -39,6 +39,7 @@ export default function BlogIndexPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Blog"
           title="Yazılar"
           description="Önce net cevap, sonra detay. Garantiler ve doğrulanamaz yüzdeler yok."

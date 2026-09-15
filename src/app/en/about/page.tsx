@@ -20,8 +20,9 @@ export const metadata: Metadata = buildMetadata({
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": `${SITE.url}/#founder`,
   name: SITE.founder.name,
-  jobTitle: SITE.founder.role,
+  jobTitle: SITE.founder.roleEn,
   worksFor: { "@id": `${SITE.url}/#organization` },
 };
 
@@ -40,6 +41,7 @@ export default function EnAboutPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="About"
           title="Groopy is a software company"
           description="We're based in Istanbul and serve businesses across Turkey and internationally. Not an agency — an engineering-led software company."

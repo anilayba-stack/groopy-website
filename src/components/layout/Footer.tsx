@@ -41,6 +41,16 @@ export function Footer({ locale = "tr" }: { locale?: "tr" | "en" }) {
               <a href={`tel:${SITE.contact.phone}`} className="inline-flex items-center gap-2 hover:text-[var(--color-text)]">
                 <Phone className="size-4" aria-hidden /> {SITE.contact.phoneDisplay}
               </a>
+              {SITE.social.instagram ? (
+                <a
+                  href={SITE.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-[var(--color-text)]"
+                >
+                  <InstagramIcon className="size-4" /> Instagram
+                </a>
+              ) : null}
             </div>
           </div>
 
@@ -69,19 +79,6 @@ export function Footer({ locale = "tr" }: { locale?: "tr" | "en" }) {
           <p className="text-xs text-[var(--color-text-faint)]">
             © {year} {SITE.name}. {t.rights}
           </p>
-          <div className="flex items-center gap-4">
-            {SITE.social.instagram ? (
-              <a
-                href={SITE.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--color-text-faint)] transition-colors hover:text-[var(--color-text)]"
-                aria-label="Instagram"
-              >
-                <InstagramIcon className="size-4" />
-              </a>
-            ) : null}
-          </div>
         </div>
       </Container>
     </footer>

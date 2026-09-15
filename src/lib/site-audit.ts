@@ -423,10 +423,12 @@ export async function runSiteAudit(rawUrl: string, locale: AuditLocale): Promise
         : "Open Graph tags are missing.",
   );
 
-  // Image alt ratio (6)
+  // Image alt ratio (6) — alt="" kasıtlı olarak geçerli (dekoratif görsel,
+  // ekran okuyucunun yanındaki görünür metni tekrar okumasını önler); yalnızca
+  // alt niteliğinin TAMAMEN yokluğu eksik sayılır.
   const images = $("img");
   const totalImages = images.length;
-  const withAlt = images.filter((_, el) => Boolean($(el).attr("alt")?.trim())).length;
+  const withAlt = images.filter((_, el) => $(el).attr("alt") !== undefined).length;
   const altRatio = totalImages === 0 ? 1 : withAlt / totalImages;
   add(
     "imgAlt",

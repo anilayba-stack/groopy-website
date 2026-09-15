@@ -39,6 +39,7 @@ export default function EnServicesPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Services"
           title="What we do"
           description="Our three core services — website & software development, SEO + GEO, and social media management — are independent of each other; take them separately or as an integrated program."

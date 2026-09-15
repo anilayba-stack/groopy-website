@@ -84,6 +84,7 @@ export default function SeoToolPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Free Tool"
           title="Free SEO Checker Tool"
           description="Calculate your website's SEO score for free; analyze title tags, meta description, mobile-friendliness, structured data, and AI search access in seconds, based on real, verifiable criteria."

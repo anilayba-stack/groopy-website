@@ -36,6 +36,7 @@ export default function EnWorkPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Case Studies"
           title="Case studies"
           description="We publish case studies only with client permission and with measurable, verifiable results. No invented numbers or unauthorized references."

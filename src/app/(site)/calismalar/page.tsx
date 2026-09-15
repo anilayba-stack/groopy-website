@@ -35,6 +35,7 @@ export default function WorkPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Çalışmalar"
           title="Vaka çalışmaları"
           description="Vaka çalışmalarını yalnızca müşterinin izniyle ve ölçülebilir, doğrulanabilir sonuçlarla yayımlıyoruz. Uydurma rakam veya izinsiz referans yok."

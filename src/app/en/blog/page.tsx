@@ -40,6 +40,7 @@ export default function EnBlogIndexPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Blog"
           title="Articles"
           description="The clear answer first, detail after. No guarantees, no unverifiable percentages."

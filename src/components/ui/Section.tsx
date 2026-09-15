@@ -30,10 +30,13 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
+  as: Tag = "h2",
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
+  /** Sayfanın tek H1'i bu başlıksa "h1" ver (varsayılan: h2). */
+  as?: "h1" | "h2";
 }) {
   return (
     <div className="max-w-2xl">
@@ -43,9 +46,9 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-text)] sm:text-3xl">
+      <Tag className="text-2xl font-semibold tracking-tight text-[var(--color-text)] sm:text-3xl">
         {title}
-      </h2>
+      </Tag>
       {description ? (
         <p className="mt-4 text-[1.0625rem] leading-relaxed text-[var(--color-text-muted)]">
           {description}

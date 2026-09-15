@@ -83,6 +83,7 @@ export default function SeoToolPage() {
 
       <Section className="!border-t-0 !pt-2">
         <SectionHeading
+          as="h1"
           eyebrow="Ücretsiz Araç"
           title="Ücretsiz SEO Analiz Aracı"
           description="Web sitenizin SEO puanını ücretsiz hesaplayın; başlık, açıklama, mobil uyum, yapılandırılmış veri ve yapay zekâ arama erişimi gibi gerçek kriterlere göre saniyeler içinde web sitesi analizi yapın."
