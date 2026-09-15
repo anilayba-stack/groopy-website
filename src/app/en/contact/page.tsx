@@ -39,7 +39,7 @@ export default function EnContactPage() {
               business days, and set up a short call if needed.
             </p>
 
-            <dl className="mt-8 space-y-4 text-sm">
+            <div className="mt-8 space-y-4 text-sm">
               <div className="flex items-center gap-3">
                 <Mail className="size-4 text-[var(--color-accent)]" aria-hidden />
                 <a
@@ -72,7 +72,7 @@ export default function EnContactPage() {
                   WhatsApp
                 </a>
               </div>
-            </dl>
+            </div>
           </div>
 
           <div>

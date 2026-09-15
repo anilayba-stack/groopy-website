@@ -8,7 +8,7 @@ export function FaqList({ items, title = "Sık sorulan sorular" }: { items: Faq[
       <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-text)]">
         {title}
       </h2>
-      <dl className="mt-6 divide-y divide-[var(--color-border)] border-t border-[var(--color-border)]">
+      <div className="mt-6 divide-y divide-[var(--color-border)] border-t border-[var(--color-border)]">
         {items.map((item) => (
           <details key={item.question} className="group py-4">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[1.0625rem] font-medium text-[var(--color-text)] [&::-webkit-details-marker]:hidden">
@@ -25,7 +25,7 @@ export function FaqList({ items, title = "Sık sorulan sorular" }: { items: Faq[
             </p>
           </details>
         ))}
-      </dl>
+      </div>
     </div>
   );
 }

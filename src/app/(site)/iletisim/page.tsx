@@ -38,7 +38,7 @@ export default function ContactPage() {
               yapılır, gerekirse kısa bir görüşme planlanır.
             </p>
 
-            <dl className="mt-8 space-y-4 text-sm">
+            <div className="mt-8 space-y-4 text-sm">
               <div className="flex items-center gap-3">
                 <Mail className="size-4 text-[var(--color-accent)]" aria-hidden />
                 <a
@@ -71,7 +71,7 @@ export default function ContactPage() {
                   WhatsApp
                 </a>
               </div>
-            </dl>
+            </div>
           </div>
 
           <div>
