@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
-import { routes } from "@/lib/routes";
+import { routes, enRoutes } from "@/lib/routes";
 import { SITE, whatsappUrl } from "@/lib/site-config";
 import { ContactForm } from "./ContactForm";
 
@@ -13,6 +13,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Groopy ile iletişime geçin. Kısa bir keşif görüşmesiyle başlıyoruz; kapsam ve takvim netleşmeden fiyat vermiyoruz.",
   path: routes.contact,
+  alternatePath: enRoutes.contact,
 });
 
 export default function ContactPage() {

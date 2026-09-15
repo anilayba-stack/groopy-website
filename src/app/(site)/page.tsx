@@ -10,6 +10,7 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { FaqList } from "@/components/ui/FaqList";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, faqSchema } from "@/lib/seo";
+import { enRoutes } from "@/lib/routes";
 import type { Faq } from "@content/types";
 import { primaryServices } from "@content/services";
 
@@ -19,6 +20,7 @@ export const metadata: Metadata = buildMetadata({
     "İstanbul merkezli yazılım şirketi Groopy; web sitesi geliştirme, SEO + GEO ve sosyal medya yönetimiyle işletmenizi Google ve yapay zekâ aramalarında görünür kılar.",
   path: "/",
   isHome: true,
+  alternatePath: enRoutes.home,
 });
 
 const homeFaq: Faq[] = [

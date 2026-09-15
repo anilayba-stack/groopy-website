@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
-import { routes } from "@/lib/routes";
+import { routes, enRoutes } from "@/lib/routes";
 import { sortedPosts } from "@content/blog";
 
 export const metadata: Metadata = buildMetadata({
@@ -14,6 +14,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Web geliştirme, SEO, GEO ve sosyal medya üzerine cevap-önce yazılar. Somut, doğrulanabilir, abartısız.",
   path: routes.blog,
+  alternatePath: enRoutes.blog,
 });
 
 const dateFmt = new Intl.DateTimeFormat("tr-TR", {

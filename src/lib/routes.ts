@@ -1,5 +1,5 @@
 /**
- * Merkezî yol tanımları. v1 yalnızca TR (kök). EN (/en) Faz 2'de buradan türetilecek.
+ * Merkezî yol tanımları. TR (kök) ve EN (/en) — Faz 2 (2026-09-14): tam ayna.
  */
 
 export const routes = {
@@ -18,4 +18,22 @@ export const routes = {
 export const PRIMARY_CTA = {
   label: "Teklif Al",
   href: routes.contact,
+} as const;
+
+/** EN yol tanımları — İngilizce slug'larla (SEO için, TR slug'ların çevirisi değil). */
+export const enRoutes = {
+  home: "/en",
+  services: "/en/services",
+  service: (slug: string) => `/en/services/${slug}`,
+  work: "/en/case-studies",
+  caseStudy: (slug: string) => `/en/case-studies/${slug}`,
+  blog: "/en/blog",
+  post: (slug: string) => `/en/blog/${slug}`,
+  about: "/en/about",
+  contact: "/en/contact",
+} as const;
+
+export const EN_PRIMARY_CTA = {
+  label: "Get a Quote",
+  href: enRoutes.contact,
 } as const;

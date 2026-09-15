@@ -14,7 +14,8 @@ import {
   breadcrumbSchema,
   faqSchema,
 } from "@/lib/seo";
-import { routes } from "@/lib/routes";
+import { routes, enRoutes } from "@/lib/routes";
+import { POST_SLUG_TR_TO_EN } from "@/lib/i18n-routes";
 import { SITE } from "@/lib/site-config";
 import { getPost, postSlugs } from "@content/blog";
 import { getService } from "@content/services";
@@ -31,6 +32,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
+  const enSlug = POST_SLUG_TR_TO_EN[post.meta.slug];
   return buildMetadata({
     title: post.meta.metaTitle ?? post.meta.title,
     description: post.meta.description,
@@ -38,6 +40,7 @@ export async function generateMetadata({
     ogType: "article",
     publishedTime: post.meta.publishedAt,
     modifiedTime: post.meta.updatedAt ?? post.meta.publishedAt,
+    alternatePath: enSlug ? enRoutes.post(enSlug) : undefined,
   });
 }
 

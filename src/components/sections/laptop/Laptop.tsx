@@ -1,13 +1,21 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { diagnostics } from "@content/diagnostics";
+import { diagnostics as diagnosticsTr, type Diagnostic } from "@content/diagnostics";
 import { DiagnosticScreen } from "./Screens";
 
 const REST_RX = 8;
 const REST_RY = -17;
 
-export function Laptop({ activeId }: { activeId: string }) {
+export function Laptop({
+  activeId,
+  diagnostics = diagnosticsTr,
+  locale = "tr",
+}: {
+  activeId: string;
+  diagnostics?: Diagnostic[];
+  locale?: "tr" | "en";
+}) {
   const stageRef = useRef<HTMLDivElement>(null);
   const laptopRef = useRef<HTMLDivElement>(null);
 
@@ -66,7 +74,12 @@ export function Laptop({ activeId }: { activeId: string }) {
           <span className="laptop__cam" />
           <div className="laptop__screen">
             {diagnostics.map((d) => (
-              <DiagnosticScreen key={d.id} d={d} active={d.id === activeId} />
+              <DiagnosticScreen
+                key={d.id}
+                d={d}
+                active={d.id === activeId}
+                locale={locale}
+              />
             ))}
           </div>
         </div>

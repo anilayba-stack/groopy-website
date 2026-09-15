@@ -8,7 +8,7 @@ const BASE = SITE.url;
 interface BuildMetadataInput {
   title: string;
   description: string;
-  /** Kök-göreli yol, örn. "/hizmetler/web-sitesi-gelistirme" */
+  /** Kök-göreli yol, örn. "/hizmetler/web-sitesi-gelistirme" veya "/en/services/..." */
   path: string;
   /** Anasayfada true — title şablon uygulanmaz */
   isHome?: boolean;
@@ -19,10 +19,15 @@ interface BuildMetadataInput {
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
+  /** Sayfa dili — varsayılan "tr". */
+  locale?: "tr" | "en";
+  /** Diğer dildeki karşılık path'i (kök-göreli, /en dahil) — verilirse hreflang üretilir. */
+  alternatePath?: string;
 }
 
 /** Her sayfa için tek noktadan benzersiz, tutarlı metadata. */
 export function buildMetadata(input: BuildMetadataInput): Metadata {
+  const locale = input.locale ?? "tr";
   const url = `${BASE}${input.path === "/" ? "" : input.path}`;
   const fullTitle = input.isHome
     ? `${input.title} — ${SITE.name}`
@@ -36,12 +41,24 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
   // Görsel verilmezse root opengraph-image.tsx dosya-kuralı devreye girer.
   const explicitImage = input.image ? `${BASE}${input.image}` : undefined;
 
+  const alternateUrl = input.alternatePath
+    ? `${BASE}${input.alternatePath === "/" ? "" : input.alternatePath}`
+    : undefined;
+
   return {
     title,
     description: input.description,
     alternates: {
       canonical: url,
-      // hreflang: EN yayına girene kadar (Faz 2) eklenmiyor.
+      ...(alternateUrl
+        ? {
+            languages: {
+              "tr-TR": locale === "tr" ? url : alternateUrl,
+              en: locale === "en" ? url : alternateUrl,
+              "x-default": locale === "tr" ? url : alternateUrl,
+            },
+          }
+        : {}),
     },
     robots: input.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
@@ -50,7 +67,7 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
       siteName: SITE.name,
       title: fullTitle,
       description: input.description,
-      locale: "tr_TR",
+      locale: locale === "en" ? "en_US" : "tr_TR",
       ...(explicitImage
         ? {
             images: [
@@ -112,14 +129,24 @@ export function websiteSchema(): JsonLd {
   };
 }
 
-export function serviceSchema(service: Service): JsonLd {
+/**
+ * @param path Sayfanın kök-göreli tam yolu (örn. "/hizmetler/x" veya "/en/services/x").
+ *             Verilmezse TR varsayılan yoluna düşer (geriye dönük uyumluluk).
+ */
+export function serviceSchema(
+  service: Service,
+  opts?: { path?: string; locale?: "tr" | "en" },
+): JsonLd {
+  const path = opts?.path ?? `/hizmetler/${service.slug}`;
+  const locale = opts?.locale ?? "tr";
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     name: service.title,
     serviceType: service.navLabel,
     description: service.metaDescription,
-    url: `${BASE}/hizmetler/${service.slug}`,
+    url: `${BASE}${path}`,
+    inLanguage: locale === "en" ? "en" : "tr-TR",
     provider: { "@id": `${BASE}/#organization` },
     areaServed: SITE.areaServed,
   };
@@ -140,19 +167,29 @@ export function breadcrumbSchema(
   };
 }
 
-export function blogPostingSchema(meta: BlogPostMeta): JsonLd {
+/**
+ * @param path Sayfanın kök-göreli tam yolu (örn. "/blog/x" veya "/en/blog/x").
+ *             Verilmezse TR varsayılan yoluna düşer (geriye dönük uyumluluk).
+ */
+export function blogPostingSchema(
+  meta: BlogPostMeta,
+  opts?: { path?: string; locale?: "tr" | "en" },
+): JsonLd {
+  const path = opts?.path ?? `/blog/${meta.slug}`;
+  const locale = opts?.locale ?? "tr";
+  const url = `${BASE}${path}`;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: meta.title,
     description: meta.description,
-    url: `${BASE}/blog/${meta.slug}`,
+    url,
     datePublished: meta.publishedAt,
     dateModified: meta.updatedAt ?? meta.publishedAt,
     author: { "@type": "Person", name: meta.author },
     publisher: { "@id": `${BASE}/#organization` },
-    inLanguage: "tr-TR",
-    mainEntityOfPage: `${BASE}/blog/${meta.slug}`,
+    inLanguage: locale === "en" ? "en" : "tr-TR",
+    mainEntityOfPage: url,
   };
 }
 

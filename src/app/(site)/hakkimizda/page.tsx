@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
-import { routes } from "@/lib/routes";
+import { routes, enRoutes } from "@/lib/routes";
 import { SITE } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata({
@@ -13,6 +13,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Groopy, İstanbul merkezli bir yazılım şirketi. Kurucu Anıl Ay. Web geliştirme, SEO + GEO ve sosyal medya yönetimi hizmetleri verir.",
   path: routes.about,
+  alternatePath: enRoutes.about,
 });
 
 const personSchema = {

@@ -7,15 +7,17 @@ export function Logo({
   markClassName = "h-6 w-auto",
   showWordmark = true,
   priority = false,
+  href = "/",
 }: {
   className?: string;
   markClassName?: string;
   showWordmark?: boolean;
   priority?: boolean;
+  href?: string;
 }) {
   return (
     <Link
-      href="/"
+      href={href}
       className={`inline-flex items-center gap-2.5 text-[var(--color-text)] ${className}`}
       aria-label={`${SITE.name} — ana sayfa`}
     >

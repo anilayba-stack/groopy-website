@@ -21,6 +21,19 @@ const IMAGES: Record<string, { src: string; alt: string }> = {
     src: "/images/services/social.jpg",
     alt: "Halka ışıkla telefonda içerik çekimi",
   },
+  // EN slug karşılıkları — aynı görseller.
+  "website-development": {
+    src: "/images/services/web.jpg",
+    alt: "An open website shown on a laptop screen",
+  },
+  "seo-and-geo-strategy": {
+    src: "/images/services/seo.jpg",
+    alt: "An analytics dashboard shown on a laptop screen",
+  },
+  "social-media-management": {
+    src: "/images/services/social.jpg",
+    alt: "Content being filmed on a phone with ring light",
+  },
 };
 
 export function serviceImage(slug: string) {

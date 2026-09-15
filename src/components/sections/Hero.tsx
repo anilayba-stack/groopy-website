@@ -3,27 +3,65 @@ import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { HeroMark } from "./HeroMark";
 import { HeroFx } from "./HeroFx";
-import { PRIMARY_CTA, routes } from "@/lib/routes";
+import { PRIMARY_CTA, EN_PRIMARY_CTA, routes, enRoutes } from "@/lib/routes";
 
-const scopeItems = [
-  {
-    key: "web",
-    label: "Kurumsal web sitesi ve özel yazılım",
-    href: routes.service("web-sitesi-gelistirme"),
+const STRINGS = {
+  tr: {
+    badge: "Yazılım şirketi",
+    h1: "İstanbul’da web sitesi geliştirme, SEO ve sosyal medya yönetimi",
+    description:
+      "İşletmenizi Google ve yapay zekâ aramalarında görünür kılıyoruz. Web geliştirme, SEO + GEO ve sosyal medya yönetimi hizmetlerini bağımsız ya da bütünleşik olarak sunuyoruz.",
+    cta: PRIMARY_CTA,
+    secondaryCta: "Hizmetleri gör",
+    servicesHref: routes.services,
+    scopeItems: [
+      {
+        key: "web",
+        label: "Kurumsal web sitesi ve özel yazılım",
+        href: routes.service("web-sitesi-gelistirme"),
+      },
+      {
+        key: "seo",
+        label: "SEO + GEO ile arama görünürlüğü",
+        href: routes.service("seo-ve-geo"),
+      },
+      {
+        key: "social",
+        label: "Sosyal medya yönetimi",
+        href: routes.service("sosyal-medya-yonetimi"),
+      },
+    ],
   },
-  {
-    key: "seo",
-    label: "SEO + GEO ile arama görünürlüğü",
-    href: routes.service("seo-ve-geo"),
+  en: {
+    badge: "Software company",
+    h1: "Website development, SEO, and social media management in Istanbul",
+    description:
+      "We make your business visible in Google and AI search. We offer website development, SEO + GEO, and social media management — independently or as an integrated program.",
+    cta: EN_PRIMARY_CTA,
+    secondaryCta: "See services",
+    servicesHref: enRoutes.services,
+    scopeItems: [
+      {
+        key: "web",
+        label: "Corporate websites and custom software",
+        href: enRoutes.service("website-development"),
+      },
+      {
+        key: "seo",
+        label: "Search visibility with SEO + GEO",
+        href: enRoutes.service("seo-and-geo-strategy"),
+      },
+      {
+        key: "social",
+        label: "Social media management",
+        href: enRoutes.service("social-media-management"),
+      },
+    ],
   },
-  {
-    key: "social",
-    label: "Sosyal medya yönetimi",
-    href: routes.service("sosyal-medya-yonetimi"),
-  },
-];
+} as const;
 
-export function Hero() {
+export function Hero({ locale = "tr" }: { locale?: "tr" | "en" }) {
+  const t = STRINGS[locale];
   return (
     <section className="hero-band relative overflow-hidden border-b border-[var(--color-border)] lg:min-h-[540px]">
       {/* Merkezî parlayan işaret — mobilde metnin üstünde, lg'de tam ortada */}
@@ -41,26 +79,24 @@ export function Hero() {
                 className="size-1.5 rounded-full bg-[var(--color-success)]"
                 aria-hidden
               />
-              Yazılım şirketi
+              {t.badge}
             </p>
             <h1 className="text-[2rem] font-semibold leading-[1.1] tracking-tight text-[var(--color-text)] sm:text-[2.5rem] lg:text-[2.75rem]">
-              İstanbul&apos;da web sitesi geliştirme, SEO ve sosyal medya yönetimi
+              {t.h1}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-[var(--color-text-muted)] sm:text-lg">
-              İşletmenizi Google ve yapay zekâ aramalarında görünür kılıyoruz. Web
-              geliştirme, SEO&nbsp;+&nbsp;GEO ve sosyal medya yönetimi hizmetlerini
-              bağımsız ya da bütünleşik olarak sunuyoruz.
+              {t.description}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <ButtonLink href={PRIMARY_CTA.href}>{PRIMARY_CTA.label}</ButtonLink>
-              <ButtonLink href={routes.services} variant="ghost" withArrow>
-                Hizmetleri gör
+              <ButtonLink href={t.cta.href}>{t.cta.label}</ButtonLink>
+              <ButtonLink href={t.servicesHref} variant="ghost" withArrow>
+                {t.secondaryCta}
               </ButtonLink>
             </div>
           </div>
 
           <ul className="mt-10 space-y-3 text-sm lg:mt-0 lg:max-w-[13.5rem] lg:text-right">
-            {scopeItems.map((item) => (
+            {t.scopeItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

@@ -53,7 +53,7 @@ function Item({ client }: { client: Client }) {
  * - Ekrandan çıkınca durur (IntersectionObserver). Görünür etiket yok.
  * - Liste boşsa hiç render edilmez.
  */
-export function ClientMarquee() {
+export function ClientMarquee({ ariaLabel = clientsAriaLabel }: { ariaLabel?: string }) {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -72,7 +72,7 @@ export function ClientMarquee() {
   const row = [...clients, ...clients, ...clients, ...clients];
 
   return (
-    <section ref={ref} className="marquee py-9" aria-label={clientsAriaLabel}>
+    <section ref={ref} className="marquee py-9" aria-label={ariaLabel}>
       <div className="marquee__mask">
         <div className="marquee__track">
           {row.map((c, i) => (

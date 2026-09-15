@@ -4,11 +4,19 @@ import type { Service } from "@content/types";
 import { routes } from "@/lib/routes";
 import { ServiceVisual } from "./services/ServiceVisual";
 
-function Card({ service, large = false }: { service: Service; large?: boolean }) {
+function Card({
+  service,
+  large = false,
+  hrefFor,
+}: {
+  service: Service;
+  large?: boolean;
+  hrefFor: (slug: string) => string;
+}) {
   const Icon = service.icon;
   return (
     <Link
-      href={routes.service(service.slug)}
+      href={hrefFor(service.slug)}
       className={`surface-glass group relative flex flex-col overflow-hidden rounded-xl border border-[var(--color-border)] p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:shadow-[var(--shadow-card-hover)] ${
         large ? "min-h-[240px] sm:col-span-2 sm:p-8" : "min-h-[200px]"
       }`}
@@ -46,11 +54,17 @@ function Card({ service, large = false }: { service: Service; large?: boolean })
 }
 
 /** Ana hizmetler ızgarası. İlk (flagship) kart geniş. */
-export function ServiceCards({ services }: { services: Service[] }) {
+export function ServiceCards({
+  services,
+  hrefFor = routes.service,
+}: {
+  services: Service[];
+  hrefFor?: (slug: string) => string;
+}) {
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       {services.map((s, i) => (
-        <Card key={s.slug} service={s} large={i === 0 && s.featured} />
+        <Card key={s.slug} service={s} large={i === 0 && s.featured} hrefFor={hrefFor} />
       ))}
     </div>
   );

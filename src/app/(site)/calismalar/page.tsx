@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
-import { routes } from "@/lib/routes";
+import { routes, enRoutes } from "@/lib/routes";
 import { caseStudies } from "@content/case-studies";
 
 export const metadata: Metadata = buildMetadata({
@@ -15,6 +15,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Groopy'nin vaka çalışmaları. Yalnızca müşteri izniyle ve doğrulanabilir sonuçlarla yayımlarız.",
   path: routes.work,
+  alternatePath: enRoutes.work,
 });
 
 const dateFmt = new Intl.DateTimeFormat("tr-TR", { year: "numeric", month: "long" });

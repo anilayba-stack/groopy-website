@@ -6,7 +6,7 @@ import { ServiceCards } from "@/components/sections/ServiceCards";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
-import { routes } from "@/lib/routes";
+import { routes, enRoutes } from "@/lib/routes";
 import { primaryServices } from "@content/services";
 
 export const metadata: Metadata = buildMetadata({
@@ -14,6 +14,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Groopy'nin hizmetleri: web sitesi ve yazılım geliştirme, SEO + GEO stratejisi ve sosyal medya yönetimi.",
   path: routes.services,
+  alternatePath: enRoutes.services,
 });
 
 export default function ServicesPage() {

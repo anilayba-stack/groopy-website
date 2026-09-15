@@ -6,9 +6,15 @@ export interface Crumb {
   path: string;
 }
 
-export function Breadcrumbs({ items }: { items: Crumb[] }) {
+export function Breadcrumbs({
+  items,
+  ariaLabel = "Site haritası",
+}: {
+  items: Crumb[];
+  ariaLabel?: string;
+}) {
   return (
-    <nav aria-label="Site haritası" className="mb-8">
+    <nav aria-label={ariaLabel} className="mb-8">
       <ol className="flex flex-wrap items-center gap-1.5 text-sm text-[var(--color-text-faint)]">
         {items.map((item, i) => {
           const last = i === items.length - 1;

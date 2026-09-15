@@ -11,12 +11,24 @@ function WhatsAppGlyph() {
   );
 }
 
+const STRINGS = {
+  tr: {
+    message: "Merhaba, hizmetleriniz hakkında bilgi almak istiyorum.",
+    label: "WhatsApp'tan yazın",
+  },
+  en: {
+    message: "Hi, I'd like to learn more about your services.",
+    label: "Chat on WhatsApp",
+  },
+} as const;
+
 /**
  * Sağ altta sabit, sayfa boyunca görünen WhatsApp iletişim düğmesi.
  * Tıklayınca ön-doldurulmuş bir WhatsApp sohbeti açar.
  */
-export function WhatsAppFloat() {
+export function WhatsAppFloat({ locale = "tr" }: { locale?: "tr" | "en" }) {
   const [visible, setVisible] = useState(false);
+  const t = STRINGS[locale];
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 180);
@@ -27,10 +39,10 @@ export function WhatsAppFloat() {
 
   return (
     <a
-      href={whatsappUrl("Merhaba, hizmetleriniz hakkında bilgi almak istiyorum.")}
+      href={whatsappUrl(t.message)}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="WhatsApp'tan yazın"
+      aria-label={t.label}
       className={`group fixed bottom-4 right-4 z-40 flex items-center gap-2.5 rounded-full border border-[var(--color-border-strong)] bg-[#0d0d0f]/90 py-1.5 pl-1.5 pr-1.5 shadow-[var(--shadow-card-hover)] backdrop-blur-xl transition-all duration-300 sm:pr-4 ${
         visible
           ? "translate-y-0 opacity-100"
@@ -41,7 +53,7 @@ export function WhatsAppFloat() {
         <WhatsAppGlyph />
       </span>
       <span className="hidden text-[13px] font-medium text-[var(--color-text-muted)] transition-colors group-hover:text-[var(--color-text)] sm:inline">
-        WhatsApp&apos;tan yazın
+        {t.label}
       </span>
     </a>
   );

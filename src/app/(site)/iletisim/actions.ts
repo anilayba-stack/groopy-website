@@ -1,6 +1,6 @@
 "use server";
 
-import type { FieldErrors } from "@/lib/contact";
+import type { ContactLocale, FieldErrors } from "@/lib/contact";
 import {
   validateContact,
   deliverContactMessage,
@@ -16,7 +16,8 @@ export interface ContactState {
   values?: { name: string; email: string; company: string; message: string };
 }
 
-export async function submitContact(
+async function submitContact(
+  locale: ContactLocale,
   _prev: ContactState,
   formData: FormData,
 ): Promise<ContactState> {
@@ -35,7 +36,7 @@ export async function submitContact(
     message: typeof raw.message === "string" ? raw.message : "",
   };
 
-  const { data, errors } = validateContact(raw);
+  const { data, errors } = validateContact(raw, locale);
   if (errors || !data) {
     return { status: "error", errors, values };
   }
@@ -47,5 +48,21 @@ export async function submitContact(
   }
 
   // Otomatik iletim henüz bağlı değil — dürüst alternatif.
-  return { status: "manual", mailto: buildContactMailto(data), values };
+  return { status: "manual", mailto: buildContactMailto(data, locale), values };
+}
+
+/** TR iletişim formu için sunucu eylemi. */
+export async function submitContactTr(
+  prev: ContactState,
+  formData: FormData,
+): Promise<ContactState> {
+  return submitContact("tr", prev, formData);
+}
+
+/** EN contact form server action. */
+export async function submitContactEn(
+  prev: ContactState,
+  formData: FormData,
+): Promise<ContactState> {
+  return submitContact("en", prev, formData);
 }

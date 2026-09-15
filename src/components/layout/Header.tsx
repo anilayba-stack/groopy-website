@@ -8,21 +8,38 @@ import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { Logo } from "./Logo";
 import { LangSwitcher } from "./LangSwitcher";
-import { mainNav } from "@/lib/navigation";
-import { PRIMARY_CTA } from "@/lib/routes";
+import { mainNav, enMainNav } from "@/lib/navigation";
+import { PRIMARY_CTA, EN_PRIMARY_CTA, routes, enRoutes } from "@/lib/routes";
 
-export function Header() {
+const STRINGS = {
+  tr: {
+    navLabel: "Ana menü",
+    openMenu: "Menüyü aç",
+    closeMenu: "Menüyü kapat",
+  },
+  en: {
+    navLabel: "Main menu",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+  },
+} as const;
+
+export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const t = STRINGS[locale];
+  const nav = locale === "en" ? enMainNav : mainNav;
+  const cta = locale === "en" ? EN_PRIMARY_CTA : PRIMARY_CTA;
+  const home = locale === "en" ? enRoutes.home : routes.home;
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-black/55 backdrop-blur-xl supports-[backdrop-filter]:bg-black/45">
       <Container className="flex h-16 items-center justify-between">
-        <Logo priority />
+        <Logo priority href={home} />
 
         {/* Masaüstü */}
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Ana menü">
-          {mainNav.map((group) =>
+        <nav className="hidden items-center gap-1 md:flex" aria-label={t.navLabel}>
+          {nav.map((group) =>
             group.children ? (
               <div key={group.label} className="group relative">
                 <Link
@@ -58,8 +75,8 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <LangSwitcher locale="tr" />
-          <ButtonLink href={PRIMARY_CTA.href}>{PRIMARY_CTA.label}</ButtonLink>
+          <LangSwitcher locale={locale} />
+          <ButtonLink href={cta.href}>{cta.label}</ButtonLink>
         </div>
 
         {/* Mobil aç/kapa */}
@@ -68,7 +85,7 @@ export function Header() {
           onClick={() => setOpen((v) => !v)}
           className="rounded-md p-2 text-[var(--color-text)] md:hidden"
           aria-expanded={open}
-          aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
+          aria-label={open ? t.closeMenu : t.openMenu}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
@@ -78,7 +95,7 @@ export function Header() {
       {open ? (
         <div className="border-t border-[var(--color-border)] bg-[var(--color-surface)] md:hidden">
           <Container className="flex flex-col gap-1 py-4">
-            {mainNav.flatMap((group) => {
+            {nav.flatMap((group) => {
               const items = group.children ?? [group as { label: string; href: string }];
               return items.map((child) => (
                 <Link
@@ -92,12 +109,12 @@ export function Header() {
               ));
             })}
             <div className="px-3 pt-3">
-              <ButtonLink href={PRIMARY_CTA.href} className="w-full">
-                {PRIMARY_CTA.label}
+              <ButtonLink href={cta.href} className="w-full">
+                {cta.label}
               </ButtonLink>
             </div>
             <div className="px-3 pt-2">
-              <LangSwitcher locale="tr" />
+              <LangSwitcher locale={locale} />
             </div>
           </Container>
         </div>

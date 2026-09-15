@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { submitContact, type ContactState } from "./actions";
+import { submitContactTr, type ContactState } from "./actions";
 
 const initialState: ContactState = { status: "idle" };
 
@@ -9,7 +9,7 @@ const fieldBase =
   "mt-1.5 w-full rounded-lg border border-[var(--color-border-strong)] bg-[var(--color-bg)] px-3.5 py-2.5 text-[15px] text-[var(--color-text)] placeholder:text-[var(--color-text-faint)] focus:border-[var(--color-accent)]";
 
 export function ContactForm() {
-  const [state, formAction, pending] = useActionState(submitContact, initialState);
+  const [state, formAction, pending] = useActionState(submitContactTr, initialState);
   const v = state.values;
 
   if (state.status === "delivered") {
