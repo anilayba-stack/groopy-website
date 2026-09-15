@@ -27,7 +27,7 @@ const homeFaq: Faq[] = [
   {
     question: "Groopy nerede ve nasıl çalışıyor?",
     answer:
-      "Groopy İstanbul merkezli bir yazılım şirketidir; fiziksel ofis olmadan uzaktan çalışır. Türkiye'nin her yerinden ve yurt dışından işletmelerle proje yürütülür, görüşmeler çevrim içi yapılır.",
+      "Groopy, İstanbul merkezli bir yazılım şirketi olarak web sitesi geliştirme, SEO + GEO stratejisi ve sosyal medya yönetimi hizmetleri sunar. Türkiye'nin her yerinden ve yurt dışından işletmelerle çalışılır; görüşmeler çevrimiçi veya yüz yüze yapılır.",
   },
   {
     question: "Fiyatlar nasıl belirleniyor?",

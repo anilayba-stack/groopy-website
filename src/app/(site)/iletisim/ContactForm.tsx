@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitContactTr, type ContactState } from "./actions";
+import { SERVICE_OPTIONS } from "@/lib/contact";
 
 const initialState: ContactState = { status: "idle" };
 
@@ -32,14 +33,16 @@ export function ContactForm() {
           Mesajınız hazır.
         </p>
         <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-          Otomatik gönderim şu an bağlı değil. Aşağıdaki bağlantı, mesajınızı
-          e-posta uygulamanızda hazır olarak açar — göndermek için tıklayın.
+          Mesajınız WhatsApp&apos;ta hazır olarak açılır — göndermek için
+          aşağıdaki bağlantıya tıklamanız yeterli.
         </p>
         <a
-          href={state.mailto}
+          href={state.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-4 inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-[var(--color-accent-contrast)] hover:bg-[var(--color-accent-hover)]"
         >
-          E-posta uygulamasında aç
+          WhatsApp&apos;ta aç
         </a>
       </div>
     );
@@ -106,6 +109,26 @@ export function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="service" className="text-sm font-medium text-[var(--color-text)]">
+          Almak istediğiniz hizmet{" "}
+          <span className="text-[var(--color-text-faint)]">(opsiyonel)</span>
+        </label>
+        <select
+          id="service"
+          name="service"
+          defaultValue={v?.service ?? ""}
+          className={`${fieldBase} appearance-none`}
+        >
+          <option value="">Seçiniz</option>
+          {SERVICE_OPTIONS.tr.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div>
         <label htmlFor="message" className="text-sm font-medium text-[var(--color-text)]">
           Mesaj *
         </label>
@@ -141,7 +164,7 @@ export function ContactForm() {
       </button>
 
       <p className="text-xs text-[var(--color-text-faint)]">
-        Verilerinizi yalnızca talebinize dönüş yapmak için kullanırız.
+        Verileriniz yalnızca talebinize dönüş yapmak için kullanılır.
       </p>
     </form>
   );

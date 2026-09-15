@@ -43,7 +43,7 @@ export function WhatsAppFloat({ locale = "tr" }: { locale?: "tr" | "en" }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t.label}
-      className={`group fixed bottom-4 right-4 z-40 flex items-center gap-2.5 rounded-full border border-[var(--color-border-strong)] bg-[#0d0d0f]/90 py-1.5 pl-1.5 pr-1.5 shadow-[var(--shadow-card-hover)] backdrop-blur-xl transition-all duration-300 sm:pr-4 ${
+      className={`group flex items-center gap-2.5 rounded-full border border-[var(--color-border-strong)] bg-[#0d0d0f]/90 py-1.5 pl-1.5 pr-1.5 shadow-[var(--shadow-card-hover)] backdrop-blur-xl transition-all duration-300 sm:pr-4 ${
         visible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-3 opacity-0"

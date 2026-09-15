@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitContactEn, type ContactState } from "../../(site)/iletisim/actions";
+import { SERVICE_OPTIONS } from "@/lib/contact";
 
 const initialState: ContactState = { status: "idle" };
 
@@ -32,14 +33,16 @@ export function ContactForm() {
           Your message is ready.
         </p>
         <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-          Automatic delivery isn&apos;t connected yet. The link below opens your
-          message pre-filled in your email app — click it to send.
+          Your message opens pre-filled in WhatsApp — click the link below to
+          send it.
         </p>
         <a
-          href={state.mailto}
+          href={state.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-4 inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-[var(--color-accent-contrast)] hover:bg-[var(--color-accent-hover)]"
         >
-          Open in email app
+          Open in WhatsApp
         </a>
       </div>
     );
@@ -103,6 +106,26 @@ export function ContactForm() {
           defaultValue={v?.company}
           className={fieldBase}
         />
+      </div>
+
+      <div>
+        <label htmlFor="service" className="text-sm font-medium text-[var(--color-text)]">
+          Service you&apos;re interested in{" "}
+          <span className="text-[var(--color-text-faint)]">(optional)</span>
+        </label>
+        <select
+          id="service"
+          name="service"
+          defaultValue={v?.service ?? ""}
+          className={`${fieldBase} appearance-none`}
+        >
+          <option value="">Select an option</option>
+          {SERVICE_OPTIONS.en.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>

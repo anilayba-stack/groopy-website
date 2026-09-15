@@ -29,7 +29,7 @@ const homeFaq: Faq[] = [
   {
     question: "Where is Groopy based and how do you work?",
     answer:
-      "Groopy is an Istanbul-based software company that works remotely, without a physical office. We run projects with businesses across Turkey and internationally; meetings are held online.",
+      "Groopy is an Istanbul-based software company offering website development, SEO + GEO strategy, and social media management. We work with businesses across Turkey and internationally; meetings are held online or in person.",
   },
   {
     question: "How is pricing determined?",

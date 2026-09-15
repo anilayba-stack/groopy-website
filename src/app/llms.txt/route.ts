@@ -27,6 +27,12 @@ export function GET() {
     );
   }
 
+  lines.push(
+    "",
+    "## Ücretsiz Araçlar",
+    `- [Ücretsiz SEO Analiz Aracı](${SITE.url}${routes.seoTool}): Herhangi bir web sitesinin SEO ve GEO (yapay zekâ arama) puanını gerçek zamanlı, ücretsiz hesaplar — kayıt gerektirmez.`,
+  );
+
   lines.push("", "## Blog");
   for (const p of sortedPosts()) {
     lines.push(`- [${p.meta.title}](${SITE.url}${routes.post(p.meta.slug)})`);
@@ -38,6 +44,7 @@ export function GET() {
     `- [Hizmetler](${SITE.url}${routes.services})`,
     `- [Çalışmalar](${SITE.url}${routes.work})`,
     `- [Hakkımızda](${SITE.url}${routes.about})`,
+    `- [Ücretsiz SEO Analiz Aracı](${SITE.url}${routes.seoTool})`,
     `- [İletişim](${SITE.url}${routes.contact})`,
     "",
   );

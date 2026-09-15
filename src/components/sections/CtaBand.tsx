@@ -6,7 +6,7 @@ const DEFAULTS = {
   tr: {
     title: "Projenizi konuşalım.",
     description:
-      "Kısa bir keşif görüşmesiyle başlıyoruz. Kapsam ve takvim yazılı hale gelmeden fiyat vermiyoruz.",
+      "Kısa bir keşif görüşmesiyle başlanır. Kapsam ve takvim yazılı hale gelmeden fiyat verilmez.",
     cta: PRIMARY_CTA,
   },
   en: {

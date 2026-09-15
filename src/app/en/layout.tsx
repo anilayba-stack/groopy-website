@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
+import { FloatingActions } from "@/components/layout/FloatingActions";
 import { HtmlLang } from "./HtmlLang";
 
 /** EN yerelinin sayfa çerçevesi (Header + Footer) — TR (site)/layout.tsx'in aynısı. */
@@ -20,7 +20,7 @@ export default function EnLayout({ children }: { children: ReactNode }) {
         {children}
       </main>
       <Footer locale="en" />
-      <WhatsAppFloat locale="en" />
+      <FloatingActions locale="en" />
     </>
   );
 }

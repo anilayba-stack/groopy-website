@@ -4,16 +4,22 @@ import type { ContactLocale, FieldErrors } from "@/lib/contact";
 import {
   validateContact,
   deliverContactMessage,
-  buildContactMailto,
+  buildContactWhatsapp,
 } from "@/lib/contact";
 
 export interface ContactState {
   status: "idle" | "error" | "delivered" | "manual";
   errors?: FieldErrors;
-  /** status === "manual" iken kullanıcının tıklayacağı hazır e-posta bağlantısı */
-  mailto?: string;
+  /** status === "manual" iken kullanıcının tıklayacağı hazır WhatsApp bağlantısı */
+  whatsapp?: string;
   /** formu geri doldurmak için */
-  values?: { name: string; email: string; company: string; message: string };
+  values?: {
+    name: string;
+    email: string;
+    company: string;
+    service: string;
+    message: string;
+  };
 }
 
 async function submitContact(
@@ -25,6 +31,7 @@ async function submitContact(
     name: formData.get("name"),
     email: formData.get("email"),
     company: formData.get("company"),
+    service: formData.get("service"),
     message: formData.get("message"),
     website: formData.get("website"), // honeypot
   };
@@ -33,6 +40,7 @@ async function submitContact(
     name: typeof raw.name === "string" ? raw.name : "",
     email: typeof raw.email === "string" ? raw.email : "",
     company: typeof raw.company === "string" ? raw.company : "",
+    service: typeof raw.service === "string" ? raw.service : "",
     message: typeof raw.message === "string" ? raw.message : "",
   };
 
@@ -48,7 +56,11 @@ async function submitContact(
   }
 
   // Otomatik iletim henüz bağlı değil — dürüst alternatif.
-  return { status: "manual", mailto: buildContactMailto(data, locale), values };
+  return {
+    status: "manual",
+    whatsapp: buildContactWhatsapp(data, locale),
+    values,
+  };
 }
 
 /** TR iletişim formu için sunucu eylemi. */

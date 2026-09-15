@@ -10,6 +10,7 @@ export const SEGMENT_TR_TO_EN: Record<string, string> = {
   iletisim: "contact",
   calismalar: "case-studies",
   blog: "blog",
+  "seo-analiz-araci": "seo-checker",
 };
 
 export const SEGMENT_EN_TO_TR: Record<string, string> = Object.fromEntries(

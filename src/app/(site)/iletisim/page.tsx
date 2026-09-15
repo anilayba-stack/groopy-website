@@ -11,7 +11,7 @@ import { ContactForm } from "./ContactForm";
 export const metadata: Metadata = buildMetadata({
   title: "İletişim",
   description:
-    "Groopy ile iletişime geçin. Kısa bir keşif görüşmesiyle başlıyoruz; kapsam ve takvim netleşmeden fiyat vermiyoruz.",
+    "Groopy ile iletişime geçin. Kısa bir keşif görüşmesiyle başlanır; kapsam ve takvim netleşmeden fiyat verilmez.",
   path: routes.contact,
   alternatePath: enRoutes.contact,
 });
@@ -72,11 +72,6 @@ export default function ContactPage() {
                 </a>
               </div>
             </dl>
-
-            <p className="mt-8 text-xs leading-relaxed text-[var(--color-text-faint)]">
-              Groopy şu an tamamen online hizmet vermektedir; fiziksel ofis
-              ziyareti yerine görüntülü görüşme yapıyoruz.
-            </p>
           </div>
 
           <div>

@@ -51,11 +51,12 @@ export default function EnAboutPage() {
             what we do: we build products tied to a measurable business goal,
             without off-the-shelf themes.
           </p>
-          <h2>How we work</h2>
+          <h2>Working principles</h2>
           <ul>
             <li>
-              <strong>Proof first.</strong> Measurable outcomes over slogans.
-              This site itself was built to our own standards.
+              <strong>Engineering discipline.</strong> Measurable outcomes
+              over marketing language; every project runs on code ownership
+              and technical documentation.
             </li>
             <li>
               <strong>Transparency.</strong> We don&apos;t start until scope,
@@ -69,16 +70,6 @@ export default function EnAboutPage() {
               independently.
             </li>
           </ul>
-          <h2>Team</h2>
-          <p>
-            Founded by {SITE.founder.name}. We work project-by-project with
-            specialists for design, content, and production.
-          </p>
-          <h2>Location</h2>
-          <p>
-            We currently work fully remote, with no physical office. Meetings
-            are held over video call, and projects run remotely.
-          </p>
         </div>
       </Section>
 

@@ -204,3 +204,29 @@ export function faqSchema(faqs: Faq[]): JsonLd {
     })),
   };
 }
+
+/**
+ * Ücretsiz araç sayfaları için (ör. SEO analiz aracı) — "ücretsiz X aracı"
+ * türü sorgularda Google/AI arama motorlarının bunu bir yazılım/araç olarak
+ * tanıması için (fiyat, kategori dahil).
+ */
+export function softwareApplicationSchema(input: {
+  name: string;
+  description: string;
+  path: string;
+  locale?: "tr" | "en";
+}): JsonLd {
+  const locale = input.locale ?? "tr";
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: input.name,
+    description: input.description,
+    url: `${BASE}${input.path}`,
+    applicationCategory: "SEO Tool",
+    operatingSystem: "Web",
+    inLanguage: locale === "en" ? "en" : "tr-TR",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    provider: { "@id": `${BASE}/#organization` },
+  };
+}

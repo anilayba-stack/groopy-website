@@ -73,11 +73,6 @@ export default function EnContactPage() {
                 </a>
               </div>
             </dl>
-
-            <p className="mt-8 text-xs leading-relaxed text-[var(--color-text-faint)]">
-              Groopy currently works fully online; we hold video calls instead
-              of in-person office visits.
-            </p>
           </div>
 
           <div>

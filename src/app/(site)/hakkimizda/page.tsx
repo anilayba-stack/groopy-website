@@ -41,41 +41,33 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Hakkımızda"
           title="Groopy bir yazılım şirketi"
-          description="İstanbul merkezliyiz; Türkiye ve yurt dışındaki işletmelere hizmet veriyoruz. Ajans değil, mühendislik odaklı bir yazılım şirketiyiz."
+          description="Groopy, İstanbul merkezli bir yazılım şirketidir; Türkiye ve yurt dışındaki işletmelere hizmet verir. Ajans değil, mühendislik odaklı bir yapı benimsenir."
         />
         <div className="prose-groopy mt-8 max-w-3xl">
           <p>
             Groopy; web sitesi ve yazılım geliştirme, SEO&nbsp;+&nbsp;GEO
-            stratejisi ve sosyal medya yönetimi hizmetleri verir. İşimizin
-            merkezinde yazılım var: hazır tema kullanmadan, ölçülebilir bir iş
-            hedefine bağlı ürünler geliştiriyoruz.
+            stratejisi ve sosyal medya yönetimi hizmetleri sunar. İşin
+            merkezinde yazılım vardır: hazır tema kullanılmadan, ölçülebilir
+            bir iş hedefine bağlı ürünler geliştirilir.
           </p>
-          <h2>Nasıl çalışırız</h2>
+          <h2>Çalışma ilkeleri</h2>
           <ul>
             <li>
-              <strong>Kanıt önce.</strong> Slogan yerine ölçülebilir sonuç. Bu
-              sitenin kendisi de bizim ölçütlerimizle yapıldı.
+              <strong>Mühendislik disiplini.</strong> Pazarlama dili yerine
+              ölçülebilir sonuç esas alınır; her proje kod sahipliği ve
+              teknik dokümantasyonla yürütülür.
             </li>
             <li>
               <strong>Şeffaflık.</strong> Kapsam, takvim ve fiyat yazılı hale
-              gelmeden başlamıyoruz. Kod müşterinindir.
+              gelmeden işe başlanmaz. Kod müşteriye aittir.
             </li>
             <li>
-              <strong>Odak.</strong> Her şeyi yapan bir yapı değiliz. Üç ana
-              hizmete odaklanırız — web sitesi ve yazılım geliştirme, SEO&nbsp;+&nbsp;GEO,
-              sosyal medya yönetimi — ve her biri bağımsız olarak sunulur.
+              <strong>Odak.</strong> Her işi yapan bir yapı hedeflenmez. Üç
+              ana hizmete odaklanılır — web sitesi ve yazılım geliştirme,
+              SEO&nbsp;+&nbsp;GEO, sosyal medya yönetimi — ve her biri
+              bağımsız olarak sunulur.
             </li>
           </ul>
-          <h2>Ekip</h2>
-          <p>
-            {SITE.founder.name} tarafından kuruldu. Proje bazında tasarım, içerik
-            ve prodüksiyon için birlikte çalıştığımız uzmanlarla ilerliyoruz.
-          </p>
-          <h2>Konum</h2>
-          <p>
-            Şu an tamamen online çalışıyoruz; fiziksel ofis yok. Görüşmeleri
-            görüntülü yapıyor, projeleri uzaktan yürütüyoruz.
-          </p>
         </div>
       </Section>
 

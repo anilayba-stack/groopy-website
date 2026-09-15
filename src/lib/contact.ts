@@ -6,8 +6,30 @@ export interface ContactInput {
   name: string;
   email: string;
   company?: string;
+  /** Açılır menüden seçilen hizmet ihtiyacı — opsiyonel, serbest metin (seçilen seçeneğin etiketi). */
+  service?: string;
   message: string;
 }
+
+/** İletişim formundaki "hangi hizmete ihtiyacınız var" açılır menüsü. Opsiyonel. */
+export const SERVICE_OPTIONS: Record<ContactLocale, string[]> = {
+  tr: [
+    "Yeni bir web sitesi yaptırmak istiyorum",
+    "Mevcut sitemi yenilemek istiyorum",
+    "Google'da / arama motorunda görünmüyorum",
+    "Yapay zekâ aramalarında (ChatGPT, Perplexity vb.) görünmek istiyorum",
+    "Sosyal medya hesabımı büyütmek istiyorum",
+    "Birden fazlası / emin değilim",
+  ],
+  en: [
+    "I want a new website built",
+    "I want to rebuild or improve my existing site",
+    "I don't show up on Google / search",
+    "I want to show up in AI search (ChatGPT, Perplexity, etc.)",
+    "I want to grow my social media presence",
+    "More than one / not sure",
+  ],
+};
 
 export interface FieldErrors {
   name?: string;
@@ -53,6 +75,7 @@ export function validateContact(
     name?: unknown;
     email?: unknown;
     company?: unknown;
+    service?: unknown;
     message?: unknown;
     /** honeypot */
     website?: unknown;
@@ -70,6 +93,10 @@ export function validateContact(
   const email = typeof raw.email === "string" ? raw.email.trim() : "";
   const company =
     typeof raw.company === "string" ? raw.company.trim() : undefined;
+  const service =
+    typeof raw.service === "string" && raw.service.trim() !== ""
+      ? raw.service.trim()
+      : undefined;
   const message = typeof raw.message === "string" ? raw.message.trim() : "";
 
   const errors: FieldErrors = {};
@@ -80,7 +107,7 @@ export function validateContact(
   if (message.length > 4000) errors.message = t.messageTooLong;
 
   if (Object.keys(errors).length > 0) return { errors };
-  return { data: { name, email, company, message } };
+  return { data: { name, email, company, service, message } };
 }
 
 /**
@@ -99,41 +126,36 @@ export async function deliverContactMessage(
     name: data.name,
     email: data.email,
     company: data.company ?? "-",
+    service: data.service ?? "-",
     length: data.message.length,
     to: SITE.contact.email,
   });
   return { delivered: false };
 }
 
-/** Kullanıcının kendi e-posta uygulamasında açacağı hazır mailto bağlantısı. */
-export function buildContactMailto(
+/** Kullanıcının kendi WhatsApp uygulamasında açacağı hazır ön-doldurulmuş mesaj. */
+export function buildContactWhatsapp(
   data: ContactInput,
   locale: ContactLocale = "tr",
 ): string {
-  const subject =
-    locale === "en"
-      ? `Contact form — ${data.name}`
-      : `İletişim formu — ${data.name}`;
-  const body = (
+  const lines =
     locale === "en"
       ? [
-          `Name: ${data.name}`,
+          `New inquiry from the website — ${data.name}`,
           `Email: ${data.email}`,
           data.company ? `Company: ${data.company}` : null,
+          data.service ? `Interested in: ${data.service}` : null,
           "",
           data.message,
         ]
       : [
-          `Ad: ${data.name}`,
+          `Web sitesinden yeni talep — ${data.name}`,
           `E-posta: ${data.email}`,
           data.company ? `Şirket: ${data.company}` : null,
+          data.service ? `İlgilendiği hizmet: ${data.service}` : null,
           "",
           data.message,
-        ]
-  )
-    .filter((l) => l !== null)
-    .join("\n");
-  return `mailto:${SITE.contact.email}?subject=${encodeURIComponent(
-    subject,
-  )}&body=${encodeURIComponent(body)}`;
+        ];
+  const text = lines.filter((l) => l !== null).join("\n");
+  return `https://wa.me/${SITE.contact.whatsapp}?text=${encodeURIComponent(text)}`;
 }

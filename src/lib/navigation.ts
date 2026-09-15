@@ -13,7 +13,7 @@ export interface NavGroup {
   children?: NavLink[];
 }
 
-/** Ana navigasyon. Üç ana hizmet + Çalışmalar / Blog / Hakkımızda. */
+/** Ana navigasyon. Üç ana hizmet + Çalışmalar / Blog / Hakkımızda / İletişim. */
 export const mainNav: NavGroup[] = [
   {
     label: "Hizmetler",
@@ -29,6 +29,8 @@ export const mainNav: NavGroup[] = [
   { label: "Çalışmalar", href: routes.work },
   { label: "Blog", href: routes.blog },
   { label: "Hakkımızda", href: routes.about },
+  { label: "Ücretsiz SEO Analizi", href: routes.seoTool },
+  { label: "İletişim", href: routes.contact },
 ];
 
 export const footerNav: NavGroup[] = [
@@ -48,6 +50,10 @@ export const footerNav: NavGroup[] = [
       { label: "İletişim", href: routes.contact },
     ],
   },
+  {
+    label: "Kaynaklar",
+    children: [{ label: "Ücretsiz SEO Analiz Aracı", href: routes.seoTool }],
+  },
 ];
 
 /** EN ana navigasyon. */
@@ -66,6 +72,8 @@ export const enMainNav: NavGroup[] = [
   { label: "Case Studies", href: enRoutes.work },
   { label: "Blog", href: enRoutes.blog },
   { label: "About", href: enRoutes.about },
+  { label: "Free SEO Check", href: enRoutes.seoTool },
+  { label: "Contact", href: enRoutes.contact },
 ];
 
 export const enFooterNav: NavGroup[] = [
@@ -84,5 +92,9 @@ export const enFooterNav: NavGroup[] = [
       { label: "About", href: enRoutes.about },
       { label: "Contact", href: enRoutes.contact },
     ],
+  },
+  {
+    label: "Resources",
+    children: [{ label: "Free SEO Checker Tool", href: enRoutes.seoTool }],
   },
 ];

@@ -12,6 +12,7 @@ export const routes = {
   post: (slug: string) => `/blog/${slug}`,
   about: "/hakkimizda",
   contact: "/iletisim",
+  seoTool: "/seo-analiz-araci",
 } as const;
 
 /** Tek birincil CTA — tüm sitede aynı (karar: 2026-09-02). */
@@ -31,6 +32,7 @@ export const enRoutes = {
   post: (slug: string) => `/en/blog/${slug}`,
   about: "/en/about",
   contact: "/en/contact",
+  seoTool: "/en/seo-checker",
 } as const;
 
 export const EN_PRIMARY_CTA = {

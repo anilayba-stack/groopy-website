@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
+import { FloatingActions } from "@/components/layout/FloatingActions";
 
 /** TR yerelinin sayfa çerçevesi (Header + Footer). */
 export default function SiteLayout({ children }: { children: ReactNode }) {
@@ -18,7 +18,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
         {children}
       </main>
       <Footer />
-      <WhatsAppFloat />
+      <FloatingActions />
     </>
   );
 }
