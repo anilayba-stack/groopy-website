@@ -28,9 +28,14 @@ import {
   meta as disHekimleriRehberiMeta,
   Body as DisHekimleriRehberiBody,
 } from "./dis-hekimleri-dijital-pazarlama-rehberi/post";
+import {
+  meta as googleAdsHesabinizKimdeMeta,
+  Body as GoogleAdsHesabinizKimdeBody,
+} from "./google-ads-hesabiniz-kimde/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: googleAdsHesabinizKimdeMeta, Body: GoogleAdsHesabinizKimdeBody },
   { meta: disHekimleriRehberiMeta, Body: DisHekimleriRehberiBody },
   { meta: googledeNedenCikmiyorumMeta, Body: GoogledeNedenCikmiyorumBody },
   {

@@ -25,9 +25,17 @@ import {
   meta as dentistDigitalMarketingGuideMeta,
   Body as DentistDigitalMarketingGuideBody,
 } from "./dentist-digital-marketing-guide/post";
+import {
+  meta as whoOwnsYourGoogleAdsAccountMeta,
+  Body as WhoOwnsYourGoogleAdsAccountBody,
+} from "./who-owns-your-google-ads-account/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  {
+    meta: whoOwnsYourGoogleAdsAccountMeta,
+    Body: WhoOwnsYourGoogleAdsAccountBody,
+  },
   {
     meta: dentistDigitalMarketingGuideMeta,
     Body: DentistDigitalMarketingGuideBody,
