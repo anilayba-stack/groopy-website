@@ -11,7 +11,7 @@ export const seoAndGeoStrategy: Service = {
     "One strategy to be found in Google search and cited in AI answers (ChatGPT, Perplexity, AI Overviews). Technical SEO, content architecture, and GEO infrastructure.",
   summary:
     "Technical SEO, content, and GEO work that moves your site up in Google rankings.",
-  tldr: "SEO aims to rank your page in Google; GEO (Generative Engine Optimization) aims to get your brand cited as a source inside AI answers from tools like ChatGPT, Perplexity, Gemini, and Google AI Overviews. Neither replaces the other — they're built together. Groopy brings technical foundation, content architecture, and structured data into one plan.",
+  tldr: "SEO (Search Engine Optimization) aims to rank your page in Google; GEO (Generative Engine Optimization) aims to get your brand cited as a source inside AI answers from tools like ChatGPT, Perplexity, Gemini, and Google AI Overviews. Neither replaces the other — they're built together. Groopy brings technical foundation, content architecture, and structured data into one plan.",
   icon: Search,
   sections: [
     {
@@ -44,8 +44,14 @@ export const seoAndGeoStrategy: Service = {
       ],
     },
     {
-      heading: "Measurement",
-      body: "Organic visibility via Search Console and CrUX; a monthly manual check for citations in AI answers on target queries. It typically takes 4–8 weeks from launch to appear in an AI answer.",
+      heading: "Measurement and management",
+      body: "Once Google's tools are set up, this service covers their ongoing monitoring and management. It typically takes 4–8 weeks from launch to appear in an AI answer.",
+      bullets: [
+        "Search Console: crawl errors, indexing status, and search performance tracking",
+        "Google Analytics: traffic and conversion reporting",
+        "Google Business Profile: posts, updates, and review management",
+        "A monthly manual check for citations in AI answers on target queries",
+      ],
     },
   ],
   process: [
@@ -89,7 +95,7 @@ export const seoAndGeoStrategy: Service = {
     {
       question: "Do you manage Google Ads or paid advertising?",
       answer:
-        "This service is focused on organic visibility. If you need paid advertising, it can be discussed in the consultation.",
+        "This service is focused on organic visibility. Paid advertising management is offered as a separate service — see Google Ads Management.",
     },
   ],
   relatedPosts: ["website-cost-2026"],

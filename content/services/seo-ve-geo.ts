@@ -11,7 +11,7 @@ export const seoVeGeo: Service = {
     "Google aramasında ve yapay zeka yanıtlarında (ChatGPT, Perplexity, AI Overviews) bulunur olmak için tek bir strateji. Teknik SEO, içerik mimarisi ve GEO altyapısı.",
   summary:
     "Sitenizi Google sıralamasında yükselten teknik SEO, içerik ve GEO çalışması.",
-  tldr: "SEO, sayfanızın Google'da sıralanmasını hedefler; GEO (Generative Engine Optimization) ise ChatGPT, Perplexity, Gemini ve Google AI Overviews gibi yapay zeka yanıtlarının içinde kaynak olarak gösterilmesini hedefler. İkisi birbirinin yerine geçmez — birlikte kurulur. Groopy teknik temeli, içerik mimarisini ve yapılandırılmış veriyi tek planda toplar.",
+  tldr: "SEO (Arama Motoru Optimizasyonu), sayfanızın Google'da sıralanmasını hedefler; GEO (Generative Engine Optimization) ise ChatGPT, Perplexity, Gemini ve Google AI Overviews gibi yapay zeka yanıtlarının içinde kaynak olarak gösterilmesini hedefler. İkisi birbirinin yerine geçmez — birlikte kurulur. Groopy teknik temeli, içerik mimarisini ve yapılandırılmış veriyi tek planda toplar.",
   icon: Search,
   sections: [
     {
@@ -44,8 +44,14 @@ export const seoVeGeo: Service = {
       ],
     },
     {
-      heading: "Ölçüm",
-      body: "Search Console ve CrUX ile organik görünürlük; hedef sorgularda yapay zeka yanıtlarında alıntı kontrolü için aylık manuel panel. Yayından yapay zeka yanıtında görünmeye tipik olarak 4–8 hafta vardır.",
+      heading: "Ölçüm ve yönetim",
+      body: "Kurulumu tamamlanmış Google araçları bu hizmet kapsamında sürekli izlenir ve yönetilir. Yayından yapay zeka yanıtında görünmeye tipik olarak 4–8 hafta vardır.",
+      bullets: [
+        "Search Console: tarama hataları, indeksleme durumu ve arama performansı takibi",
+        "Google Analytics: trafik ve dönüşüm raporlaması",
+        "Google İşletme Profili: gönderi, güncelleme ve yorum yönetimi",
+        "Hedef sorgularda yapay zeka yanıtlarında alıntı kontrolü için aylık manuel panel",
+      ],
     },
   ],
   process: [
@@ -89,7 +95,7 @@ export const seoVeGeo: Service = {
     {
       question: "Google Ads / reklam yönetiyor musunuz?",
       answer:
-        "Bu hizmet organik görünürlüğe odaklıdır. Ücretli reklam ihtiyacınız varsa görüşmede değerlendirilebilir.",
+        "Bu hizmet organik görünürlüğe odaklıdır. Ücretli reklam yönetimi ayrı bir hizmet olarak sunulur — bkz. Google Reklam Yönetimi.",
     },
   ],
   relatedPosts: ["web-sitesi-maliyeti-2026"],

@@ -9,9 +9,9 @@ export const SITE = {
   /** TR konumlandırma cümlesi — "ajans" değil "yazılım şirketi". */
   tagline: "İstanbul merkezli yazılım şirketi",
   descriptionTr:
-    "Groopy bir yazılım şirketi. Web sitesi ve yazılım geliştirme, SEO + GEO stratejisi ve sosyal medya yönetimi hizmetleri sunar. İstanbul merkezli; Türkiye ve yurt dışına hizmet.",
+    "Groopy bir yazılım şirketi. Web sitesi ve yazılım geliştirme, SEO + GEO stratejisi, Google Reklam Yönetimi ve sosyal medya yönetimi hizmetleri sunar. İstanbul merkezli; Türkiye ve yurt dışına hizmet.",
   descriptionEn:
-    "Groopy is a software company offering website and software development, SEO + GEO strategy, and social media management. Based in Istanbul, serving Turkey and abroad.",
+    "Groopy is a software company offering website and software development, SEO + GEO strategy, Google Ads Management, and social media management. Based in Istanbul, serving Turkey and abroad.",
 
   /** Kanonik üretim adresi. */
   url: "https://groopyagency.com",

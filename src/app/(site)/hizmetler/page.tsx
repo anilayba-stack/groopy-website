@@ -12,7 +12,7 @@ import { primaryServices } from "@content/services";
 export const metadata: Metadata = buildMetadata({
   title: "Hizmetler",
   description:
-    "Groopy'nin hizmetleri: web sitesi ve yazılım geliştirme, SEO + GEO stratejisi ve sosyal medya yönetimi.",
+    "Groopy'nin hizmetleri: web sitesi ve yazılım geliştirme, SEO + GEO stratejisi, Google Reklam Yönetimi ve sosyal medya yönetimi.",
   path: routes.services,
   alternatePath: enRoutes.services,
 });
@@ -40,7 +40,7 @@ export default function ServicesPage() {
           as="h1"
           eyebrow="Hizmetler"
           title="Ne yapıyoruz"
-          description="Üç ana hizmetimiz — web sitesi ve yazılım geliştirme, SEO + GEO, sosyal medya yönetimi — birbirinden bağımsızdır; ayrı ayrı ya da bütünleşik biçimde sunulur."
+          description="Dört ana hizmetimiz — web sitesi ve yazılım geliştirme, SEO + GEO, Google Reklam Yönetimi, sosyal medya yönetimi — birbirinden bağımsızdır; ayrı ayrı ya da bütünleşik biçimde sunulur."
         />
       </Section>
 

@@ -9,9 +9,9 @@ import { enRoutes, routes } from "@/lib/routes";
 import { SITE } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About",
+  title: "About: Istanbul-Based Software Company",
   description:
-    "Groopy is an Istanbul-based software company. Founded by Anıl Ay. We provide website development, SEO + GEO, and social media management.",
+    "Groopy is an Istanbul-based software company. Founded by Anıl Ay. We provide website development, SEO + GEO, Google Ads Management, and social media management.",
   path: enRoutes.about,
   locale: "en",
   alternatePath: routes.about,
@@ -43,15 +43,15 @@ export default function EnAboutPage() {
         <SectionHeading
           as="h1"
           eyebrow="About"
-          title="Groopy is a software company"
+          title="Groopy: an Istanbul-based software company"
           description="We're based in Istanbul and serve businesses across Turkey and internationally. Not an agency — an engineering-led software company."
         />
         <div className="prose-groopy mt-8 max-w-3xl">
           <p>
             Groopy provides website & software development, SEO&nbsp;+&nbsp;GEO
-            strategy, and social media management. Software is at the core of
-            what we do: we build products tied to a measurable business goal,
-            without off-the-shelf themes.
+            strategy, Google Ads Management, and social media management.
+            Software is at the core of what we do: we build products tied to
+            a measurable business goal, without off-the-shelf themes.
           </p>
           <h2>Working principles</h2>
           <ul>
@@ -67,9 +67,9 @@ export default function EnAboutPage() {
             </li>
             <li>
               <strong>Focus.</strong> We&apos;re not a do-everything shop. We focus
-              on three core services — website & software development,
-              SEO&nbsp;+&nbsp;GEO, and social media management — each offered
-              independently.
+              on four core services — website & software development,
+              SEO&nbsp;+&nbsp;GEO, Google Ads Management, and social media
+              management — each offered independently.
             </li>
           </ul>
         </div>

@@ -18,7 +18,7 @@ import { diagnostics } from "@content/en/diagnostics";
 export const metadata: Metadata = buildMetadata({
   title: "Website Development, SEO and GEO in Istanbul",
   description:
-    "Groopy is an Istanbul-based software company; we make your business visible in Google and AI search through website development, SEO + GEO, and social media management.",
+    "Groopy is an Istanbul-based software company; we make your business visible in Google and AI search through website development, SEO + GEO, Google Ads Management, and social media management.",
   path: enRoutes.home,
   isHome: true,
   locale: "en",
@@ -29,7 +29,7 @@ const homeFaq: Faq[] = [
   {
     question: "Where is Groopy based and how do you work?",
     answer:
-      "Groopy is an Istanbul-based software company offering website development, SEO + GEO strategy, and social media management. We work with businesses across Turkey and internationally; meetings are held online or in person.",
+      "Groopy is an Istanbul-based software company offering website development, SEO + GEO strategy, Google Ads Management, and social media management. We work with businesses across Turkey and internationally; meetings are held online or in person.",
   },
   {
     question: "How is pricing determined?",
@@ -49,7 +49,7 @@ const homeFaq: Faq[] = [
   {
     question: "Do I have to take the services one at a time?",
     answer:
-      "No. Website development, SEO + GEO, and social media management are independent of each other; you can take just one. When planned together, measurement and reporting are consolidated — but that's not required.",
+      "No. Website development, SEO + GEO, Google Ads Management, and social media management are independent of each other; you can take just one. When planned together, measurement and reporting are consolidated — but that's not required.",
   },
 ];
 
@@ -85,8 +85,8 @@ export default function EnHomePage() {
       <Section>
         <SectionHeading
           eyebrow="Core services"
-          title="Website development, SEO + GEO, and social media management"
-          description="Groopy is an Istanbul-based software company offering corporate website development, SEO, GEO (AI search optimization), and social media management. All of it is aimed at growing your brand on Google and social media."
+          title="Website development, SEO + GEO, Google Ads Management, and social media management"
+          description="Groopy is an Istanbul-based software company offering corporate website development, SEO (Search Engine Optimization), GEO (AI search optimization), Google Ads Management, and social media management. All of it is aimed at growing your brand on Google and social media."
         />
         <div className="mt-10">
           <ServiceCards services={primaryServices} hrefFor={enRoutes.service} />

@@ -5,6 +5,7 @@ import Image from "next/image";
  * sayfasında hero görseli. Fotoğraflar Pexels (ücretsiz, atıf gerekmez):
  *  web    → pexels.com/photo/7181184
  *  seo    → pexels.com/photo/12969403
+ *  ads    → pexels.com/photo/9822733
  *  social → pexels.com/photo/6333749
  * Monokrom tasarımla uyum için CSS'te griye + koyulaştırılır.
  */
@@ -16,6 +17,10 @@ const IMAGES: Record<string, { src: string; alt: string }> = {
   "seo-ve-geo": {
     src: "/images/services/seo.jpg",
     alt: "Dizüstü bilgisayarda analitik panosu",
+  },
+  "google-reklam-yonetimi": {
+    src: "/images/services/ads.jpg",
+    alt: "Yükselen bir grafik oku ile üst üste dizilmiş tahta küpler",
   },
   "sosyal-medya-yonetimi": {
     src: "/images/services/social.jpg",
@@ -29,6 +34,10 @@ const IMAGES: Record<string, { src: string; alt: string }> = {
   "seo-and-geo-strategy": {
     src: "/images/services/seo.jpg",
     alt: "An analytics dashboard shown on a laptop screen",
+  },
+  "google-ads-management": {
+    src: "/images/services/ads.jpg",
+    alt: "Wooden blocks stacked in ascending order with a rising growth arrow",
   },
   "social-media-management": {
     src: "/images/services/social.jpg",

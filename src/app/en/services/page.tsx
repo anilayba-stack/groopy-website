@@ -12,7 +12,7 @@ import { primaryServices } from "@content/en/services";
 export const metadata: Metadata = buildMetadata({
   title: "Services",
   description:
-    "Groopy's services: website & software development, SEO + GEO strategy, and social media management.",
+    "Groopy's services: website & software development, SEO + GEO strategy, Google Ads Management, and social media management.",
   path: enRoutes.services,
   locale: "en",
   alternatePath: routes.services,
@@ -42,7 +42,7 @@ export default function EnServicesPage() {
           as="h1"
           eyebrow="Services"
           title="What we do"
-          description="Our three core services — website & software development, SEO + GEO, and social media management — are independent of each other; take them separately or as an integrated program."
+          description="Our four core services — website & software development, SEO + GEO, Google Ads Management, and social media management — are independent of each other; take them separately or as an integrated program."
         />
       </Section>
 

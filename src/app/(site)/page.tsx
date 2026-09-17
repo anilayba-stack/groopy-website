@@ -17,7 +17,7 @@ import { primaryServices } from "@content/services";
 export const metadata: Metadata = buildMetadata({
   title: "İstanbul web sitesi geliştirme, SEO ve GEO",
   description:
-    "İstanbul merkezli yazılım şirketi Groopy; web sitesi geliştirme, SEO + GEO ve sosyal medya yönetimiyle işletmenizi Google ve yapay zekâ aramalarında görünür kılar.",
+    "İstanbul merkezli yazılım şirketi Groopy; web sitesi geliştirme, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimiyle işletmenizi Google ve yapay zekâ aramalarında görünür kılar.",
   path: "/",
   isHome: true,
   alternatePath: enRoutes.home,
@@ -27,7 +27,7 @@ const homeFaq: Faq[] = [
   {
     question: "Groopy nerede ve nasıl çalışıyor?",
     answer:
-      "Groopy, İstanbul merkezli bir yazılım şirketi olarak web sitesi geliştirme, SEO + GEO stratejisi ve sosyal medya yönetimi hizmetleri sunar. Türkiye'nin her yerinden ve yurt dışından işletmelerle çalışılır; görüşmeler çevrimiçi veya yüz yüze yapılır.",
+      "Groopy, İstanbul merkezli bir yazılım şirketi olarak web sitesi geliştirme, SEO + GEO stratejisi, Google Reklam Yönetimi ve sosyal medya yönetimi hizmetleri sunar. Türkiye'nin her yerinden ve yurt dışından işletmelerle çalışılır; görüşmeler çevrimiçi veya yüz yüze yapılır.",
   },
   {
     question: "Fiyatlar nasıl belirleniyor?",
@@ -47,7 +47,7 @@ const homeFaq: Faq[] = [
   {
     question: "Hizmetlerin tek tek mi alınması gerekir?",
     answer:
-      "Hayır. Web sitesi geliştirme, SEO + GEO ve sosyal medya yönetimi birbirinden bağımsızdır; yalnızca biri de alınabilir. Birlikte planlandığında ölçüm ve raporlama tek yerde toplanır, ancak bu zorunlu değildir.",
+      "Hayır. Web sitesi geliştirme, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimi birbirinden bağımsızdır; yalnızca biri de alınabilir. Birlikte planlandığında ölçüm ve raporlama tek yerde toplanır, ancak bu zorunlu değildir.",
   },
 ];
 
@@ -83,8 +83,8 @@ export default function HomePage() {
       <Section>
         <SectionHeading
           eyebrow="Ana hizmetler"
-          title="Web sitesi geliştirme, SEO + GEO ve sosyal medya yönetimi"
-          description="İstanbul merkezli yazılım şirketi Groopy; kurumsal web sitesi geliştirme, SEO, GEO (yapay zekâ arama optimizasyonu) ve sosyal medya yönetimi hizmetleri sunar. Hepsi, markanızın Google'da ve sosyal medyada büyümesine yöneliktir."
+          title="Web sitesi geliştirme, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimi"
+          description="İstanbul merkezli yazılım şirketi Groopy; kurumsal web sitesi geliştirme, SEO (arama motoru optimizasyonu), GEO (yapay zekâ arama optimizasyonu), Google Reklam Yönetimi ve sosyal medya yönetimi hizmetleri sunar. Hepsi, markanızın Google'da ve sosyal medyada büyümesine yöneliktir."
         />
         <div className="mt-10">
           <ServiceCards services={primaryServices} />

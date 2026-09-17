@@ -1,12 +1,14 @@
 import type { Service } from "../../types";
 import { websiteDevelopment } from "./website-development";
 import { seoAndGeoStrategy } from "./seo-and-geo-strategy";
+import { googleAdsManagement } from "./google-ads-management";
 import { socialMediaManagement } from "./social-media-management";
 
 /** Order = presentation priority. Flagship (website) first. */
 export const services: Service[] = [
   websiteDevelopment,
   seoAndGeoStrategy,
+  googleAdsManagement,
   socialMediaManagement,
 ];
 

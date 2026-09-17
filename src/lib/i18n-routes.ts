@@ -21,6 +21,7 @@ export const SEGMENT_EN_TO_TR: Record<string, string> = Object.fromEntries(
 export const SERVICE_SLUG_TR_TO_EN: Record<string, string> = {
   "web-sitesi-gelistirme": "website-development",
   "seo-ve-geo": "seo-and-geo-strategy",
+  "google-reklam-yonetimi": "google-ads-management",
   "sosyal-medya-yonetimi": "social-media-management",
 };
 

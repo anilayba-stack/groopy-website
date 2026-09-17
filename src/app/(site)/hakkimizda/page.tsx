@@ -9,9 +9,9 @@ import { routes, enRoutes } from "@/lib/routes";
 import { SITE } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Hakkımızda",
+  title: "İstanbul Merkezli Yazılım Şirketi Hakkımızda",
   description:
-    "Groopy, İstanbul merkezli bir yazılım şirketi. Kurucu Anıl Ay. Web geliştirme, SEO + GEO ve sosyal medya yönetimi hizmetleri verir.",
+    "Groopy, İstanbul merkezli bir yazılım şirketi. Kurucu Anıl Ay. Web geliştirme, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimi hizmetleri verir.",
   path: routes.about,
   alternatePath: enRoutes.about,
 });
@@ -42,15 +42,16 @@ export default function AboutPage() {
         <SectionHeading
           as="h1"
           eyebrow="Hakkımızda"
-          title="Groopy bir yazılım şirketi"
+          title="Groopy: İstanbul merkezli bir yazılım şirketi"
           description="Groopy, İstanbul merkezli bir yazılım şirketidir; Türkiye ve yurt dışındaki işletmelere hizmet verir. Ajans değil, mühendislik odaklı bir yapı benimsenir."
         />
         <div className="prose-groopy mt-8 max-w-3xl">
           <p>
             Groopy; web sitesi ve yazılım geliştirme, SEO&nbsp;+&nbsp;GEO
-            stratejisi ve sosyal medya yönetimi hizmetleri sunar. İşin
-            merkezinde yazılım vardır: hazır tema kullanılmadan, ölçülebilir
-            bir iş hedefine bağlı ürünler geliştirilir.
+            stratejisi, Google Reklam Yönetimi ve sosyal medya yönetimi
+            hizmetleri sunar. İşin merkezinde yazılım vardır: hazır tema
+            kullanılmadan, ölçülebilir bir iş hedefine bağlı ürünler
+            geliştirilir.
           </p>
           <h2>Çalışma ilkeleri</h2>
           <ul>
@@ -64,10 +65,10 @@ export default function AboutPage() {
               gelmeden işe başlanmaz. Kod müşteriye aittir.
             </li>
             <li>
-              <strong>Odak.</strong> Her işi yapan bir yapı hedeflenmez. Üç
+              <strong>Odak.</strong> Her işi yapan bir yapı hedeflenmez. Dört
               ana hizmete odaklanılır — web sitesi ve yazılım geliştirme,
-              SEO&nbsp;+&nbsp;GEO, sosyal medya yönetimi — ve her biri
-              bağımsız olarak sunulur.
+              SEO&nbsp;+&nbsp;GEO, Google Reklam Yönetimi, sosyal medya
+              yönetimi — ve her biri bağımsız olarak sunulur.
             </li>
           </ul>
         </div>

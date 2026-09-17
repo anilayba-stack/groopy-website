@@ -9,12 +9,12 @@ import { routes, enRoutes } from "@/lib/routes";
 
 const STRINGS = {
   tr: {
-    tagline: `${SITE.tagline}. Web geliştirme, SEO + GEO ve sosyal medya yönetimi.`,
+    tagline: `${SITE.tagline}. Web geliştirme, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimi.`,
     rights: "Tüm hakları saklıdır.",
   },
   en: {
     tagline:
-      "Software company based in Istanbul. Website development, SEO + GEO, and social media management.",
+      "Software company based in Istanbul. Website development, SEO + GEO, Google Ads Management, and social media management.",
     rights: "All rights reserved.",
   },
 } as const;

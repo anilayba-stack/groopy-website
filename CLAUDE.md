@@ -44,15 +44,24 @@ terk ediliyor** — bu görsel dil "eğlence/etkinlik markası" hissi veriyor, h
   GEO/AI-citation hazırlığında kusursuz olmalı.
 
 # HİZMET HİYERARŞİSİ
-Sitede yalnızca üç hizmet var — hepsi birincil, birbirinden bağımsız:
+Sitede dört hizmet var — hepsi birincil, birbirinden bağımsız:
 1. Web Sitesi / Yazılım Geliştirme — flagship, ana CTA odağı, homepage'de büyük kart
-2. SEO + GEO Stratejisi
-3. Sosyal Medya Yönetimi (fotoğraf/video prodüksiyon bu hizmete dahil)
+   (Google Arama Konsolu / Analytics / İşletme Profili KURULUMU bu hizmetin kapsamında)
+2. SEO + GEO Stratejisi (kurulan Google araçlarının SÜREKLİ YÖNETİMİ — GSC, GA, GBP —
+   bu hizmetin kapsamında; organik/AI arama görünürlüğü)
+3. Google Reklam Yönetimi — ücretli reklam (Google Ads: arama, alışveriş, görüntülü);
+   reklam hesabı müşteride kalır, Groopy yönetici erişimiyle yönetir
+4. Sosyal Medya Yönetimi (fotoğraf/video prodüksiyon bu hizmete dahil)
 
 **Karar (2026-09-03, kullanıcı):** Yaratıcı Hizmetler ve Etkinlik & Organizasyon
-hizmetleri KALDIRILDI — konu dağınıklığı ve SEO odağının bozulmaması için. İkincil
-hizmet katmanı yok. Video/foto prodüksiyon yalnızca sosyal medya yönetimi kapsamında
-(içerik ölçeğinde) sunulur; DJ/etkinlik/organizasyon işleri sitede hiç yer almaz.
+hizmetleri KALDIRILDI — konu dağınıklığı ve SEO odağının bozulmaması için. Video/foto
+prodüksiyon yalnızca sosyal medya yönetimi kapsamında (içerik ölçeğinde) sunulur;
+DJ/etkinlik/organizasyon işleri sitede hiç yer almaz.
+
+**Karar (2026-09-17, kullanıcı):** Google Reklam Yönetimi 4. bağımsız hizmet olarak
+eklendi — "yalnızca üç hizmet, ikincil katman yok" ilkesinden kasıtlı bir sapma. Bunun
+yanında GBP/GSC/GA için kurulum (Web Sitesi hizmeti) ile süregelen yönetim (SEO + GEO
+hizmeti) ayrımı netleştirildi.
 
 # TEKNOLOJİ SEÇİMİ VE GEREKÇESİ
 - **Server Components varsayılan.** Gerçek client-side interaktivite gerekmedikçe

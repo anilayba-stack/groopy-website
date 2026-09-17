@@ -26,6 +26,11 @@ const STRINGS = {
         href: routes.service("seo-ve-geo"),
       },
       {
+        key: "ads",
+        label: "Google Reklam Yönetimi",
+        href: routes.service("google-reklam-yonetimi"),
+      },
+      {
         key: "social",
         label: "Sosyal medya yönetimi",
         href: routes.service("sosyal-medya-yonetimi"),
@@ -50,6 +55,11 @@ const STRINGS = {
         key: "seo",
         label: "Search visibility with SEO + GEO",
         href: enRoutes.service("seo-and-geo-strategy"),
+      },
+      {
+        key: "ads",
+        label: "Google Ads Management",
+        href: enRoutes.service("google-ads-management"),
       },
       {
         key: "social",

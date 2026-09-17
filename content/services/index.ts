@@ -1,12 +1,14 @@
 import type { Service } from "../types";
 import { webSitesiGelistirme } from "./web-sitesi-gelistirme";
 import { seoVeGeo } from "./seo-ve-geo";
+import { googleReklamYonetimi } from "./google-reklam-yonetimi";
 import { sosyalMedyaYonetimi } from "./sosyal-medya-yonetimi";
 
 /** Sıra = sunum önceliği. Flagship (web) en başta. */
 export const services: Service[] = [
   webSitesiGelistirme,
   seoVeGeo,
+  googleReklamYonetimi,
   sosyalMedyaYonetimi,
 ];
 
