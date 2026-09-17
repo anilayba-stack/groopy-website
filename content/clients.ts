@@ -22,15 +22,9 @@ export const clients: Client[] = [
     logo: { src: "/logos/tike-zekeriyakoy.png", w: 2000, h: 988, scale: 1.5 },
   },
   {
-    name: "Dr. Burak Gümüşçü",
-    url: "https://www.drburakgumuscu.com",
-    logo: {
-      src: "/logos/dr-burak-gumuscu.png",
-      w: 204,
-      h: 207,
-      scale: 1.05,
-      withName: true,
-    },
+    name: "Fzt. Mevlüt Bilgin",
+    url: "https://fztmevlutbilgin.com",
+    logo: { src: "/logos/mevlut-bilgin.png", w: 600, h: 144, scale: 0.85 },
   },
   { name: "Fzt. Senem Elmalı", url: "https://senemelmali.com" },
   {
