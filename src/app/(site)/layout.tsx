@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "../globals.css";
 import { SITE } from "@/lib/site-config";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
@@ -64,6 +65,7 @@ export default function SiteLayout({ children }: Readonly<{ children: ReactNode 
         <Footer />
         <FloatingActions />
       </body>
+      <GoogleAnalytics gaId="G-MBK9KMLX6R" />
     </html>
   );
 }
