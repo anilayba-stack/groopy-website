@@ -99,6 +99,8 @@ export const seoAndGeoStrategy: Service = {
     },
   ],
   relatedPosts: [
+    "dentist-digital-marketing-guide",
+    "why-isnt-my-site-on-google",
     "what-is-geo",
     "google-ads-or-seo",
     "how-to-choose-an-seo-agency",

@@ -117,7 +117,13 @@ export default async function EnBlogPostPage({
                   {meta.title}
                 </h1>
                 <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-                  {authorByline}
+                  {meta.author === SITE.founder.name ? (
+                    <Link href={enRoutes.about} className="hover:text-[var(--color-text)]">
+                      {authorByline}
+                    </Link>
+                  ) : (
+                    authorByline
+                  )}
                 </p>
               </header>
             </Container>
@@ -142,7 +148,13 @@ export default async function EnBlogPostPage({
                 {meta.title}
               </h1>
               <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-                {authorByline}
+                {meta.author === SITE.founder.name ? (
+                  <Link href={enRoutes.about} className="hover:text-[var(--color-text)]">
+                    {authorByline}
+                  </Link>
+                ) : (
+                  authorByline
+                )}
               </p>
             </header>
           </Container>

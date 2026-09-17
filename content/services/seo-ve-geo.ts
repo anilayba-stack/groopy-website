@@ -99,6 +99,8 @@ export const seoVeGeo: Service = {
     },
   ],
   relatedPosts: [
+    "dis-hekimleri-dijital-pazarlama-rehberi",
+    "googlede-neden-cikmiyorum",
     "geo-nedir",
     "google-ads-mi-seo-mu",
     "seo-ajansi-secerken-nelere-dikkat-edilmeli",

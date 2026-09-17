@@ -73,6 +73,7 @@ export const googleAdsManagement: Service = {
     },
   ],
   relatedPosts: [
+    "dentist-digital-marketing-guide",
     "how-to-choose-a-google-ads-agency",
     "google-ads-or-seo",
   ],

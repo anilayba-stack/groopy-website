@@ -89,5 +89,5 @@ export const websiteDevelopment: Service = {
         "Content areas are built so you can manage them yourself. For structural changes, it's either a maintenance agreement with us or handing off to your own team — your choice.",
     },
   ],
-  relatedPosts: ["website-cost-2026"],
+  relatedPosts: ["dentist-digital-marketing-guide", "website-cost-2026"],
 };

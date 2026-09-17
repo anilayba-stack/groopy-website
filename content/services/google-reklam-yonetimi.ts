@@ -73,6 +73,7 @@ export const googleReklamYonetimi: Service = {
     },
   ],
   relatedPosts: [
+    "dis-hekimleri-dijital-pazarlama-rehberi",
     "google-ads-ajansi-secerken-nelere-dikkat-edilmeli",
     "google-ads-mi-seo-mu",
   ],

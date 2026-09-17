@@ -89,5 +89,8 @@ export const webSitesiGelistirme: Service = {
         "İçerik alanları sizin yönetebileceğiniz şekilde kurgulanır. Yapısal değişiklikler için bakım anlaşması ya da kendi ekibinizle devam — seçim sizin.",
     },
   ],
-  relatedPosts: ["web-sitesi-maliyeti-2026"],
+  relatedPosts: [
+    "dis-hekimleri-dijital-pazarlama-rehberi",
+    "web-sitesi-maliyeti-2026",
+  ],
 };

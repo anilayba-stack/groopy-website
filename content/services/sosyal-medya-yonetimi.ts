@@ -81,5 +81,8 @@ export const sosyalMedyaYonetimi: Service = {
         "Organik yönetim ve içerik bu hizmetin özü. Meta/TikTok reklam yönetimi ihtiyacınız varsa görüşmede değerlendirilir.",
     },
   ],
-  relatedPosts: ["sosyal-medya-yonetimi-fiyatlari-2026"],
+  relatedPosts: [
+    "dis-hekimleri-dijital-pazarlama-rehberi",
+    "sosyal-medya-yonetimi-fiyatlari-2026",
+  ],
 };

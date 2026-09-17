@@ -20,9 +20,19 @@ import {
   meta as googleAdsAjansiSecerkenMeta,
   Body as GoogleAdsAjansiSecerkenBody,
 } from "./google-ads-ajansi-secerken-nelere-dikkat-edilmeli/post";
+import {
+  meta as googledeNedenCikmiyorumMeta,
+  Body as GoogledeNedenCikmiyorumBody,
+} from "./googlede-neden-cikmiyorum/post";
+import {
+  meta as disHekimleriRehberiMeta,
+  Body as DisHekimleriRehberiBody,
+} from "./dis-hekimleri-dijital-pazarlama-rehberi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: disHekimleriRehberiMeta, Body: DisHekimleriRehberiBody },
+  { meta: googledeNedenCikmiyorumMeta, Body: GoogledeNedenCikmiyorumBody },
   {
     meta: googleAdsAjansiSecerkenMeta,
     Body: GoogleAdsAjansiSecerkenBody,

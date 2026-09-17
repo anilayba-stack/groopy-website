@@ -38,6 +38,8 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
   "geo-nedir": "what-is-geo",
   "google-ads-ajansi-secerken-nelere-dikkat-edilmeli":
     "how-to-choose-a-google-ads-agency",
+  "googlede-neden-cikmiyorum": "why-isnt-my-site-on-google",
+  "dis-hekimleri-dijital-pazarlama-rehberi": "dentist-digital-marketing-guide",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(

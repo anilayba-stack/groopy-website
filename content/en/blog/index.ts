@@ -17,9 +17,22 @@ import {
   meta as howToChooseAGoogleAdsAgencyMeta,
   Body as HowToChooseAGoogleAdsAgencyBody,
 } from "./how-to-choose-a-google-ads-agency/post";
+import {
+  meta as whyIsntMySiteOnGoogleMeta,
+  Body as WhyIsntMySiteOnGoogleBody,
+} from "./why-isnt-my-site-on-google/post";
+import {
+  meta as dentistDigitalMarketingGuideMeta,
+  Body as DentistDigitalMarketingGuideBody,
+} from "./dentist-digital-marketing-guide/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  {
+    meta: dentistDigitalMarketingGuideMeta,
+    Body: DentistDigitalMarketingGuideBody,
+  },
+  { meta: whyIsntMySiteOnGoogleMeta, Body: WhyIsntMySiteOnGoogleBody },
   {
     meta: howToChooseAGoogleAdsAgencyMeta,
     Body: HowToChooseAGoogleAdsAgencyBody,
