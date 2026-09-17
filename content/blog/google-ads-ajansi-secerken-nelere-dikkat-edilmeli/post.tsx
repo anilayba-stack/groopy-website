@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Google Ads Ajansı Seçerken Nelere Dikkat Edilmeli?",
   metaTitle: "Google Ads Ajansı Seçerken Nelere Dikkat Edilmeli?",
   description:
-    "Google Ads ajansı seçerken nelere dikkat etmeniz gerektiğini anlatıyoruz: hesap sahipliği, ücret modeli, garanti vaatleri ve raporlama şeffaflığı dahil somut kriterler.",
+    "Google Ads ajansı seçerken nelere dikkat etmelisiniz: hesap sahipliği, ücret modeli, garanti vaatleri ve raporlama şeffaflığı dahil somut kriterler.",
   publishedAt: "2026-10-10",
   tldr: "İyi bir Google Ads ajansı; reklam hesabınızı kendi adına açmaz, yüzde-komisyon modelinde bütçeyi şişirme riskini şeffaf şekilde ele alır, kesin sonuç garantisi vermez ve dönüşüm izlemeyi kampanya başlamadan önce kurar. Bu yazıda karar vermeden önce kontrol edebileceğiniz somut kriterler var.",
   author: "Anıl Ay",

@@ -17,7 +17,7 @@ import { primaryServices } from "@content/services";
 export const metadata: Metadata = buildMetadata({
   title: "İstanbul web sitesi geliştirme, SEO ve GEO",
   description:
-    "İstanbul merkezli yazılım şirketi Groopy; web sitesi geliştirme, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimiyle işletmenizi Google ve yapay zekâ aramalarında görünür kılar.",
+    "İstanbul merkezli Groopy; web sitesi, SEO + GEO, Google Reklam Yönetimi ve sosyal medya yönetimiyle işletmenizi Google ve yapay zekâ aramalarında görünür kılar.",
   path: "/",
   isHome: true,
   alternatePath: enRoutes.home,

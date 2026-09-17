@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "GEO Nedir? Yapay Zeka Aramalarında (ChatGPT, Gemini, AI Overviews) Görünür Olmak",
   metaTitle: "GEO Nedir? Yapay Zeka Arama Optimizasyonu",
   description:
-    "GEO (Generative Engine Optimization) nedir, SEO'dan farkı ne, ve ChatGPT, Gemini ile Google AI Overviews'te markanızın kaynak gösterilmesi için neler yapılmalı — somut adımlarla.",
+    "GEO nedir, SEO'dan farkı ne, ve ChatGPT, Gemini ile Google AI Overviews'te kaynak gösterilmek için neler yapılmalı — somut adımlarla.",
   publishedAt: "2026-10-03",
   tldr: "GEO (Generative Engine Optimization / yapay zekâ arama optimizasyonu), içeriğinizin ChatGPT, Gemini ve Google AI Overviews gibi araçların ürettiği yanıtların içinde kaynak olarak gösterilmesi için yapılan çalışmadır. SEO'nun yerine geçmez, tamamlar. Temel gereksinimler: yapay zekâ tarayıcılarına açık robots.txt, cevap-önce içerik formatı, doğru yapılandırılmış veri ve tutarlı marka/varlık bilgisi.",
   author: "Anıl Ay",

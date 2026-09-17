@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Google Ads mı SEO mu? Aslında İkisine de İhtiyacınız Var",
   metaTitle: "Google Ads mı SEO mu?",
   description:
-    "Google Ads mı SEO mu tartışmasına doğrudan cevap: ikisi farklı işi yapar, birbirinin yerine geçmez. Bütçenize, zaman çizelgenize ve büyüme aşamanıza göre karar rehberi.",
+    "Google Ads mı SEO mu tartışmasına doğrudan cevap: ikisi farklı işi yapar, birbirinin yerine geçmez. Bütçe ve büyüme aşamanıza göre karar rehberi.",
   publishedAt: "2026-09-19",
   tldr: "SEO organik ve uzun vadeli görünürlük sağlar, Google Ads ücretli ve anlık görünürlük sağlar — biri diğerinin yerine geçmez. Yeni veya hızlı sonuç isteyen işletmeler Google Ads ile başlayıp eşzamanlı SEO altyapısı kurabilir; 2026 itibarıyla üçüncü bir boyut (GEO / yapay zekâ arama) da bu denkleme dahil edilmeli.",
   author: "Anıl Ay",

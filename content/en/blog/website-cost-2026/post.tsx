@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   title: "Website Cost in Istanbul in 2026: A Realistic Pricing Guide (USD)",
   metaTitle: "Website Cost in Istanbul, 2026",
   description:
-    "How much does a website cost in Istanbul in 2026? Realistic price ranges in USD by project type, the factors that actually drive cost, and a budgeting guide for foreign businesses working with a Turkey-based team.",
+    "How much does a website cost in Istanbul in 2026? Realistic USD ranges by project type, the factors that drive cost, and a budgeting guide for foreign clients.",
   publishedAt: "2026-09-02",
   tldr: "For a project built in Istanbul in 2026, website cost varies by project type: a small-business site runs $450–$900, a mid-size corporate site $1,900–$3,500, corporate projects needing custom software $2,300–$6,500, and e-commerce $2,000 and up. Figures are in USD for international clients; the real driver of price isn't page count — it's whether the design is built from scratch, integration needs, and the performance/SEO scope.",
   author: "Anıl Ay",

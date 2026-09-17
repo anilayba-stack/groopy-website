@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Sosyal Medya Yönetimi Fiyatları 2026: Ne Kadar Bütçe Ayırmalı?",
   metaTitle: "Sosyal Medya Yönetimi Fiyatları 2026",
   description:
-    "2026'da sosyal medya yönetimi ne kadar tutar? Platform sayısı, içerik sıklığı ve prodüksiyon ihtiyacına göre gerçekçi fiyat aralıkları ve bütçe planlama rehberi.",
+    "2026'da sosyal medya yönetimi ne kadar tutar? Platform sayısı, içerik sıklığı ve prodüksiyona göre gerçekçi fiyat aralıkları ve bütçe rehberi.",
   publishedAt: "2026-09-26",
   tldr: "2026'da Türkiye'de profesyonel sosyal medya yönetimi aylık tipik olarak 14.000–55.000 TL arasında; belirleyici faktörler platform sayısı, içerik sıklığı ve fotoğraf/video prodüksiyon ihtiyacıdır. Yalnızca gönderi sayısına bakmak yanıltıcıdır — asıl fark prodüksiyonun dahil olup olmadığındadır.",
   author: "Anıl Ay",

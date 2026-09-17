@@ -19,7 +19,7 @@ import type { Faq } from "@content/types";
 export const metadata: Metadata = buildMetadata({
   title: "Free SEO Checker Tool",
   description:
-    "Calculate your website's SEO (Search Engine Optimization) score for free. Analyze title tags, meta description, mobile-friendliness, structured data, and AI search access in seconds, based on real, verifiable criteria.",
+    "Calculate your website's SEO score for free. Analyze title tags, mobile-friendliness, structured data, and AI search access in seconds, based on real criteria.",
   path: enRoutes.seoTool,
   alternatePath: routes.seoTool,
   locale: "en",

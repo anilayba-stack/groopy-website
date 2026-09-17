@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "How to Choose an SEO Agency: 7 Concrete Criteria",
   metaTitle: "How to Choose an SEO Agency",
   description:
-    "What to actually check before hiring an SEO agency: contract length, who owns your Search Console and Analytics access, ranking guarantees, and reporting transparency — 7 concrete criteria.",
+    "What to check before hiring an SEO agency: contract length, who owns your Search Console access, ranking guarantees, and reporting transparency.",
   publishedAt: "2026-09-17",
   tldr: "A good SEO agency never guarantees a specific ranking, leaves Google Search Console and Analytics access in your hands, doesn't lock you into a long mandatory contract, and reports conversions, not just traffic. This guide covers 7 concrete criteria and the promises worth walking away from.",
   author: "Anıl Ay",

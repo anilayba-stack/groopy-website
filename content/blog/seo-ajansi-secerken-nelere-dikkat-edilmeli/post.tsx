@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "SEO Ajansı Seçerken Nelere Dikkat Edilmeli? 7 Somut Kriter",
   metaTitle: "SEO Ajansı Seçerken Nelere Dikkat Edilmeli?",
   description:
-    "SEO ajansı seçerken nelere dikkat etmeniz gerektiğini anlatıyoruz: sözleşme süresi, veri ve erişim sahipliği, garanti vaatleri ve raporlama şeffaflığı dahil 7 somut kriter.",
+    "SEO ajansı seçerken nelere dikkat etmeniz gerektiğini anlatıyoruz: sözleşme süresi, veri sahipliği, garanti vaatleri ve raporlama şeffaflığı dahil 7 kriter.",
   publishedAt: "2026-09-17",
   tldr: "İyi bir SEO ajansı; kesin sıralama garantisi vermez, Google Search Console ve Analytics erişimini size bırakır, kısa vadeli zorunlu sözleşme dayatmaz ve trafiği değil dönüşümü raporlar. Bu yazıda 7 somut kriter ve kaçınılması gereken vaatler listeleniyor.",
   author: "Anıl Ay",

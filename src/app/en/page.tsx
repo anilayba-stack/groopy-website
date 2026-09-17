@@ -18,7 +18,7 @@ import { diagnostics } from "@content/en/diagnostics";
 export const metadata: Metadata = buildMetadata({
   title: "Website Development, SEO and GEO in Istanbul",
   description:
-    "Groopy is an Istanbul-based software company; we make your business visible in Google and AI search through website development, SEO + GEO, Google Ads Management, and social media management.",
+    "Groopy, an Istanbul software company, makes you visible in Google and AI search: website development, SEO + GEO, Google Ads Management, and social media.",
   path: enRoutes.home,
   isHome: true,
   locale: "en",
