@@ -19,7 +19,7 @@ import type { Faq } from "@content/types";
 export const metadata: Metadata = buildMetadata({
   title: "Ücretsiz SEO Analiz Aracı",
   description:
-    "Web sitenizin SEO puanını ücretsiz hesaplayın. Başlık, meta açıklama, mobil uyum, yapılandırılmış veri ve yapay zekâ arama erişimi gibi gerçek kriterlere göre saniyeler içinde web sitesi analizi yapın.",
+    "Web sitenizin SEO (arama motoru optimizasyonu) puanını ücretsiz hesaplayın. Başlık, meta açıklama, mobil uyum, yapılandırılmış veri ve yapay zekâ arama erişimi gibi gerçek kriterlere göre saniyeler içinde web sitesi analizi yapın.",
   path: routes.seoTool,
   alternatePath: enRoutes.seoTool,
 });
