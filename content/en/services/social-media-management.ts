@@ -81,5 +81,5 @@ export const socialMediaManagement: Service = {
         "Organic management and content are the core of this service. If you need Meta/TikTok ad management, it's assessed in the consultation.",
     },
   ],
-  relatedPosts: [],
+  relatedPosts: ["social-media-management-pricing-2026"],
 };

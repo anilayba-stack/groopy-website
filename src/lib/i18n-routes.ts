@@ -32,6 +32,12 @@ export const SERVICE_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(
 /** Blog yazısı slug eşlemesi. */
 export const POST_SLUG_TR_TO_EN: Record<string, string> = {
   "web-sitesi-maliyeti-2026": "website-cost-2026",
+  "seo-ajansi-secerken-nelere-dikkat-edilmeli": "how-to-choose-an-seo-agency",
+  "google-ads-mi-seo-mu": "google-ads-or-seo",
+  "sosyal-medya-yonetimi-fiyatlari-2026": "social-media-management-pricing-2026",
+  "geo-nedir": "what-is-geo",
+  "google-ads-ajansi-secerken-nelere-dikkat-edilmeli":
+    "how-to-choose-a-google-ads-agency",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(

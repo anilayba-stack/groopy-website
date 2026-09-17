@@ -72,4 +72,8 @@ export const googleAdsManagement: Service = {
         "No, they serve different purposes — SEO is organic and long-term, Google Ads is immediate and paid. They can be taken together or separately.",
     },
   ],
+  relatedPosts: [
+    "how-to-choose-a-google-ads-agency",
+    "google-ads-or-seo",
+  ],
 };

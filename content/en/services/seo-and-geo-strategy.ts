@@ -98,5 +98,10 @@ export const seoAndGeoStrategy: Service = {
         "This service is focused on organic visibility. Paid advertising management is offered as a separate service — see Google Ads Management.",
     },
   ],
-  relatedPosts: ["website-cost-2026"],
+  relatedPosts: [
+    "what-is-geo",
+    "google-ads-or-seo",
+    "how-to-choose-an-seo-agency",
+    "website-cost-2026",
+  ],
 };

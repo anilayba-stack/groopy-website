@@ -98,5 +98,10 @@ export const seoVeGeo: Service = {
         "Bu hizmet organik görünürlüğe odaklıdır. Ücretli reklam yönetimi ayrı bir hizmet olarak sunulur — bkz. Google Reklam Yönetimi.",
     },
   ],
-  relatedPosts: ["web-sitesi-maliyeti-2026"],
+  relatedPosts: [
+    "geo-nedir",
+    "google-ads-mi-seo-mu",
+    "seo-ajansi-secerken-nelere-dikkat-edilmeli",
+    "web-sitesi-maliyeti-2026",
+  ],
 };

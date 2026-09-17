@@ -72,4 +72,8 @@ export const googleReklamYonetimi: Service = {
         "Hayır, ikisi farklı amaca hizmet eder — SEO organik ve uzun vadelidir, Google Ads anlık ve ücretlidir. Birlikte ya da ayrı ayrı alınabilir.",
     },
   ],
+  relatedPosts: [
+    "google-ads-ajansi-secerken-nelere-dikkat-edilmeli",
+    "google-ads-mi-seo-mu",
+  ],
 };
