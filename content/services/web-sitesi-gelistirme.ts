@@ -23,6 +23,7 @@ export const webSitesiGelistirme: Service = {
         "E-ticaret ve ürün katalogları",
         "İşletme içi paneller, rezervasyon ve başvuru sistemleri",
         "Mevcut sitenin yeniden yazımı ve performans onarımı",
+        "Google Arama Konsolu, Analytics ve İşletme Profili kurulumu",
       ],
     },
     {
@@ -63,7 +64,7 @@ export const webSitesiGelistirme: Service = {
     {
       title: "Yayın ve ölçüm",
       description:
-        "Core Web Vitals, arama görünürlüğü ve dönüşüm ölçülür; ilk aylarda ince ayar yapılır.",
+        "Google Arama Konsolu, Analytics ve İşletme Profili kurulur; Core Web Vitals, arama görünürlüğü ve dönüşüm ölçülür. Kurulumun ardından sürekli yönetim, SEO + GEO hizmeti kapsamındadır.",
     },
   ],
   faq: [

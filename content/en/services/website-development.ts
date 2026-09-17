@@ -23,6 +23,7 @@ export const websiteDevelopment: Service = {
         "E-commerce and product catalogs",
         "Internal dashboards, booking, and application systems",
         "Rewrites and performance fixes for existing sites",
+        "Google Search Console, Analytics, and Business Profile setup",
       ],
     },
     {
@@ -63,7 +64,7 @@ export const websiteDevelopment: Service = {
     {
       title: "Launch and measurement",
       description:
-        "Core Web Vitals, search visibility, and conversion are measured; the first months bring fine-tuning.",
+        "Google Search Console, Analytics, and Business Profile are set up; Core Web Vitals, search visibility, and conversion are measured. Ongoing management after setup falls under the SEO + GEO service.",
     },
   ],
   faq: [
