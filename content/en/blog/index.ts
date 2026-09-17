@@ -29,9 +29,14 @@ import {
   meta as whoOwnsYourGoogleAdsAccountMeta,
   Body as WhoOwnsYourGoogleAdsAccountBody,
 } from "./who-owns-your-google-ads-account/post";
+import {
+  meta as wordpressVsNextjsMeta,
+  Body as WordpressVsNextjsBody,
+} from "./wordpress-vs-nextjs/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: wordpressVsNextjsMeta, Body: WordpressVsNextjsBody },
   {
     meta: whoOwnsYourGoogleAdsAccountMeta,
     Body: WhoOwnsYourGoogleAdsAccountBody,

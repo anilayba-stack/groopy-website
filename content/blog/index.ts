@@ -32,9 +32,14 @@ import {
   meta as googleAdsHesabinizKimdeMeta,
   Body as GoogleAdsHesabinizKimdeBody,
 } from "./google-ads-hesabiniz-kimde/post";
+import {
+  meta as wordpressMiNextjsMiMeta,
+  Body as WordpressMiNextjsMiBody,
+} from "./wordpress-mi-nextjs-mi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: wordpressMiNextjsMiMeta, Body: WordpressMiNextjsMiBody },
   { meta: googleAdsHesabinizKimdeMeta, Body: GoogleAdsHesabinizKimdeBody },
   { meta: disHekimleriRehberiMeta, Body: DisHekimleriRehberiBody },
   { meta: googledeNedenCikmiyorumMeta, Body: GoogledeNedenCikmiyorumBody },

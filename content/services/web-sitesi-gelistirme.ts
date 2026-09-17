@@ -90,6 +90,7 @@ export const webSitesiGelistirme: Service = {
     },
   ],
   relatedPosts: [
+    "wordpress-mi-nextjs-mi",
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "web-sitesi-maliyeti-2026",
   ],
