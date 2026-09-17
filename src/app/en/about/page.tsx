@@ -48,10 +48,11 @@ export default function EnAboutPage() {
         />
         <div className="prose-groopy mt-8 max-w-3xl">
           <p>
-            Groopy provides website & software development, SEO&nbsp;+&nbsp;GEO
-            strategy, Google Ads Management, and social media management.
-            Software is at the core of what we do: we build products tied to
-            a measurable business goal, without off-the-shelf themes.
+            Groopy, led by founder Anıl Ay, provides website & software
+            development, SEO&nbsp;+&nbsp;GEO strategy, Google Ads Management,
+            and social media management. Software is at the core of what we
+            do: we build products tied to a measurable business goal,
+            without off-the-shelf themes.
           </p>
           <h2>Working principles</h2>
           <ul>

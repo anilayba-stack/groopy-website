@@ -65,6 +65,8 @@ export interface BlogPostMeta {
   faq?: Faq[];
   /** Okuma süresi (dk) — elle */
   readingMinutes: number;
+  /** Opsiyonel kapak görseli — public/ altında yol. Yoksa hero'da görsel gösterilmez. */
+  coverImage?: { src: string; alt: string };
 }
 
 export interface BlogPost {

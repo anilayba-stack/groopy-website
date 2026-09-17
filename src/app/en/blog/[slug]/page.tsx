@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -42,6 +43,7 @@ export async function generateMetadata({
     modifiedTime: post.meta.updatedAt ?? post.meta.publishedAt,
     locale: "en",
     alternatePath: trSlug ? routes.post(trSlug) : undefined,
+    image: post.meta.coverImage?.src,
   });
 }
 
@@ -62,6 +64,10 @@ export default async function EnBlogPostPage({
 
   const { meta, Body } = post;
   const hub = meta.hubService ? getService(meta.hubService) : undefined;
+  const authorByline =
+    meta.author === SITE.founder.name
+      ? `${meta.author} — Founder at Groopy`
+      : meta.author;
   const crumbs = [
     { name: "Home", path: enRoutes.home },
     { name: "Blog", path: enRoutes.blog },
@@ -78,31 +84,72 @@ export default async function EnBlogPostPage({
         ]}
       />
 
-      <Container className="pt-10">
-        <Breadcrumbs ariaLabel="Breadcrumb" items={crumbs} />
-        <article>
-          <header className="max-w-3xl">
-            <div className="flex items-baseline gap-3 text-xs text-[var(--color-text-faint)]">
-              <time dateTime={meta.publishedAt}>
-                {dateFmt.format(new Date(meta.publishedAt))}
-              </time>
-              {meta.updatedAt ? (
-                <span>
-                  · Updated {dateFmt.format(new Date(meta.updatedAt))}
-                </span>
-              ) : null}
-              <span aria-hidden>·</span>
-              <span>{meta.readingMinutes} min read</span>
+      <article>
+        {meta.coverImage ? (
+          <section className="service-hero relative isolate overflow-hidden border-b border-[var(--color-border)]">
+            <div className="service-hero__media">
+              <Image
+                src={meta.coverImage.src}
+                alt={meta.coverImage.alt}
+                fill
+                priority
+                sizes="100vw"
+                className="service-hero__img"
+              />
+              <span className="service-hero__fade" aria-hidden />
             </div>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-[var(--color-text)] sm:text-4xl">
-              {meta.title}
-            </h1>
-            <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-              {meta.author}
-            </p>
-          </header>
+            <Container className="relative pt-10 pb-16 sm:pb-20">
+              <Breadcrumbs ariaLabel="Breadcrumb" items={crumbs} />
+              <header className="mt-6 max-w-3xl">
+                <div className="flex items-baseline gap-3 text-xs text-[var(--color-text-faint)]">
+                  <time dateTime={meta.publishedAt}>
+                    {dateFmt.format(new Date(meta.publishedAt))}
+                  </time>
+                  {meta.updatedAt ? (
+                    <span>
+                      · Updated {dateFmt.format(new Date(meta.updatedAt))}
+                    </span>
+                  ) : null}
+                  <span aria-hidden>·</span>
+                  <span>{meta.readingMinutes} min read</span>
+                </div>
+                <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-[var(--color-text)] sm:text-4xl">
+                  {meta.title}
+                </h1>
+                <p className="mt-4 text-sm text-[var(--color-text-muted)]">
+                  {authorByline}
+                </p>
+              </header>
+            </Container>
+          </section>
+        ) : (
+          <Container className="pt-10">
+            <Breadcrumbs ariaLabel="Breadcrumb" items={crumbs} />
+            <header className="max-w-3xl">
+              <div className="flex items-baseline gap-3 text-xs text-[var(--color-text-faint)]">
+                <time dateTime={meta.publishedAt}>
+                  {dateFmt.format(new Date(meta.publishedAt))}
+                </time>
+                {meta.updatedAt ? (
+                  <span>
+                    · Updated {dateFmt.format(new Date(meta.updatedAt))}
+                  </span>
+                ) : null}
+                <span aria-hidden>·</span>
+                <span>{meta.readingMinutes} min read</span>
+              </div>
+              <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-[var(--color-text)] sm:text-4xl">
+                {meta.title}
+              </h1>
+              <p className="mt-4 text-sm text-[var(--color-text-muted)]">
+                {authorByline}
+              </p>
+            </header>
+          </Container>
+        )}
 
-          <div className="mt-8 max-w-3xl">
+        <Container className="pt-10">
+          <div className="max-w-3xl">
             <TldrBox label="Summary">{meta.tldr}</TldrBox>
           </div>
 
@@ -119,7 +166,7 @@ export default async function EnBlogPostPage({
           {hub ? (
             <div className="mt-16 max-w-3xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6">
               <p className="text-sm text-[var(--color-text-muted)]">
-                We work on this:
+                Related services:
               </p>
               <Link
                 href={enRoutes.service(hub.slug)}
@@ -138,8 +185,8 @@ export default async function EnBlogPostPage({
               <ArrowLeft className="size-4" aria-hidden /> All articles
             </Link>
           </div>
-        </article>
-      </Container>
+        </Container>
+      </article>
 
       <div className="mt-20">
         <CtaBand

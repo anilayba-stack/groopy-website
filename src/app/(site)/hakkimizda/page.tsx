@@ -47,11 +47,11 @@ export default function AboutPage() {
         />
         <div className="prose-groopy mt-8 max-w-3xl">
           <p>
-            Groopy; web sitesi ve yazılım geliştirme, SEO&nbsp;+&nbsp;GEO
-            stratejisi, Google Reklam Yönetimi ve sosyal medya yönetimi
-            hizmetleri sunar. İşin merkezinde yazılım vardır: hazır tema
-            kullanılmadan, ölçülebilir bir iş hedefine bağlı ürünler
-            geliştirilir.
+            Groopy; kurucusu Anıl Ay önderliğinde, web sitesi ve yazılım
+            geliştirme, SEO&nbsp;+&nbsp;GEO stratejisi, Google Reklam
+            Yönetimi ve sosyal medya yönetimi hizmetleri sunar. İşin
+            merkezinde yazılım vardır: hazır tema kullanılmadan, ölçülebilir
+            bir iş hedefine bağlı ürünler geliştirilir.
           </p>
           <h2>Çalışma ilkeleri</h2>
           <ul>

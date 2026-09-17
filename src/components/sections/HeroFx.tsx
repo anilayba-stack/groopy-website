@@ -23,8 +23,8 @@ const HOTSPOT_R: Record<NodeKey, number> = { web: 18, social: 18 };
 const CENTER = { x: 0.435, y: 0.472, r: 0.115 };
 
 /** is-lit için tüm hizmet anahtarları. */
-type LinkKey = "web" | "seo" | "social";
-const LINK_KEYS: LinkKey[] = ["web", "seo", "social"];
+type LinkKey = "web" | "seo" | "ads" | "social";
+const LINK_KEYS: LinkKey[] = ["web", "seo", "ads", "social"];
 type Key = LinkKey | "all";
 
 interface Pt {
@@ -409,12 +409,14 @@ export function HeroFx() {
                   />
                   {geom.targets.web &&
                     geom.targets.seo &&
+                    geom.targets.ads &&
                     geom.targets.social && (
                       <ButterflyRunner
                         d={smoothClosed([
                           geom.center,
                           lerp(geom.center, geom.targets.web, 0.8),
                           lerp(geom.center, geom.targets.seo, 0.82),
+                          lerp(geom.center, geom.targets.ads, 0.82),
                           lerp(geom.center, geom.targets.social, 0.8),
                         ])}
                       />
