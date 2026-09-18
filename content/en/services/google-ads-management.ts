@@ -74,6 +74,7 @@ export const googleAdsManagement: Service = {
   ],
   relatedPosts: [
     "who-owns-your-google-ads-account",
+    "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",
     "how-to-choose-a-google-ads-agency",
     "google-ads-or-seo",

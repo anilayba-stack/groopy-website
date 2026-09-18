@@ -36,9 +36,14 @@ import {
   meta as wordpressMiNextjsMiMeta,
   Body as WordpressMiNextjsMiBody,
 } from "./wordpress-mi-nextjs-mi/post";
+import {
+  meta as fizyoterapistlerRehberiMeta,
+  Body as FizyoterapistlerRehberiBody,
+} from "./fizyoterapistler-dijital-pazarlama-rehberi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: fizyoterapistlerRehberiMeta, Body: FizyoterapistlerRehberiBody },
   { meta: wordpressMiNextjsMiMeta, Body: WordpressMiNextjsMiBody },
   { meta: googleAdsHesabinizKimdeMeta, Body: GoogleAdsHesabinizKimdeBody },
   { meta: disHekimleriRehberiMeta, Body: DisHekimleriRehberiBody },

@@ -33,9 +33,17 @@ import {
   meta as wordpressVsNextjsMeta,
   Body as WordpressVsNextjsBody,
 } from "./wordpress-vs-nextjs/post";
+import {
+  meta as physiotherapistDigitalMarketingGuideMeta,
+  Body as PhysiotherapistDigitalMarketingGuideBody,
+} from "./physiotherapist-digital-marketing-guide/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  {
+    meta: physiotherapistDigitalMarketingGuideMeta,
+    Body: PhysiotherapistDigitalMarketingGuideBody,
+  },
   { meta: wordpressVsNextjsMeta, Body: WordpressVsNextjsBody },
   {
     meta: whoOwnsYourGoogleAdsAccountMeta,

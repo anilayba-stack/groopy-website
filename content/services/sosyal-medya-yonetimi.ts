@@ -82,6 +82,7 @@ export const sosyalMedyaYonetimi: Service = {
     },
   ],
   relatedPosts: [
+    "fizyoterapistler-dijital-pazarlama-rehberi",
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "sosyal-medya-yonetimi-fiyatlari-2026",
   ],

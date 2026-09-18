@@ -74,6 +74,7 @@ export const googleReklamYonetimi: Service = {
   ],
   relatedPosts: [
     "google-ads-hesabiniz-kimde",
+    "fizyoterapistler-dijital-pazarlama-rehberi",
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "google-ads-ajansi-secerken-nelere-dikkat-edilmeli",
     "google-ads-mi-seo-mu",

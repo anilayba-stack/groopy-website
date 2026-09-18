@@ -82,6 +82,7 @@ export const socialMediaManagement: Service = {
     },
   ],
   relatedPosts: [
+    "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",
     "social-media-management-pricing-2026",
   ],

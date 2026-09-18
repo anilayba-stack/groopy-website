@@ -42,6 +42,8 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
   "dis-hekimleri-dijital-pazarlama-rehberi": "dentist-digital-marketing-guide",
   "google-ads-hesabiniz-kimde": "who-owns-your-google-ads-account",
   "wordpress-mi-nextjs-mi": "wordpress-vs-nextjs",
+  "fizyoterapistler-dijital-pazarlama-rehberi":
+    "physiotherapist-digital-marketing-guide",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(
