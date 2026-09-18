@@ -309,7 +309,12 @@ export function Body() {
         Adding terms like &quot;physiotherapy training&quot; or &quot;physiotherapist
         salary&quot; to the negative-keyword list also helps protect budget
         from unrelated searches, which can drain spend quickly in a
-        healthcare vertical.
+        healthcare vertical. For the actual setup steps — certification,
+        ad extensions, conversion tracking, bid strategy —{" "}
+        <Link href="/en/blog/physiotherapist-google-ads-guide">
+          our Google Ads Guide for Physiotherapists
+        </Link>{" "}
+        walks through it in detail.
       </p>
 
       <h2 id="missed-appointments">

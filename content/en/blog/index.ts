@@ -37,9 +37,17 @@ import {
   meta as physiotherapistDigitalMarketingGuideMeta,
   Body as PhysiotherapistDigitalMarketingGuideBody,
 } from "./physiotherapist-digital-marketing-guide/post";
+import {
+  meta as physiotherapistGoogleAdsGuideMeta,
+  Body as PhysiotherapistGoogleAdsGuideBody,
+} from "./physiotherapist-google-ads-guide/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  {
+    meta: physiotherapistGoogleAdsGuideMeta,
+    Body: PhysiotherapistGoogleAdsGuideBody,
+  },
   {
     meta: physiotherapistDigitalMarketingGuideMeta,
     Body: PhysiotherapistDigitalMarketingGuideBody,

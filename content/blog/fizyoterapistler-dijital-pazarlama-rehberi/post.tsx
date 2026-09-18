@@ -326,7 +326,13 @@ export function Body() {
         &quot;fizyoterapi eğitimi,&quot; &quot;fizyoterapist maaşları&quot;
         gibi tedaviyle ilgisi olmayan aramaları negatif anahtar kelime
         listesine eklemek de önemli bir adım — bu tür genel aramalar
-        sağlık dikeyinde bütçeyi hızla tüketebiliyor.
+        sağlık dikeyinde bütçeyi hızla tüketebiliyor. Kampanyayı
+        gerçekte nasıl kuracağınızı (sertifikasyon, reklam uçları,
+        dönüşüm izleme, teklif stratejisi) merak ediyorsanız{" "}
+        <Link href="/blog/fizyoterapistler-google-ads-rehberi">
+          Fizyoterapistler için Google Ads Rehberi
+        </Link>{" "}
+        yazımızda adım adım anlattık.
       </p>
 
       <h2 id="randevu-kacirma">

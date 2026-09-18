@@ -73,6 +73,7 @@ export const googleAdsManagement: Service = {
     },
   ],
   relatedPosts: [
+    "physiotherapist-google-ads-guide",
     "who-owns-your-google-ads-account",
     "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",

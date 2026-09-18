@@ -73,6 +73,7 @@ export const googleReklamYonetimi: Service = {
     },
   ],
   relatedPosts: [
+    "fizyoterapistler-google-ads-rehberi",
     "google-ads-hesabiniz-kimde",
     "fizyoterapistler-dijital-pazarlama-rehberi",
     "dis-hekimleri-dijital-pazarlama-rehberi",

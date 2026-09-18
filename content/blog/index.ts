@@ -40,9 +40,17 @@ import {
   meta as fizyoterapistlerRehberiMeta,
   Body as FizyoterapistlerRehberiBody,
 } from "./fizyoterapistler-dijital-pazarlama-rehberi/post";
+import {
+  meta as fizyoterapistlerGoogleAdsRehberiMeta,
+  Body as FizyoterapistlerGoogleAdsRehberiBody,
+} from "./fizyoterapistler-google-ads-rehberi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  {
+    meta: fizyoterapistlerGoogleAdsRehberiMeta,
+    Body: FizyoterapistlerGoogleAdsRehberiBody,
+  },
   { meta: fizyoterapistlerRehberiMeta, Body: FizyoterapistlerRehberiBody },
   { meta: wordpressMiNextjsMiMeta, Body: WordpressMiNextjsMiBody },
   { meta: googleAdsHesabinizKimdeMeta, Body: GoogleAdsHesabinizKimdeBody },
