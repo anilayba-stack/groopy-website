@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
-import { InstagramIcon } from "@/components/icons/BrandIcons";
+import { InstagramIcon, LinkedInIcon } from "@/components/icons/BrandIcons";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "./Logo";
 import { footerNav, enFooterNav } from "@/lib/navigation";
@@ -49,6 +49,16 @@ export function Footer({ locale = "tr" }: { locale?: "tr" | "en" }) {
                   className="inline-flex items-center gap-2 hover:text-[var(--color-text)]"
                 >
                   <InstagramIcon className="size-4" /> Instagram
+                </a>
+              ) : null}
+              {SITE.social.linkedin ? (
+                <a
+                  href={SITE.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-[var(--color-text)]"
+                >
+                  <LinkedInIcon className="size-4" /> LinkedIn
                 </a>
               ) : null}
             </div>

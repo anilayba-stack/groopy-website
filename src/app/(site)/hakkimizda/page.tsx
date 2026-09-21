@@ -23,6 +23,7 @@ const personSchema = {
   name: SITE.founder.name,
   jobTitle: SITE.founder.role,
   worksFor: { "@id": `${SITE.url}/#organization` },
+  sameAs: [SITE.founder.linkedin],
 };
 
 export default function AboutPage() {

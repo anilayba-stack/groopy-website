@@ -24,6 +24,7 @@ const personSchema = {
   name: SITE.founder.name,
   jobTitle: SITE.founder.roleEn,
   worksFor: { "@id": `${SITE.url}/#organization` },
+  sameAs: [SITE.founder.linkedin],
 };
 
 export default function EnAboutPage() {

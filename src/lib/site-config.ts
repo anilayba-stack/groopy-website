@@ -5,6 +5,8 @@
 
 export const SITE = {
   name: "Groopy",
+  /** Alan adı ve mevcut profillerdeki yazım; şemada takma ad olarak kullanılır, görünür marka dili değildir. */
+  alternateName: "Groopy Agency",
   legalName: "Groopy",
   /** TR konumlandırma cümlesi — "ajans" değil "yazılım şirketi". */
   tagline: "İstanbul merkezli yazılım şirketi",
@@ -43,6 +45,7 @@ export const SITE = {
   /** JSON-LD sameAs + footer. Yalnızca gerçek profiller. */
   social: {
     instagram: "https://instagram.com/groopy_agency",
+    linkedin: "https://www.linkedin.com/company/groopy-agency/",
   } as Record<string, string>,
 
   /** E-E-A-T — Article yazarı ve Hakkımızda. */
@@ -50,6 +53,7 @@ export const SITE = {
     name: "Anıl Ay",
     role: "Kurucu",
     roleEn: "Founder",
+    linkedin: "https://www.linkedin.com/in/an%C4%B1l-ay-6468a8194",
   },
 
 } as const;

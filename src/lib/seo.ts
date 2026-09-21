@@ -105,6 +105,7 @@ export function organizationSchema(locale: "tr" | "en" = "tr"): JsonLd {
     "@type": "Organization",
     "@id": `${BASE}/#organization`,
     name: SITE.name,
+    alternateName: SITE.alternateName,
     legalName: SITE.legalName,
     url: BASE,
     logo: `${BASE}/icon.png`,
@@ -133,6 +134,7 @@ export function websiteSchema(locale: "tr" | "en" = "tr"): JsonLd {
     "@id": `${BASE}/#website`,
     url: BASE,
     name: SITE.name,
+    alternateName: SITE.alternateName,
     inLanguage: locale === "en" ? "en" : "tr-TR",
     publisher: { "@id": `${BASE}/#organization` },
   };
