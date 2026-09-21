@@ -45,9 +45,19 @@ import {
   meta as localSeoGuideMeta,
   Body as LocalSeoGuideBody,
 } from "./local-seo-guide/post";
+import {
+  meta as agencyVsFreelancerVsInHouseMeta,
+  Body as AgencyVsFreelancerVsInHouseBody,
+} from "./agency-vs-freelancer-vs-in-house/post";
+import {
+  meta as gymMemberAcquisitionGuideMeta,
+  Body as GymMemberAcquisitionGuideBody,
+} from "./gym-and-fitness-studio-member-acquisition-guide/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: gymMemberAcquisitionGuideMeta, Body: GymMemberAcquisitionGuideBody },
+  { meta: agencyVsFreelancerVsInHouseMeta, Body: AgencyVsFreelancerVsInHouseBody },
   { meta: localSeoGuideMeta, Body: LocalSeoGuideBody },
   {
     meta: physiotherapistGoogleAdsGuideMeta,

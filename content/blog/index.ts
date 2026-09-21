@@ -48,9 +48,19 @@ import {
   meta as yerelSeoRehberiMeta,
   Body as YerelSeoRehberiBody,
 } from "./yerel-seo-rehberi/post";
+import {
+  meta as ajansFreelancerInHouseMeta,
+  Body as AjansFreelancerInHouseBody,
+} from "./ajans-mi-freelancer-mi-in-house-mi/post";
+import {
+  meta as sporKulupleriMeta,
+  Body as SporKulupleriBody,
+} from "./spor-kulupleri-uye-kazanma-rehberi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: sporKulupleriMeta, Body: SporKulupleriBody },
+  { meta: ajansFreelancerInHouseMeta, Body: AjansFreelancerInHouseBody },
   { meta: yerelSeoRehberiMeta, Body: YerelSeoRehberiBody },
   {
     meta: fizyoterapistlerGoogleAdsRehberiMeta,

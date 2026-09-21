@@ -46,6 +46,9 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
     "physiotherapist-digital-marketing-guide",
   "fizyoterapistler-google-ads-rehberi": "physiotherapist-google-ads-guide",
   "yerel-seo-rehberi": "local-seo-guide",
+  "ajans-mi-freelancer-mi-in-house-mi": "agency-vs-freelancer-vs-in-house",
+  "spor-kulupleri-uye-kazanma-rehberi":
+    "gym-and-fitness-studio-member-acquisition-guide",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(

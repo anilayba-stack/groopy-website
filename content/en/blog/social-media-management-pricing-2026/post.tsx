@@ -202,7 +202,11 @@ export function Body() {
         a fixed salary plus a separate investment in production equipment;
         an agency bundles team, process, and equipment together. Which is
         right depends on your volume and how independently you want to
-        manage it — we cover this comparison in depth in a separate post.
+        manage it — we cover this comparison in depth in{" "}
+        <Link href="/en/blog/agency-vs-freelancer-vs-in-house">
+          Agency, freelancer, or in-house?
+        </Link>
+        .
       </p>
 
       <h2 id="ad-spend">Is ad spend included in this price?</h2>

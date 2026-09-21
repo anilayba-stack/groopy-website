@@ -199,7 +199,11 @@ export function Body() {
         ayrı bir yatırım gerektirir; ajans ise ekip + süreç + ekipman
         paketini birlikte sunar. Hangisinin doğru olduğu işletmenizin
         hacmine ve ne kadar bağımsız yönetmek istediğinize bağlı — bu
-        konuyu ayrı bir yazıda derinlemesine ele alacağız.
+        karşılaştırmayı{" "}
+        <Link href="/blog/ajans-mi-freelancer-mi-in-house-mi">
+          ajans mı, freelancer mı, in-house mı?
+        </Link>{" "}
+        yazımızda ayrıntılı ele aldık.
       </p>
       <p>
         Pratikte fiyat karşılaştırması yaparken bu üç seçeneği aynı

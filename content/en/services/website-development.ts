@@ -90,6 +90,7 @@ export const websiteDevelopment: Service = {
     },
   ],
   relatedPosts: [
+    "gym-and-fitness-studio-member-acquisition-guide",
     "physiotherapist-digital-marketing-guide",
     "wordpress-vs-nextjs",
     "dentist-digital-marketing-guide",
