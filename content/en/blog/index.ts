@@ -41,9 +41,14 @@ import {
   meta as physiotherapistGoogleAdsGuideMeta,
   Body as PhysiotherapistGoogleAdsGuideBody,
 } from "./physiotherapist-google-ads-guide/post";
+import {
+  meta as localSeoGuideMeta,
+  Body as LocalSeoGuideBody,
+} from "./local-seo-guide/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: localSeoGuideMeta, Body: LocalSeoGuideBody },
   {
     meta: physiotherapistGoogleAdsGuideMeta,
     Body: PhysiotherapistGoogleAdsGuideBody,

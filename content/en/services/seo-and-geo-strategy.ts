@@ -99,6 +99,7 @@ export const seoAndGeoStrategy: Service = {
     },
   ],
   relatedPosts: [
+    "local-seo-guide",
     "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",
     "why-isnt-my-site-on-google",

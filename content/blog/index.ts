@@ -44,9 +44,14 @@ import {
   meta as fizyoterapistlerGoogleAdsRehberiMeta,
   Body as FizyoterapistlerGoogleAdsRehberiBody,
 } from "./fizyoterapistler-google-ads-rehberi/post";
+import {
+  meta as yerelSeoRehberiMeta,
+  Body as YerelSeoRehberiBody,
+} from "./yerel-seo-rehberi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: yerelSeoRehberiMeta, Body: YerelSeoRehberiBody },
   {
     meta: fizyoterapistlerGoogleAdsRehberiMeta,
     Body: FizyoterapistlerGoogleAdsRehberiBody,

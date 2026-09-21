@@ -99,6 +99,7 @@ export const seoVeGeo: Service = {
     },
   ],
   relatedPosts: [
+    "yerel-seo-rehberi",
     "fizyoterapistler-dijital-pazarlama-rehberi",
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "googlede-neden-cikmiyorum",
