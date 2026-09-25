@@ -90,6 +90,7 @@ export const webSitesiGelistirme: Service = {
     },
   ],
   relatedPosts: [
+    "randevu-rezervasyon-sistemi-nasil-yapilir",
     "kendi-web-sitesi-mi-pazaryeri-mi",
     "core-web-vitals-nedir",
     "web-sitesi-ne-kadar-surede-tamamlanir",

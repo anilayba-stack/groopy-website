@@ -65,9 +65,14 @@ import {
   meta as ownWebsiteVsMarketplaceMeta,
   Body as OwnWebsiteVsMarketplaceBody,
 } from "./own-website-vs-marketplace/post";
+import {
+  meta as howToBuildAppointmentBookingWebsiteMeta,
+  Body as HowToBuildAppointmentBookingWebsiteBody,
+} from "./how-to-build-an-appointment-booking-website/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: howToBuildAppointmentBookingWebsiteMeta, Body: HowToBuildAppointmentBookingWebsiteBody },
   { meta: ownWebsiteVsMarketplaceMeta, Body: OwnWebsiteVsMarketplaceBody },
   { meta: whatAreCoreWebVitalsMeta, Body: WhatAreCoreWebVitalsBody },
   { meta: howLongDoesAWebsiteTakeMeta, Body: HowLongDoesAWebsiteTakeBody },

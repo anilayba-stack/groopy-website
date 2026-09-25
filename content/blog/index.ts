@@ -68,9 +68,14 @@ import {
   meta as kendiWebSitesiMiPazaryeriMiMeta,
   Body as KendiWebSitesiMiPazaryeriMiBody,
 } from "./kendi-web-sitesi-mi-pazaryeri-mi/post";
+import {
+  meta as randevuRezervasyonSistemiMeta,
+  Body as RandevuRezervasyonSistemiBody,
+} from "./randevu-rezervasyon-sistemi-nasil-yapilir/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: randevuRezervasyonSistemiMeta, Body: RandevuRezervasyonSistemiBody },
   { meta: kendiWebSitesiMiPazaryeriMiMeta, Body: KendiWebSitesiMiPazaryeriMiBody },
   { meta: coreWebVitalsNedirMeta, Body: CoreWebVitalsNedirBody },
   { meta: webSitesiNeKadarSuredeMeta, Body: WebSitesiNeKadarSuredeBody },

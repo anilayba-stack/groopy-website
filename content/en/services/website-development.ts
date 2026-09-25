@@ -90,6 +90,7 @@ export const websiteDevelopment: Service = {
     },
   ],
   relatedPosts: [
+    "how-to-build-an-appointment-booking-website",
     "own-website-vs-marketplace",
     "what-are-core-web-vitals",
     "how-long-does-a-website-take",
