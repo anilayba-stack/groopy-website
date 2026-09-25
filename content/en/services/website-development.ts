@@ -90,6 +90,7 @@ export const websiteDevelopment: Service = {
     },
   ],
   relatedPosts: [
+    "what-are-core-web-vitals",
     "how-long-does-a-website-take",
     "gym-and-fitness-studio-member-acquisition-guide",
     "physiotherapist-digital-marketing-guide",

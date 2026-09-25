@@ -50,6 +50,7 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
   "spor-kulupleri-uye-kazanma-rehberi":
     "gym-and-fitness-studio-member-acquisition-guide",
   "web-sitesi-ne-kadar-surede-tamamlanir": "how-long-does-a-website-take",
+  "core-web-vitals-nedir": "what-are-core-web-vitals",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(

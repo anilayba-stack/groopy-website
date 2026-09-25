@@ -57,9 +57,14 @@ import {
   meta as howLongDoesAWebsiteTakeMeta,
   Body as HowLongDoesAWebsiteTakeBody,
 } from "./how-long-does-a-website-take/post";
+import {
+  meta as whatAreCoreWebVitalsMeta,
+  Body as WhatAreCoreWebVitalsBody,
+} from "./what-are-core-web-vitals/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: whatAreCoreWebVitalsMeta, Body: WhatAreCoreWebVitalsBody },
   { meta: howLongDoesAWebsiteTakeMeta, Body: HowLongDoesAWebsiteTakeBody },
   { meta: gymMemberAcquisitionGuideMeta, Body: GymMemberAcquisitionGuideBody },
   { meta: agencyVsFreelancerVsInHouseMeta, Body: AgencyVsFreelancerVsInHouseBody },

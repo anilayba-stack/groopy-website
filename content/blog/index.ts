@@ -60,9 +60,14 @@ import {
   meta as webSitesiNeKadarSuredeMeta,
   Body as WebSitesiNeKadarSuredeBody,
 } from "./web-sitesi-ne-kadar-surede-tamamlanir/post";
+import {
+  meta as coreWebVitalsNedirMeta,
+  Body as CoreWebVitalsNedirBody,
+} from "./core-web-vitals-nedir/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: coreWebVitalsNedirMeta, Body: CoreWebVitalsNedirBody },
   { meta: webSitesiNeKadarSuredeMeta, Body: WebSitesiNeKadarSuredeBody },
   { meta: sporKulupleriMeta, Body: SporKulupleriBody },
   { meta: ajansFreelancerInHouseMeta, Body: AjansFreelancerInHouseBody },
