@@ -25,15 +25,54 @@ export const metadata: Metadata = buildMetadata({
   locale: "en",
 });
 
-const criteria = [
-  "Page title and meta description length",
-  "H1 heading and image alt attributes",
-  "Mobile viewport and canonical tag",
-  "HTTPS usage",
-  "Structured data (JSON-LD) and Open Graph tags",
-  "Content depth (word count)",
-  "Access for AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) — a GEO signal",
-  "Real page speed and Core Web Vitals via Google PageSpeed Insights (when available)",
+const criteria: { label: string; weight: number; rule: string }[] = [
+  { label: "Page title", weight: 12, rule: "Tag is present and under 60 characters" },
+  { label: "Meta description", weight: 10, rule: "50-160 characters (recommended: 120-160)" },
+  { label: "H1 heading", weight: 8, rule: "Exactly one H1 on the page" },
+  { label: "Mobile viewport", weight: 8, rule: "Viewport meta tag present" },
+  { label: "HTTPS", weight: 7, rule: "Site is served over HTTPS" },
+  { label: "Structured data (JSON-LD)", weight: 7, rule: "At least one JSON-LD script on the page" },
+  { label: "Image alt attributes", weight: 6, rule: "At least 80% of images have an alt attribute" },
+  { label: "Content depth", weight: 6, rule: "At least 300 words on the page" },
+  {
+    label: "AI search access (GEO)",
+    weight: 6,
+    rule: "GPTBot, ClaudeBot, PerplexityBot, Google-Extended are not blocked in robots.txt",
+  },
+  { label: "Open Graph tags", weight: 5, rule: "og:title and og:description present" },
+  { label: "Canonical tag", weight: 5, rule: "A canonical link tag is present" },
+  {
+    label: "Google PageSpeed (performance)",
+    weight: 20,
+    rule: "Mobile performance score is used — only counted when this tool has PageSpeed access configured",
+  },
+];
+
+const fixes: { problem: string; fix: string }[] = [
+  {
+    problem: "No title tag, or it's over 60 characters",
+    fix: "Add a page-specific <title> tag short enough (50-60 characters) not to get cut off in search results.",
+  },
+  {
+    problem: "Meta description missing, too short, or too long",
+    fix: "Write a 120-160 character meta description that honestly summarizes the page's content, with the keyword worked in naturally.",
+  },
+  {
+    problem: "Multiple H1s, or none at all",
+    fix: "Use exactly one H1 per page — it tells both readers and search engines what the page is actually about.",
+  },
+  {
+    problem: "Most images are missing alt text",
+    fix: "Add a descriptive alt attribute to every image; a purely decorative image can use an empty alt=\"\" — what matters is that the attribute is never missing entirely.",
+  },
+  {
+    problem: "Content is under 300 words",
+    fix: "Add a real block of text that answers the visitor's actual question — padding with repetition to hit a word count lowers quality; add genuine information instead.",
+  },
+  {
+    problem: "AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) are blocked",
+    fix: "Don't Disallow these bots in robots.txt — being reachable is the precondition for being cited by AI search tools like ChatGPT, Perplexity, and Google AI Overviews.",
+  },
 ];
 
 const faq: Faq[] = [
@@ -41,6 +80,16 @@ const faq: Faq[] = [
     question: "How is the SEO score calculated?",
     answer:
       "The HTML at the address you enter is fetched in real time and each of the criteria above is checked. The score is a weighted total of these checks — never a made-up or random number.",
+  },
+  {
+    question: "Is a score under 80 bad?",
+    answer:
+      "Not on its own. The score exists to point you to which items are missing — what matters is looking at the detailed results and prioritizing what's failing. A gap that's critical for an e-commerce site may be minor for a blog.",
+  },
+  {
+    question: "Why does the PageSpeed score sometimes not show up?",
+    answer:
+      "The Google PageSpeed Insights check (including Core Web Vitals) only runs when this tool has PageSpeed API access configured; if it doesn't, that 20-point criterion is skipped and the total is calculated out of the remaining 80 points. In that case a page that passes every other criterion still shows 100.",
   },
   {
     question: "Is this tool actually free?",
@@ -105,16 +154,53 @@ export default function SeoToolPage() {
 
       <Section surface>
         <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-text)]">
-          What criteria are checked?
+          How is the score calculated?
         </h2>
-        <ul className="prose-groopy mt-6 max-w-2xl">
-          {criteria.map((c) => (
-            <li key={c}>{c}</li>
-          ))}
-        </ul>
+        <p className="prose-groopy mt-4 max-w-2xl">
+          The total score is a weighted sum of the criteria below. The 11
+          criteria other than PageSpeed make up an 80-point base; when Google
+          PageSpeed access is configured, a 20-point performance criterion is
+          added on top.
+        </p>
+        <div className="prose-groopy mt-6 max-w-2xl overflow-x-auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Weight</th>
+                <th>Pass condition</th>
+              </tr>
+            </thead>
+            <tbody>
+              {criteria.map((c) => (
+                <tr key={c.label}>
+                  <td>{c.label}</td>
+                  <td>{c.weight}</td>
+                  <td>{c.rule}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </Section>
 
       <Section>
+        <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-text)]">
+          Common issues and how to fix them
+        </h2>
+        <div className="prose-groopy mt-6 max-w-2xl">
+          <dl>
+            {fixes.map((f) => (
+              <div key={f.problem} className="mb-6">
+                <dt className="font-semibold text-[var(--color-text)]">{f.problem}</dt>
+                <dd className="mt-1">{f.fix}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </Section>
+
+      <Section surface>
         <div className="max-w-3xl">
           <FaqList items={faq} title="Frequently asked questions" />
         </div>
