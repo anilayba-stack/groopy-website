@@ -61,9 +61,14 @@ import {
   meta as whatAreCoreWebVitalsMeta,
   Body as WhatAreCoreWebVitalsBody,
 } from "./what-are-core-web-vitals/post";
+import {
+  meta as ownWebsiteVsMarketplaceMeta,
+  Body as OwnWebsiteVsMarketplaceBody,
+} from "./own-website-vs-marketplace/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: ownWebsiteVsMarketplaceMeta, Body: OwnWebsiteVsMarketplaceBody },
   { meta: whatAreCoreWebVitalsMeta, Body: WhatAreCoreWebVitalsBody },
   { meta: howLongDoesAWebsiteTakeMeta, Body: HowLongDoesAWebsiteTakeBody },
   { meta: gymMemberAcquisitionGuideMeta, Body: GymMemberAcquisitionGuideBody },

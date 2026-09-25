@@ -90,6 +90,7 @@ export const webSitesiGelistirme: Service = {
     },
   ],
   relatedPosts: [
+    "kendi-web-sitesi-mi-pazaryeri-mi",
     "core-web-vitals-nedir",
     "web-sitesi-ne-kadar-surede-tamamlanir",
     "spor-kulupleri-uye-kazanma-rehberi",

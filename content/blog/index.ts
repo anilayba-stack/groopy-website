@@ -64,9 +64,14 @@ import {
   meta as coreWebVitalsNedirMeta,
   Body as CoreWebVitalsNedirBody,
 } from "./core-web-vitals-nedir/post";
+import {
+  meta as kendiWebSitesiMiPazaryeriMiMeta,
+  Body as KendiWebSitesiMiPazaryeriMiBody,
+} from "./kendi-web-sitesi-mi-pazaryeri-mi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: kendiWebSitesiMiPazaryeriMiMeta, Body: KendiWebSitesiMiPazaryeriMiBody },
   { meta: coreWebVitalsNedirMeta, Body: CoreWebVitalsNedirBody },
   { meta: webSitesiNeKadarSuredeMeta, Body: WebSitesiNeKadarSuredeBody },
   { meta: sporKulupleriMeta, Body: SporKulupleriBody },
