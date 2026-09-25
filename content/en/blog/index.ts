@@ -53,9 +53,14 @@ import {
   meta as gymMemberAcquisitionGuideMeta,
   Body as GymMemberAcquisitionGuideBody,
 } from "./gym-and-fitness-studio-member-acquisition-guide/post";
+import {
+  meta as howLongDoesAWebsiteTakeMeta,
+  Body as HowLongDoesAWebsiteTakeBody,
+} from "./how-long-does-a-website-take/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: howLongDoesAWebsiteTakeMeta, Body: HowLongDoesAWebsiteTakeBody },
   { meta: gymMemberAcquisitionGuideMeta, Body: GymMemberAcquisitionGuideBody },
   { meta: agencyVsFreelancerVsInHouseMeta, Body: AgencyVsFreelancerVsInHouseBody },
   { meta: localSeoGuideMeta, Body: LocalSeoGuideBody },

@@ -90,6 +90,7 @@ export const webSitesiGelistirme: Service = {
     },
   ],
   relatedPosts: [
+    "web-sitesi-ne-kadar-surede-tamamlanir",
     "spor-kulupleri-uye-kazanma-rehberi",
     "fizyoterapistler-dijital-pazarlama-rehberi",
     "wordpress-mi-nextjs-mi",

@@ -56,9 +56,14 @@ import {
   meta as sporKulupleriMeta,
   Body as SporKulupleriBody,
 } from "./spor-kulupleri-uye-kazanma-rehberi/post";
+import {
+  meta as webSitesiNeKadarSuredeMeta,
+  Body as WebSitesiNeKadarSuredeBody,
+} from "./web-sitesi-ne-kadar-surede-tamamlanir/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: webSitesiNeKadarSuredeMeta, Body: WebSitesiNeKadarSuredeBody },
   { meta: sporKulupleriMeta, Body: SporKulupleriBody },
   { meta: ajansFreelancerInHouseMeta, Body: AjansFreelancerInHouseBody },
   { meta: yerelSeoRehberiMeta, Body: YerelSeoRehberiBody },
