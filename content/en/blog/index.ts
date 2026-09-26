@@ -69,9 +69,14 @@ import {
   meta as howToBuildAppointmentBookingWebsiteMeta,
   Body as HowToBuildAppointmentBookingWebsiteBody,
 } from "./how-to-build-an-appointment-booking-website/post";
+import {
+  meta as sevenSignsRedesignMeta,
+  Body as SevenSignsRedesignBody,
+} from "./7-signs-its-time-to-redesign-your-website/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: sevenSignsRedesignMeta, Body: SevenSignsRedesignBody },
   { meta: howToBuildAppointmentBookingWebsiteMeta, Body: HowToBuildAppointmentBookingWebsiteBody },
   { meta: ownWebsiteVsMarketplaceMeta, Body: OwnWebsiteVsMarketplaceBody },
   { meta: whatAreCoreWebVitalsMeta, Body: WhatAreCoreWebVitalsBody },

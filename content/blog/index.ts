@@ -72,9 +72,14 @@ import {
   meta as randevuRezervasyonSistemiMeta,
   Body as RandevuRezervasyonSistemiBody,
 } from "./randevu-rezervasyon-sistemi-nasil-yapilir/post";
+import {
+  meta as eskiWebSitesiniYenilemeMeta,
+  Body as EskiWebSitesiniYenilemeBody,
+} from "./eski-web-sitesini-yenileme-zamani-7-belirti/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: eskiWebSitesiniYenilemeMeta, Body: EskiWebSitesiniYenilemeBody },
   { meta: randevuRezervasyonSistemiMeta, Body: RandevuRezervasyonSistemiBody },
   { meta: kendiWebSitesiMiPazaryeriMiMeta, Body: KendiWebSitesiMiPazaryeriMiBody },
   { meta: coreWebVitalsNedirMeta, Body: CoreWebVitalsNedirBody },

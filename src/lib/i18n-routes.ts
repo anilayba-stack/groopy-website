@@ -54,6 +54,8 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
   "kendi-web-sitesi-mi-pazaryeri-mi": "own-website-vs-marketplace",
   "randevu-rezervasyon-sistemi-nasil-yapilir":
     "how-to-build-an-appointment-booking-website",
+  "eski-web-sitesini-yenileme-zamani-7-belirti":
+    "7-signs-its-time-to-redesign-your-website",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(
