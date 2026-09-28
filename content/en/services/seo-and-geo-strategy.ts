@@ -99,6 +99,7 @@ export const seoAndGeoStrategy: Service = {
     },
   ],
   relatedPosts: [
+    "how-to-make-your-brand-visible-in-chatgpt",
     "local-seo-guide",
     "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",

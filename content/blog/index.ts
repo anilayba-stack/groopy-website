@@ -76,9 +76,14 @@ import {
   meta as eskiWebSitesiniYenilemeMeta,
   Body as EskiWebSitesiniYenilemeBody,
 } from "./eski-web-sitesini-yenileme-zamani-7-belirti/post";
+import {
+  meta as chatgptdeMarkanizMeta,
+  Body as ChatgptdeMarkanizBody,
+} from "./chatgptde-markaniz-nasil-gorunur-olur/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: chatgptdeMarkanizMeta, Body: ChatgptdeMarkanizBody },
   { meta: eskiWebSitesiniYenilemeMeta, Body: EskiWebSitesiniYenilemeBody },
   { meta: randevuRezervasyonSistemiMeta, Body: RandevuRezervasyonSistemiBody },
   { meta: kendiWebSitesiMiPazaryeriMiMeta, Body: KendiWebSitesiMiPazaryeriMiBody },

@@ -56,6 +56,8 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
     "how-to-build-an-appointment-booking-website",
   "eski-web-sitesini-yenileme-zamani-7-belirti":
     "7-signs-its-time-to-redesign-your-website",
+  "chatgptde-markaniz-nasil-gorunur-olur":
+    "how-to-make-your-brand-visible-in-chatgpt",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(
