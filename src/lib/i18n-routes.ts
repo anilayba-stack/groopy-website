@@ -58,6 +58,8 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
     "7-signs-its-time-to-redesign-your-website",
   "chatgptde-markaniz-nasil-gorunur-olur":
     "how-to-make-your-brand-visible-in-chatgpt",
+  "google-ai-overviews-turkiyede-ne-degistirdi":
+    "what-google-ai-overviews-changed-in-turkiye",
 };
 
 export const POST_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(

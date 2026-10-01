@@ -80,9 +80,14 @@ import {
   meta as chatgptdeMarkanizMeta,
   Body as ChatgptdeMarkanizBody,
 } from "./chatgptde-markaniz-nasil-gorunur-olur/post";
+import {
+  meta as aiOverviewsTurkiyedeMeta,
+  Body as AiOverviewsTurkiyedeBody,
+} from "./google-ai-overviews-turkiyede-ne-degistirdi/post";
 
 /** Yayımlanmış yazılar — en yeni önce. */
 export const posts: BlogPost[] = [
+  { meta: aiOverviewsTurkiyedeMeta, Body: AiOverviewsTurkiyedeBody },
   { meta: chatgptdeMarkanizMeta, Body: ChatgptdeMarkanizBody },
   { meta: eskiWebSitesiniYenilemeMeta, Body: EskiWebSitesiniYenilemeBody },
   { meta: randevuRezervasyonSistemiMeta, Body: RandevuRezervasyonSistemiBody },

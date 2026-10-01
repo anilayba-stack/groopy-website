@@ -99,6 +99,7 @@ export const seoVeGeo: Service = {
     },
   ],
   relatedPosts: [
+    "google-ai-overviews-turkiyede-ne-degistirdi",
     "chatgptde-markaniz-nasil-gorunur-olur",
     "yerel-seo-rehberi",
     "fizyoterapistler-dijital-pazarlama-rehberi",

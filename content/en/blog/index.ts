@@ -77,9 +77,14 @@ import {
   meta as howToMakeYourBrandVisibleInChatgptMeta,
   Body as HowToMakeYourBrandVisibleInChatgptBody,
 } from "./how-to-make-your-brand-visible-in-chatgpt/post";
+import {
+  meta as whatGoogleAiOverviewsChangedMeta,
+  Body as WhatGoogleAiOverviewsChangedBody,
+} from "./what-google-ai-overviews-changed-in-turkiye/post";
 
 /** Published posts — newest first. */
 export const posts: BlogPost[] = [
+  { meta: whatGoogleAiOverviewsChangedMeta, Body: WhatGoogleAiOverviewsChangedBody },
   { meta: howToMakeYourBrandVisibleInChatgptMeta, Body: HowToMakeYourBrandVisibleInChatgptBody },
   { meta: sevenSignsRedesignMeta, Body: SevenSignsRedesignBody },
   { meta: howToBuildAppointmentBookingWebsiteMeta, Body: HowToBuildAppointmentBookingWebsiteBody },
