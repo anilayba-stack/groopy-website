@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Local SEO Guide: Google Business Profile",
   description:
     "How to rank higher on Google Maps with a Business Profile: Google's own ranking factors, review data, and why the Q&A feature is going away.",
-  publishedAt: "2026-10-29",
+  publishedAt: "2026-09-21",
   tldr: "Google says local ranking rests on three factors — relevance, distance, and prominence — and states plainly that you can't request or pay for a better local ranking. Businesses can influence two of the three: choosing the right category and earning reviews are the main levers. Per BrightLocal's 2026 data, 31% of consumers will only use a business rated 4.5 stars or higher, and 80% say they're more likely to use a business that responds to all its reviews. Also, Google shut down the My Business Q&A API on November 3, 2025 — older guides' advice to \"manage your Q&A\" is no longer current.",
   author: "Anıl Ay",
   hubService: "seo-and-geo-strategy",

@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Google AI Overviews Türkiye'de Ne Değiştirdi?",
   description:
     "AI Overviews 18 Şubat 2026'da Türkiye'de yayına girdi. Tıklama davranışı nasıl değişti, kendi görünürlüğünüzü nasıl kontrol edersiniz.",
-  publishedAt: "2026-12-31",
+  publishedAt: "2026-10-01",
   tldr: "Google, AI Modu ve AI Bakışı'nı (AI Overviews) 18 Şubat 2026'da Türkiye'de kademeli olarak yayına aldı; Gemini 3 model ailesiyle çalışıyor. Türkiye'ye özgü bağımsız bir tıklama verisi yok, ama Pew Research Center'ın Mart 2025'te ABD'de 900 kişi ve 68.879 aramayı incelediği çalışmasına göre AI özeti gösterilen aramalarda kullanıcılar geleneksel sonuç linkine %8 oranında tıklıyor (AI özeti olmayan aramalarda %15); oturumu tamamen bitirme oranı ise %26'ya karşı %16. Google, AI Overviews'ta görünmek için ekstra bir optimizasyon gerekmediğini resmi olarak açıklıyor. Search Console'da 'Generative AI performans raporu' adıyla ayrı bir rapor var; yalnızca gösterim verisi sunuyor, tıklama veya sorgu kırılımı yok. Kendi hesabımızdan API üzerinden bu veriye erişmeyi denedik, boş sonuç döndü.",
   author: "Anıl Ay",
   hubService: "seo-ve-geo",

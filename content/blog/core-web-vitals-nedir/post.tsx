@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Core Web Vitals Nedir?",
   description:
     "Core Web Vitals (LCP, INP, CLS) nedir, Google sıralamasını nasıl etkiler ve gerçek vaka çalışmalarına göre işletmenizin gelirini neden ilgilendirir.",
-  publishedAt: "2026-11-26",
+  publishedAt: "2026-09-25",
   tldr: "Core Web Vitals; sayfa yükleme hızını (LCP, 2,5 saniye ve altı iyi kabul ediliyor), etkileşim tepki hızını (INP, 200 milisaniye ve altı) ve görsel kararlılığı (CLS, 0,1 ve altı) ölçen üç metrikten oluşuyor (web.dev, kaynak). Google bu metrikleri sıralama sistemlerinde kullandığını söylüyor, ama alakalı içeriği her zaman önceliklendirdiğini de açıkça belirtiyor; yani mükemmel bir puan kötü içeriği kurtarmaz. Google'ın kendi vaka çalışmalarına göre Vodafone'da LCP'de %31 iyileşme toplam satışları %8 artırmış, Renault'da 1 saniyelik LCP iyileştirmesi dönüşümü %13 yükseltmiş. Kendi sitemizi ölçtük: mobilde 96/100, LCP 2,8 saniye; ama site yeni olduğu için henüz gerçek kullanıcı (alan) verisi yok, bu da laboratuvar ve alan verisi arasındaki farkı göstermenin iyi bir örneği.",
   author: "Anıl Ay",
   hubService: "web-sitesi-gelistirme",

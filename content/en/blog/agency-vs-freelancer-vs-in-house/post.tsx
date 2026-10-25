@@ -8,7 +8,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Agency, Freelancer, or In-House? Social Media",
   description:
     "Should you hand social media to an agency, a freelancer, or an in-house hire? Cost structure, risks, and a decision guide for the Turkish market.",
-  publishedAt: "2026-11-05",
+  publishedAt: "2026-09-21",
   tldr: "The right model depends on your content volume, the range of skills you need, and how much time you can spend managing it. In-house gives you the most control, but even a minimum-wage employee costs an employer 40,214 TL a month in Türkiye in 2026 (Ministry of Labour and Social Security), and expecting strategy, design, and video skills from one person is unrealistic. A freelancer can be flexible and economical, but continuity rests on one person. An agency or team model offers scope and backup in exchange for some control. Whichever you choose, your business should own the accounts, and responsibility for ad disclosure (Ministry of Trade) stays with the advertiser regardless of the model.",
   author: "Anıl Ay",
   hubService: "social-media-management",

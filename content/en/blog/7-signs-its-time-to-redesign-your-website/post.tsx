@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "7 Signs It's Time to Redesign Your Website",
   description:
     "Decide whether your site needs a redesign using 7 concrete, self-testable criteria instead of a subjective 'it looks old' feeling.",
-  publishedAt: "2026-12-17",
+  publishedAt: "2026-09-26",
   tldr: "The answer to 'is my site outdated?' isn't a feeling, it's seven concrete tests: is your Core Web Vitals score in the red, does your site pass Google's mobile-first indexing criteria, do you have HTTPS, is your CMS/plugins up to date, does your structured data pass Google's Rich Results Test, do you show up when you search your own brand name, and can you actually measure your traffic. Most of these seven can be tested in minutes with free tools; if the problem shows up in several of these fundamentals rather than the visual design, you need a real rebuild, not a cosmetic update.",
   author: "Anıl Ay",
   hubService: "website-development",

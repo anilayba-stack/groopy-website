@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "How to Build an Appointment Booking Website",
   description:
     "Ready-made booking tool or a custom system built into your site? A decision guide on cost, data protection, and double-booking prevention.",
-  publishedAt: "2026-12-10",
+  publishedAt: "2026-09-26",
   tldr: "For appointment-based businesses like dentists, physiotherapists, salons, or gyms, the real decision is 'ready-made tool or custom integrated system.' Ready-made tools (e.g., Calendly, officially priced at $10-16/user/month) get you started fast but charge per user long-term and usually keep data on servers abroad. Under Türkiye's data protection law (KVKK), health data is a 'special category personal data' requiring explicit consent; the Board issued a decision (2022/594) fining a controller 75,000 TL for a special-category data breach. The technical foundation for preventing double bookings is the VFREEBUSY component in IETF's RFC 5545 (iCalendar) standard. Reminder message content matters too: a peer-reviewed study found that an SMS stating the cost of a missed appointment reduced no-show rates more than a generic reminder.",
   author: "Anıl Ay",
   hubService: "website-development",

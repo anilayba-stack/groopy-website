@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "ChatGPT'de Markanız Nasıl Görünür Olur?",
   description:
     "ChatGPT markanız hakkında bilgiyi nereden alıyor, görünürlüğünüzü nasıl test edersiniz ve hangi site-dışı sinyaller gerçekten önemli. Uygulamalı rehber.",
-  publishedAt: "2026-12-24",
+  publishedAt: "2026-09-28",
   tldr: "ChatGPT'nin markanız hakkında iki farklı bilgi katmanı var: dondurulmuş eğitim verisi (markanız orada hiç geçmiyorsa arama açık olmadan hiç bahsedilmez) ve OpenAI'nin 31 Ekim 2024'te duyurduğu canlı web arama özelliği. OpenAI'nin resmi dokümanına göre GPTBot eğitim verisi topluyor, OAI-SearchBot ise ChatGPT'nin arama sonuçlarında sitenizi göstermek için kullanılıyor; ikisi ayrı, robots.txt'te ayrı ayrı yönetilebilir. Markanızın şu an ne kadar görünür olduğunu test etmenin resmi bir aracı yok; tek güvenilir yöntem, gizli sekmede search açık/kapalı aynı soruları düzenli sormak. \"X kat daha çok atıf alır\" gibi kaynaksız istatistiklere güvenmeyin; bunlar doğrulanamıyor.",
   author: "Anıl Ay",
   hubService: "seo-ve-geo",

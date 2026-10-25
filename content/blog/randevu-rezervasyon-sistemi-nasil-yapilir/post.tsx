@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Randevu Sistemi Olan Web Sitesi Nasıl Yapılır?",
   description:
     "Hazır bir randevu aracı mı, siteye entegre özel bir sistem mi? Maliyet, KVKK ve çift rezervasyonu önleme açısından karar rehberi.",
-  publishedAt: "2026-12-10",
+  publishedAt: "2026-09-26",
   tldr: "Diş hekimi, fizyoterapist, kuaför ya da spor salonu gibi randevu bazlı işletmeler için asıl karar 'hazır bir araç mı, özel entegre bir sistem mi' sorusu. Hazır araçlar (ör. Calendly, resmi fiyatlandırmasına göre 10-16 dolar/kullanıcı/ay) hızlı başlangıç sağlar ama uzun vadede kullanıcı başına ücretlenir ve veri genellikle yurt dışı sunucuda kalır. KVKK'ya göre sağlık verisi 'özel nitelikli kişisel veri'dir ve açık rıza gerektirir; Kurul, özel nitelikli veri paylaşım ihlalinde 75.000 TL idari para cezası verdiği bir kararı yayımladı (2022/594). Çift rezervasyonu önlemenin teknik temeli IETF'nin RFC 5545 (iCalendar) standardındaki VFREEBUSY bileşenidir. Hatırlatma mesajlarının içeriği de önemli: hakemli bir çalışmaya göre randevu maliyetini belirten bir SMS, genel bir hatırlatmaya kıyasla kaçırma oranını düşürdü.",
   author: "Anıl Ay",
   hubService: "web-sitesi-gelistirme",

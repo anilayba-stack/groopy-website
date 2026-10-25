@@ -8,7 +8,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Ajans mı, Freelancer mı, In-house mı? Sosyal Medya",
   description:
     "Sosyal medyayı ajansa, freelancer'a ya da şirket içi ekibe mi vermeli? Üç modelin maliyet yapısı, riskleri ve durumunuza göre karar rehberi.",
-  publishedAt: "2026-11-05",
+  publishedAt: "2026-09-21",
   tldr: "Doğru model, içerik hacminize, ihtiyaç duyduğunuz uzmanlık genişliğine ve yönetime ayırabileceğiniz zamana bağlı. Şirket içi ekip en yüksek kontrolü verir; ancak asgari ücretli tek bir çalışanın bile işverene maliyeti 2026'da ayda 40.214 TL (ÇSGB) ve strateji, tasarım, video gibi farklı uzmanlıkları tek kişiden beklemek gerçekçi değil. Freelancer esnek ve ekonomik olabilir, ama süreklilik tek kişiye bağlıdır. Ajans ya da ekip modeli kapsam ve yedeklilik sunar, karşılığında kontrolün bir bölümünü devreder. Hangisini seçerseniz seçin, hesapların sahibi işletmeniz olmalı; reklam etiketi sorumluluğu da (Ticaret Bakanlığı) modelden bağımsız olarak reklam verende kalır.",
   author: "Anıl Ay",
   hubService: "sosyal-medya-yonetimi",

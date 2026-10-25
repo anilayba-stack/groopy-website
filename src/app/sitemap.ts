@@ -10,7 +10,6 @@ import { caseStudySlugs as enCaseStudySlugs } from "@content/en/case-studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
-  const now = new Date();
 
   const staticPaths: { path: string; priority: number }[] = [
     { path: routes.home, priority: 1 },
@@ -45,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...casePaths,
   ].map((e) => ({
     url: `${base}${e.path === "/" ? "" : e.path}`,
-    lastModified: now,
     changeFrequency: "monthly",
     priority: e.priority,
   }));

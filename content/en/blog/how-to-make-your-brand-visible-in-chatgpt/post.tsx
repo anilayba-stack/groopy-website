@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "How to Make Your Brand Visible in ChatGPT",
   description:
     "Where ChatGPT gets its information about your brand, how to test your visibility, and which off-site signals actually matter. A practical guide.",
-  publishedAt: "2026-12-24",
+  publishedAt: "2026-09-28",
   tldr: "ChatGPT has two different information layers about your brand: frozen training data (if your brand never appears there, it won't be mentioned without search turned on) and the live web search feature OpenAI announced on October 31, 2024. Per OpenAI's official documentation, GPTBot collects training data while OAI-SearchBot is used to surface your site in ChatGPT's search results; the two are separate and can be managed independently in robots.txt. There's no official tool for testing how visible your brand currently is; the only reliable method is repeating the same queries with search on and off in an incognito session. Don't trust unsourced claims like \"X times more citations\"; these can't be verified.",
   author: "Anıl Ay",
   hubService: "seo-and-geo-strategy",

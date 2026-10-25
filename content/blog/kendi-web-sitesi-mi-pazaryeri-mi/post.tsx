@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Kendi Web Sitesi mi, Pazaryeri mi?",
   description:
     "Trendyol, Hepsiburada gibi pazaryerleri ile kendi web siteniz arasında seçim yaparken maliyet, kontrol ve müşteri verisi açısından bilmeniz gerekenler.",
-  publishedAt: "2026-12-03",
+  publishedAt: "2026-09-25",
   tldr: "İkisi de gerçek bir seçenek, sahte bir ikilem değil. Pazaryeri hazır trafik ve kurulmuş güven sağlar; karşılığında komisyon öder, marka deneyiminizi platformun kurallarına göre şekillendirirsiniz. Amazon.com.tr'nin resmi ücretlendirme sayfasına göre komisyon kategoriye göre %6-%20 arasında değişiyor; Trendyol ve Hepsiburada'nın oranları da benzer şekilde kategoriye göre değişiyor ama kesin yüzdeler satıcı paneline giriş gerektiriyor, bu yüzden kendi hesabınızdan kontrol etmenizi öneririz. 6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun'un 10. maddesine göre hizmet sağlayıcı, elde ettiği kişisel verileri ilgili kişinin onayı olmadan üçüncü kişilere iletemez; pratik sonucu, pazaryerinde satış yaptığınızda müşterinin iletişim bilgisi doğrudan sizde olmayabilir. Türkiye'de 2024'te 600.800 işletme e-ticaret yaptı (Ticaret Bakanlığı). Çoğu büyüyen işletme için gerçekçi yol, ikisini bir arada kullanmak.",
   author: "Anıl Ay",
   hubService: "web-sitesi-gelistirme",

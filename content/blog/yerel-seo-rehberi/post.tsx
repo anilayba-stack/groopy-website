@@ -8,7 +8,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Yerel SEO Rehberi: Google İşletme Profili",
   description:
     "Google İşletme Profili ile haritalarda nasıl üst sıraya çıkılır? Google'ın kendi sıralama faktörleri, yorum verileri ve Soru-Cevap'ın kalkması.",
-  publishedAt: "2026-10-29",
+  publishedAt: "2026-09-21",
   tldr: "Google, yerel sıralamayı üç faktöre dayandırdığını söylüyor: alaka, mesafe ve belirginlik — ve sıralama için istekte bulunmanın ya da ödeme yapmanın mümkün olmadığını açıkça belirtiyor. Bu üç faktörün ikisini (alaka ve belirginlik) işletme etkileyebilir: doğru kategori seçimi ve yorumlar bunların başında geliyor. BrightLocal'ın 2026 verisine göre tüketicilerin %31'i yalnızca 4,5 yıldız ve üzeri işletmeleri kullanıyor, %80'i tüm yorumlara yanıt veren işletmeyi tercih ediyor. Ayrıca Google, İşletme Profili'ndeki Soru-Cevap özelliğinin API'sini 3 Kasım 2025'te kapattı; eski rehberlerin önerdiği 'Soru-Cevap'ı yönetin' tavsiyesi artık güncel değil.",
   author: "Anıl Ay",
   hubService: "seo-ve-geo",

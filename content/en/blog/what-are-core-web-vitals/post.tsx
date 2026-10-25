@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "What Are Core Web Vitals?",
   description:
     "Core Web Vitals (LCP, INP, CLS) explained: how they affect Google ranking, and why real case studies show they matter for revenue.",
-  publishedAt: "2026-11-26",
+  publishedAt: "2026-09-25",
   tldr: "Core Web Vitals are three metrics: loading speed (LCP, 2.5 seconds or less is considered good), interaction responsiveness (INP, 200 milliseconds or less), and visual stability (CLS, 0.1 or less), per web.dev's official documentation. Google says it uses these in its ranking systems, but also states plainly that it always prioritizes relevant content, so a perfect score doesn't rescue weak content. Per Google's own case studies, a 31% LCP improvement raised Vodafone's total sales by 8%, and a 1-second LCP improvement raised Renault's conversion rate by 13%. We measured our own site: 96/100 on mobile, LCP 2.8s, but since the site is new there's no real-user field data yet, which is itself a good illustration of the gap between lab and field data.",
   author: "Anıl Ay",
   hubService: "website-development",

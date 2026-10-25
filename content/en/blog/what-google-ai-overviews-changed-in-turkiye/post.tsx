@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "What Google AI Overviews Changed in Türkiye",
   description:
     "AI Overviews launched in Türkiye on February 18, 2026. How click behavior has shifted globally, and how to check your own visibility.",
-  publishedAt: "2026-12-31",
+  publishedAt: "2026-10-01",
   tldr: "Google rolled out AI Mode and AI Overviews (AI Bakışı) in Türkiye on February 18, 2026, gradually, powered by the Gemini 3 model family. There's no independent Turkey-specific click data, but Pew Research Center's study of 900 U.S. adults and 68,879 searches in March 2025 found that when an AI summary appears, users click a traditional result link in only 8% of visits, versus 15% without one; the share of visits that end the session entirely is 26% versus 16%. Google's own official documentation states no extra optimization is needed to appear in AI Overviews. Search Console has a separate \"Generative AI performance report\" that shows impressions only, no clicks or query breakdown. We tried to pull this data through the API on our own account and got an empty result.",
   author: "Anıl Ay",
   hubService: "seo-and-geo-strategy",

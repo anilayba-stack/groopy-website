@@ -8,7 +8,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Spor Kulüpleri için Üye Kazanma Rehberi",
   description:
     "Fitness, pilates ve yoga stüdyoları için üye kazanma: Google İşletme Profili, reklam kuralları, lead yanıt hızı, üye tutundurma ve iki hukuki tuzak.",
-  publishedAt: "2026-11-12",
+  publishedAt: "2026-09-21",
   tldr: "Üye kazanmak ilk ziyaretle bitmiyor. Oslo'da 25 salonda 250 yeni üyenin bir yıl boyunca izlendiği hakemli bir çalışmada, 3., 6. ve 12. ayda bırakanların oranı %20,1, %21,1 ve %28,3; yıl boyu düzenli antrenman yapan yalnızca %37 (öz-bildirim). İşletmelerin kendi beyanına dayanan HFA 2025 raporu ise ortalama tutundurma oranını %66,4 veriyor. Kontrol edebileceğiniz üç kaldıraç var: Google'da doğru kategoriyle bulunmak, formu dolduran kişiye hızlı dönmek (HBR'nin ABD verisine göre ilk saatte temas eden firmalar lead'i nitelendirmede yaklaşık 7 kat başarılı; fitness'a özgü değil) ve ilk 90 günü yönetmek. Türkiye'de iki hukuki tuzağa da dikkat edin: kapıdaki fiyatla uyuşmayan fiyat vaadi (Reklam Kurulu bülteni 354) ve biyometrik giriş sistemi (KVKK Kurulu 2020/167).",
   author: "Anıl Ay",
   hubService: "web-sitesi-gelistirme",

@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Web Sitesini Yenileme Zamanının 7 Belirtisi",
   description:
     "Sitenizin yenilenmesi gerekip gerekmediğini 'eski görünüyor' hissine değil, 7 somut, kendi kendinize test edebileceğiniz kritere göre anlayın.",
-  publishedAt: "2026-12-17",
+  publishedAt: "2026-09-26",
   tldr: "\"Sitem eski mi?\" sorusunun cevabı bir his değil, yedi somut testten geçiyor: Core Web Vitals puanınız kırmızı mı, Google'ın mobil öncelikli indeksleme kriterlerini geçiyor mu, HTTPS var mı, CMS/eklentileriniz güncel mi, yapılandırılmış verileriniz Google'ın Rich Results Test aracından geçiyor mu, kendi marka adınızla arattığınızda çıkıyor musunuz ve trafiğinizi ölçebiliyor musunuz. Bu yedisinin çoğu ücretsiz araçlarla dakikalar içinde test edilebilir; sorun görsel tasarımda değil, bu temellerden birkaçında çıkıyorsa, yüzeysel bir güncelleme yerine gerçek bir yenileme gerekiyor demektir.",
   author: "Anıl Ay",
   hubService: "web-sitesi-gelistirme",

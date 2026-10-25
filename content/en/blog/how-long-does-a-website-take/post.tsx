@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "How Long Does a Website Take to Build?",
   description:
     "Why website projects run long, what phases the process goes through, and what actually shortens the timeline — a sourced, concrete guide.",
-  publishedAt: "2026-11-19",
+  publishedAt: "2026-09-25",
   tldr: "Per GoodFirms' 2024 data, based on more than 100 web development companies, timelines scale with complexity: small-business/corporate sites take 1-12 weeks, e-commerce 4-16 weeks, custom web applications 16-30 weeks. But the real reason these ranges are so wide isn't technology, it's process: per Ignition's 2025 agency survey, 57% of agencies lose $1K-$5K a month in unbilled work to scope creep, and that lost work maps directly onto a longer project. The real driver of timeline isn't coding speed; it's when content is ready, how many rounds approvals take, and how clearly scope was defined up front.",
   author: "Anıl Ay",
   hubService: "website-development",

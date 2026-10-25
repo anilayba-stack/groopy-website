@@ -8,7 +8,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Member Acquisition Guide for Gyms and Studios",
   description:
     "Winning members for fitness, pilates, and yoga studios: Business Profile, ad rules, lead response speed, retention, and two legal traps in Türkiye.",
-  publishedAt: "2026-11-12",
+  publishedAt: "2026-09-21",
   tldr: "Winning a member doesn't end with the first visit. In a peer-reviewed study that followed 250 new members at 25 gyms in Oslo for a year, the share who had dropped out at 3, 6, and 12 months was 20.1%, 21.1%, and 28.3%, and only 37% exercised regularly throughout the year (self-reported). The HFA 2025 report, based on operators' own reporting, puts average retention at 66.4%. Three levers are in your control: being found on Google with the right category, replying quickly to people who fill in your form (per HBR's US data, firms that made contact within an hour were about 7 times more likely to qualify a lead; not fitness-specific), and managing the first 90 days. In Türkiye, watch out for two legal traps: a price promise that doesn't match the price at the door (Advertising Board bulletin 354) and biometric entry systems (KVKK Board decision 2020/167).",
   author: "Anıl Ay",
   hubService: "website-development",

@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Own Website or Marketplace?",
   description:
     "Choosing between marketplaces like Trendyol and Hepsiburada and your own website: what you need to know about cost, control, and customer data.",
-  publishedAt: "2026-12-03",
+  publishedAt: "2026-09-25",
   tldr: "Both are legitimate options, not a false choice. A marketplace gives you ready-made traffic and established trust; in exchange you pay commission and shape your brand experience around the platform's rules. Per Amazon.com.tr's official pricing page, commission ranges from 6% to 20% depending on category; Turkey's Trendyol and Hepsiburada also charge category-based commission, but exact rates sit behind seller-panel logins, so check your own account. Under Article 10 of Türkiye's Law No. 6563 on the Regulation of Electronic Commerce, a service provider can't pass on personal data it collects to third parties without consent; in practice, this means you may not have direct access to a customer's contact details when you sell through a marketplace. In 2024, 600,800 businesses in Türkiye did e-commerce (Ministry of Trade). For most growing businesses, the realistic path is using both together.",
   author: "Anıl Ay",
   hubService: "website-development",

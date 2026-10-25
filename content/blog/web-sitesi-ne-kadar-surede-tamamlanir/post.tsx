@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   metaTitle: "Web Sitesi Ne Kadar Sürede Tamamlanır?",
   description:
     "Web sitesi projeleri neden uzuyor, süreç hangi fazlardan geçiyor ve süreyi gerçekten kısaltmak için ne yapabilirsiniz? Kaynaklı, somut bir rehber.",
-  publishedAt: "2026-11-19",
+  publishedAt: "2026-09-25",
   tldr: "GoodFirms'ın 100'den fazla web geliştirme şirketini incelediği 2024 verisine göre süre karmaşıklıkla doğru orantılı artıyor: kurumsal/küçük işletme sitesi 1-12 hafta, e-ticaret 4-16 hafta, özel web uygulaması 16-30 hafta. Ama bu aralıkların neden bu kadar geniş olduğunun asıl nedeni teknoloji değil, süreç: Ignition'ın 2025 ajans anketine göre ajansların %57'si kapsam kayması (scope creep) yüzünden ayda 1.000-5.000 dolar arası faturalandırılamayan iş kaybediyor; bu, projenin de aynı oranda uzaması demek. Süreyi belirleyen asıl faktör kod yazma hızı değil, içeriğin ne zaman hazır olduğu, onayların kaç turda tamamlandığı ve kapsamın baştan ne kadar net tanımlandığı.",
   author: "Anıl Ay",
   hubService: "web-sitesi-gelistirme",
