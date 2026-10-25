@@ -27,7 +27,17 @@ export const mainNav: NavGroup[] = [
     ],
   },
   { label: "Çalışmalar", href: routes.work },
-  { label: "Blog", href: routes.blog },
+  {
+    label: "Blog",
+    href: routes.blog,
+    children: [
+      ...primaryServices.map((s) => ({
+        label: s.navLabel,
+        href: `${routes.blog}#${s.slug}`,
+      })),
+      { label: "Tüm yazılar", href: routes.blog },
+    ],
+  },
   { label: "Hakkımızda", href: routes.about },
   { label: "Ücretsiz SEO Analizi", href: routes.seoTool },
   { label: "İletişim", href: routes.contact },
@@ -70,7 +80,17 @@ export const enMainNav: NavGroup[] = [
     ],
   },
   { label: "Case Studies", href: enRoutes.work },
-  { label: "Blog", href: enRoutes.blog },
+  {
+    label: "Blog",
+    href: enRoutes.blog,
+    children: [
+      ...enPrimaryServices.map((s) => ({
+        label: s.navLabel,
+        href: `${enRoutes.blog}#${s.slug}`,
+      })),
+      { label: "All articles", href: enRoutes.blog },
+    ],
+  },
   { label: "About", href: enRoutes.about },
   { label: "Free SEO Check", href: enRoutes.seoTool },
   { label: "Contact", href: enRoutes.contact },

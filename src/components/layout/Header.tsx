@@ -95,19 +95,40 @@ export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
       {open ? (
         <div className="border-t border-[var(--color-border)] bg-[var(--color-surface)] md:hidden">
           <Container className="flex flex-col gap-1 py-4">
-            {nav.flatMap((group) => {
-              const items = group.children ?? [group as { label: string; href: string }];
-              return items.map((child) => (
+            {nav.map((group) =>
+              group.children ? (
+                <div key={group.label} className="py-1">
+                  <Link
+                    href={group.href ?? "#"}
+                    onClick={() => setOpen(false)}
+                    className="block rounded-lg px-3 py-2.5 text-[15px] font-medium text-[var(--color-text)]"
+                  >
+                    {group.label}
+                  </Link>
+                  <div className="ml-2 flex flex-col gap-1 border-l border-[var(--color-border)] pl-3">
+                    {group.children.map((child) => (
+                      <Link
+                        key={child.href + child.label}
+                        href={child.href}
+                        onClick={() => setOpen(false)}
+                        className="rounded-lg px-3 py-2 text-[15px] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-2)] hover:text-[var(--color-text)]"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
                 <Link
-                  key={child.href + child.label}
-                  href={child.href}
+                  key={group.href}
+                  href={group.href ?? "#"}
                   onClick={() => setOpen(false)}
                   className="rounded-lg px-3 py-2.5 text-[15px] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-2)] hover:text-[var(--color-text)]"
                 >
-                  {child.label}
+                  {group.label}
                 </Link>
-              ));
-            })}
+              ),
+            )}
             <div className="px-3 pt-3">
               <ButtonLink href={cta.href} className="w-full">
                 {cta.label}
