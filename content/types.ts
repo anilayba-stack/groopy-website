@@ -86,3 +86,22 @@ export interface CaseStudy {
   results: { label: string; value: string }[];
   Body: ComponentType;
 }
+
+/**
+ * Müşteri bazlı gerçek çalışma kanıtı — sonuç/rakam iddiası TAŞIMAZ.
+ * CaseStudy'den farklı olarak "results" gerektirmez; yalnızca müşterinin
+ * izniyle paylaşılan, verilen hizmetleri gösteren gerçek görsel/link içindir.
+ */
+export interface WorkEntry {
+  slug: string;
+  client: string;
+  location: string;
+  /** Bu müşteri için verilen hizmet(ler) */
+  services: string[];
+  /** Kısa, somut açıklama — abartılı/pazarlama dili ve sonuç iddiası yok */
+  summary: string;
+  website?: { url: string; label: string };
+  photos: { src: string; alt: string }[];
+  /** ISO tarih */
+  date: string;
+}

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -9,11 +8,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { routes, enRoutes } from "@/lib/routes";
 import { caseStudies } from "@content/case-studies";
+import { workGallery } from "@content/work-gallery";
+import { WorkGallery } from "@/components/sections/WorkGallery";
 
 export const metadata: Metadata = buildMetadata({
   title: "Çalışmalar",
   description:
-    "Groopy'nin vaka çalışmaları. Yalnızca müşteri izniyle ve doğrulanabilir sonuçlarla yayımlarız.",
+    "Groopy'nin gerçek müşteri çalışmaları — web sitesi, SEO+GEO ve sosyal medya yönetimi projelerinden kareler.",
   path: routes.work,
   alternatePath: enRoutes.work,
 });
@@ -37,24 +38,11 @@ export default function WorkPage() {
         <SectionHeading
           as="h1"
           eyebrow="Çalışmalar"
-          title="Vaka çalışmaları"
-          description="Vaka çalışmalarını yalnızca müşterinin izniyle ve ölçülebilir, doğrulanabilir sonuçlarla yayımlıyoruz. Uydurma rakam veya izinsiz referans yok."
+          title="Birlikte çalıştığımız projeler"
+          description="Müşterilerimizin izniyle paylaştığımız projelerimiz."
         />
 
-        {caseStudies.length === 0 ? (
-          <div className="mt-10 max-w-2xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
-            <p className="text-[1.0625rem] leading-relaxed text-[var(--color-text-muted)]">
-              İlk vaka çalışmalarımızı yayına hazırlıyoruz. Bir projenin sonuçlarını
-              görmek isterseniz doğrudan paylaşabiliriz.
-            </p>
-            <Link
-              href={routes.contact}
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
-            >
-              Bize yazın <ArrowRight className="size-4" aria-hidden />
-            </Link>
-          </div>
-        ) : (
+        {caseStudies.length > 0 && (
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
             {caseStudies.map((cs) => (
               <li key={cs.slug}>
@@ -76,6 +64,10 @@ export default function WorkPage() {
             ))}
           </ul>
         )}
+
+        <div className="mt-10">
+          <WorkGallery entries={workGallery} locale="tr" />
+        </div>
       </Section>
 
       <CtaBand />

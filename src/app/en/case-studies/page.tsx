@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -9,11 +8,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { enRoutes, routes } from "@/lib/routes";
 import { caseStudies } from "@content/en/case-studies";
+import { workGallery } from "@content/en/work-gallery";
+import { WorkGallery } from "@/components/sections/WorkGallery";
 
 export const metadata: Metadata = buildMetadata({
   title: "Case Studies",
   description:
-    "Groopy's case studies. Published only with client permission and verifiable results.",
+    "Groopy's real client work — photos from website development, SEO+GEO, and social media management projects.",
   path: enRoutes.work,
   locale: "en",
   alternatePath: routes.work,
@@ -38,24 +39,11 @@ export default function EnWorkPage() {
         <SectionHeading
           as="h1"
           eyebrow="Case Studies"
-          title="Case studies"
-          description="We publish case studies only with client permission and with measurable, verifiable results. No invented numbers or unauthorized references."
+          title="Projects we've worked on"
+          description="Real projects shared only with client permission. No invented numbers or unauthorized references."
         />
 
-        {caseStudies.length === 0 ? (
-          <div className="mt-10 max-w-2xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
-            <p className="text-[1.0625rem] leading-relaxed text-[var(--color-text-muted)]">
-              We&apos;re preparing our first case studies for publication. If you&apos;d
-              like to see a project&apos;s results, we can share them directly.
-            </p>
-            <Link
-              href={enRoutes.contact}
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
-            >
-              Get in touch <ArrowRight className="size-4" aria-hidden />
-            </Link>
-          </div>
-        ) : (
+        {caseStudies.length > 0 && (
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
             {caseStudies.map((cs) => (
               <li key={cs.slug}>
@@ -77,6 +65,10 @@ export default function EnWorkPage() {
             ))}
           </ul>
         )}
+
+        <div className="mt-10">
+          <WorkGallery entries={workGallery} locale="en" />
+        </div>
       </Section>
 
       <CtaBand locale="en" />
