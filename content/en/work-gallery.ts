@@ -12,6 +12,7 @@ export const workGallery: WorkEntry[] = [
     services: ["Website development", "SEO and GEO strategy", "Google Ads management", "Social media management"],
     summary: "We run website development, SEO+GEO strategy, and Google Ads management for Tike Zekeriyaköy; a frame from a shoot day under our social media management service.",
     website: { url: "https://tikezekeriyakoy.com/", label: "tikezekeriyakoy.com" },
+    rawPhoto: true,
     photos: [
       {
         src: "/images/work/tike-zekeriyakoy-urun-cekimi.jpg",
@@ -19,5 +20,21 @@ export const workGallery: WorkEntry[] = [
       },
     ],
     date: "2026-10-25",
+  },
+  {
+    slug: "busra-kayan-kemerburgaz",
+    client: "Dt. Büşra Kayan",
+    location: "Kemerburgaz, Istanbul",
+    services: ["Website development", "SEO and GEO strategy", "Google Ads management", "Social media management"],
+    summary: "We run website development, SEO+GEO strategy, and Google Ads management for Dt. Büşra Kayan; a frame from her clinic under our social media management service.",
+    website: { url: "https://dtbusrakayan.com/", label: "dtbusrakayan.com" },
+    rawPhoto: true,
+    photos: [
+      {
+        src: "/images/work/busra-kayan-klinik.jpg",
+        alt: "A portrait of Dt. Büşra Kayan wearing dental loupes and a surgical mask in her clinic",
+      },
+    ],
+    date: "2026-10-28",
   },
 ];

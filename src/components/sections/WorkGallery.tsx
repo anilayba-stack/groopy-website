@@ -27,7 +27,9 @@ export function WorkGallery({ entries, locale = "tr" }: WorkGalleryProps) {
                   alt={entry.photos[0].alt}
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover brightness-75 transition-[filter] duration-300 ease-out hover:brightness-100"
+                  className={`object-cover brightness-75 transition-[filter] duration-300 ease-out hover:brightness-100 ${
+                    entry.rawPhoto ? "" : "sepia-[.45] saturate-150 contrast-[1.05]"
+                  }`}
                 />
               </div>
             )}

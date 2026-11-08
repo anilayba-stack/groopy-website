@@ -101,6 +101,8 @@ export interface WorkEntry {
   /** Kısa, somut açıklama — abartılı/pazarlama dili ve sonuç iddiası yok */
   summary: string;
   website?: { url: string; label: string };
+  /** true = görsel olduğu gibi gösterilir (filtre yok); varsayılan false — sıcak ton filtresi uygulanır */
+  rawPhoto?: boolean;
   photos: { src: string; alt: string }[];
   /** ISO tarih */
   date: string;
