@@ -1,8 +1,9 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { submitContactTr, type ContactState } from "./actions";
 import { SERVICE_OPTIONS } from "@/lib/contact";
+import { trackGenerateLead, trackWhatsAppClick } from "@/lib/analytics";
 
 const initialState: ContactState = { status: "idle" };
 
@@ -12,6 +13,11 @@ const fieldBase =
 export function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContactTr, initialState);
   const v = state.values;
+
+  useEffect(() => {
+    if (state.status === "delivered") trackGenerateLead("email", "tr");
+    if (state.status === "manual") trackGenerateLead("whatsapp_fallback", "tr");
+  }, [state.status]);
 
   if (state.status === "delivered") {
     return (
@@ -40,6 +46,7 @@ export function ContactForm() {
           href={state.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("contact_form", "tr")}
           className="mt-4 inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-[var(--color-accent-contrast)] hover:bg-[var(--color-accent-hover)]"
         >
           WhatsApp&apos;ta aç

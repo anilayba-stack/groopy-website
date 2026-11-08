@@ -5,6 +5,7 @@ import { Search, Loader2, CheckCircle2, XCircle, Gauge } from "lucide-react";
 import { whatsappUrl } from "@/lib/site-config";
 import { RabbitLoader } from "@/components/ui/RabbitLoader";
 import type { AuditResult } from "@/lib/site-audit";
+import { trackSeoToolUsed, trackWhatsAppClick } from "@/lib/analytics";
 
 const STRINGS = {
   tr: {
@@ -67,6 +68,7 @@ export function SeoAnalyzerTool({ locale = "tr" }: { locale?: "tr" | "en" }) {
         return;
       }
       setResult(data as AuditResult);
+      trackSeoToolUsed((data as AuditResult).score, locale);
     } catch {
       setError(t.errorGeneric);
     } finally {
@@ -186,6 +188,7 @@ export function SeoAnalyzerTool({ locale = "tr" }: { locale?: "tr" | "en" }) {
                 href={whatsappUrl(whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick("seo_tool_result", locale)}
                 className="mt-4 inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-[var(--color-accent-contrast)] hover:bg-[var(--color-accent-hover)]"
               >
                 {t.ctaButton}
