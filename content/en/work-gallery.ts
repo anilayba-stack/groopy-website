@@ -18,8 +18,6 @@ export const workGallery: WorkEntry[] = [
       {
         src: "/images/work/tike-zekeriyakoy-urun-cekimi.jpg",
         alt: "Studio lighting and camera setup during a product photo shoot for Tike in Zekeriyaköy",
-        w: 900,
-        h: 1600,
       },
     ],
     date: "2026-10-25",
@@ -37,8 +35,6 @@ export const workGallery: WorkEntry[] = [
       {
         src: "/images/work/busra-kayan-klinik.jpg",
         alt: "A portrait of Dt. Büşra Kayan wearing dental loupes and a surgical mask in her clinic",
-        w: 900,
-        h: 1600,
       },
     ],
     date: "2026-10-28",
@@ -56,8 +52,6 @@ export const workGallery: WorkEntry[] = [
       {
         src: "/images/work/kozmoz724-site-ekrani.jpg",
         alt: "Homepage screenshot from Kozmoz724's live website, presenting its shopping and health categories",
-        w: 863,
-        h: 691,
       },
     ],
     date: "2026-11-09",
@@ -75,8 +69,6 @@ export const workGallery: WorkEntry[] = [
       {
         src: "/images/work/mevlut-bilgin-site-ekrani.jpg",
         alt: "Homepage screenshot from Fzt. Mevlüt Bilgin's live website, showing a manual therapy session",
-        w: 300,
-        h: 400,
       },
     ],
     date: "2026-11-09",

@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import type { WorkEntry } from "@content/types";
-import { WorkPhotoLightbox } from "./WorkPhotoLightbox";
 
 const dateFmtTr = new Intl.DateTimeFormat("tr-TR", { year: "numeric", month: "long" });
 const dateFmtEn = new Intl.DateTimeFormat("en-US", { year: "numeric", month: "long" });
@@ -32,12 +32,31 @@ export function WorkGallery({ entries, locale = "tr" }: WorkGalleryProps) {
         return (
           <li key={entry.slug} className={`${layout.span} ${layout.offset}`}>
             <figure>
-              <WorkPhotoLightbox
-                entry={entry}
-                aspect={layout.aspect}
-                priority={i === 0}
-                locale={locale}
-              />
+              <div
+                className={`group relative w-full overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] ${layout.aspect}`}
+              >
+                <div className="absolute inset-0 flex items-center justify-center p-10 transition-opacity duration-300 ease-out group-hover:opacity-0 sm:p-12">
+                  <Image
+                    src={entry.logo.src}
+                    alt={entry.client}
+                    width={entry.logo.w}
+                    height={entry.logo.h}
+                    priority={i === 0}
+                    className="h-auto max-h-full w-full max-w-[220px] object-contain opacity-70 brightness-0 invert"
+                  />
+                </div>
+                {entry.photos[0] && (
+                  <div className="absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100">
+                    <Image
+                      src={entry.photos[0].src}
+                      alt={entry.photos[0].alt}
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+              </div>
               <figcaption className="mt-5 max-w-sm">
                 <div className="flex flex-wrap gap-x-3 gap-y-1">
                   {entry.services.map((service) => (
