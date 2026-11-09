@@ -43,6 +43,14 @@ export const socialMediaManagement: Service = {
       heading: "Standalone or integrated",
       body: "Social media management is offered as a standalone service. If website or SEO work is also underway, social content is tied to those traffic and conversion goals — but that's not a prerequisite.",
     },
+    {
+      heading: "How the fee is set",
+      body: "Three factors drive the price: how many platforms are managed, monthly content frequency, and the scale of production needs (on-site shoot days, editing time). A business that only needs content planning and publishing has a different scope than one that needs weekly on-site shoots. Scope is clarified in the discovery call and a firm fee follows.",
+    },
+    {
+      heading: "How results are measured",
+      body: "Follower count alone isn't a goal. Reach, engagement rate, traffic to the profile, and clicks from there to the site or WhatsApp are tracked together. Which content type actually drove a business result — a message, a booking, a sale — is called out separately in the monthly report.",
+    },
   ],
   process: [
     {
@@ -79,6 +87,11 @@ export const socialMediaManagement: Service = {
       question: "Do you manage ad budgets?",
       answer:
         "Organic management and content are the core of this service. If you need Meta/TikTok ad management, it's assessed in the consultation.",
+    },
+    {
+      question: "How do you decide which platforms we should be on?",
+      answer:
+        "It comes down to where your audience actually is and your business model — LinkedIn for B2B, Instagram for visual or product-led businesses, TikTok for reach with a younger audience. The discovery call looks at your current state and goal together and recommends 1-2 platforms; being on every platform isn't required.",
     },
   ],
   relatedPosts: [

@@ -21,8 +21,20 @@ export const googleReklamYonetimi: Service = {
         "Arama (Search) kampanyaları",
         "Alışveriş (Shopping) kampanyaları",
         "Görüntülü reklam (Display) ve yeniden pazarlama",
-        "Anahtar kelime, hedef kitle ve dönüşüm izleme kurulumu",
+        "Anahtar kelime araştırması ve negatif anahtar kelime listesi",
+        "Reklam metni varyasyonları ve A/B testi",
+        "Reklam uzantıları (çağrı, konum, site bağlantıları)",
+        "Dönüşüm izleme kurulumu (form gönderimi, arama, WhatsApp tıklaması)",
+        "Açılış sayfası ile reklam metni uyumunun kontrolü",
       ],
+    },
+    {
+      heading: "Hangi kampanya türü size uygun",
+      body: "Kampanya türü iş modeline göre değişir. Arama kampanyaları, aktif olarak hizmet/ürün arayan kullanıcıya anında görünürlük sağlar — çoğu hizmet işletmesi için ilk tercih. Alışveriş kampanyaları ürün kataloğu olan e-ticaret siteleri için uygundur; ürün görseli ve fiyatı doğrudan arama sonucunda gösterilir. Görüntülü reklam ve yeniden pazarlama ise markayı daha önce siteyi ziyaret etmiş ama henüz dönüşmemiş kullanıcıların önünde tutmak için kullanılır — genelde arama kampanyalarını tamamlayıcı olarak, tek başına değil.",
+    },
+    {
+      heading: "Yönetim bedeli neye göre belirlenir",
+      body: "Sabit bir fiyat listesi yoktur; yönetim bedeli reklam bütçesinin büyüklüğünden değil, işin karmaşıklığından belirlenir. Kampanya sayısı, hedeflenen anahtar kelime hacmi, ürün kataloğu büyüklüğü (alışveriş kampanyaları için) ve raporlama sıklığı gibi etkenler kapsamı belirler. Keşif görüşmesinde net bir ücret paylaşılır; reklam bütçesi bu ücretin dışındadır ve doğrudan Google'a ödenir.",
     },
     {
       heading: "Reklam hesabı size aittir",
@@ -70,6 +82,16 @@ export const googleReklamYonetimi: Service = {
       question: "SEO yerine bu hizmeti mi almalıyım?",
       answer:
         "Hayır, ikisi farklı amaca hizmet eder — SEO organik ve uzun vadelidir, Google Ads anlık ve ücretlidir. Birlikte ya da ayrı ayrı alınabilir.",
+    },
+    {
+      question: "Ne kadar sürede sonuç alınır?",
+      answer:
+        "Kampanyalar yayına alındıktan sonra ilk veriler günler içinde gelir, ama anlamlı bir optimizasyon döngüsü (hangi anahtar kelime/hedef kitle çalışıyor) genelde 2-4 hafta sürer. Rekabetçi sektörlerde öğrenme süresi daha uzun olabilir.",
+    },
+    {
+      question: "Yönetim ücreti reklam bütçesinin yüzdesi mi?",
+      answer:
+        "Hayır. Yüzde-komisyon modeli, bütçeyi gereksiz yere şişirme riski taşır. Ücret, işin kapsamına göre sabit olarak belirlenir ve reklam bütçesinden bağımsızdır.",
     },
   ],
   relatedPosts: [

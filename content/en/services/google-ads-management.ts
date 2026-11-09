@@ -21,8 +21,20 @@ export const googleAdsManagement: Service = {
         "Search campaigns",
         "Shopping campaigns",
         "Display and remarketing",
-        "Keyword, audience, and conversion tracking setup",
+        "Keyword research and negative keyword lists",
+        "Ad copy variants and A/B testing",
+        "Ad extensions (call, location, sitelinks)",
+        "Conversion tracking setup (form submits, calls, WhatsApp clicks)",
+        "Checking that the landing page matches the ad copy",
       ],
+    },
+    {
+      heading: "Which campaign type fits your business",
+      body: "The right campaign type depends on the business model. Search campaigns put you in front of people actively looking for your service — the first choice for most service businesses. Shopping campaigns suit e-commerce sites with a product catalog, showing the product image and price directly in the search result. Display and remarketing keep the brand in front of people who already visited the site but haven't converted yet — usually a complement to search campaigns, not a replacement.",
+    },
+    {
+      heading: "How the management fee is set",
+      body: "There's no fixed price list; the fee is based on the complexity of the work, not the size of the ad budget. Campaign count, targeted keyword volume, catalog size (for Shopping), and reporting frequency shape the scope. A clear fee is shared during the discovery call; ad spend is separate from this fee and paid directly to Google.",
     },
     {
       heading: "The ad account is yours",
@@ -70,6 +82,16 @@ export const googleAdsManagement: Service = {
       question: "Should I take this instead of SEO?",
       answer:
         "No, they serve different purposes — SEO is organic and long-term, Google Ads is immediate and paid. They can be taken together or separately.",
+    },
+    {
+      question: "How soon do I see results?",
+      answer:
+        "The first data comes in within days of launch, but a meaningful optimization cycle — learning which keywords and audiences actually work — usually takes 2-4 weeks. Competitive industries can take longer to settle.",
+    },
+    {
+      question: "Is the management fee a percentage of ad spend?",
+      answer:
+        "No. A percentage-of-spend model creates an incentive to inflate the budget unnecessarily. The fee is a fixed amount based on the scope of the work, independent of ad spend.",
     },
   ],
   relatedPosts: [

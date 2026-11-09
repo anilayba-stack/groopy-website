@@ -43,6 +43,14 @@ export const sosyalMedyaYonetimi: Service = {
       heading: "Bağımsız ya da bütünleşik",
       body: "Sosyal medya yönetimi bağımsız bir hizmet olarak sunulur. Web sitesi veya SEO çalışması da yürüyorsa, sosyal içerik o trafik ve dönüşüm hedefleriyle ilişkilendirilir; bu bir ön koşul değildir.",
     },
+    {
+      heading: "Ücret neye göre belirleniyor",
+      body: "Fiyatı belirleyen üç etken var: kaç platformda yönetim yapıldığı, aylık içerik sıklığı ve prodüksiyon ihtiyacının büyüklüğü (yerinde çekim gün sayısı, kurgu süresi). Yalnızca içerik planlama ve yayın isteyen bir işletmeyle, haftalık yerinde çekim gerektiren bir işletmenin kapsamı aynı değildir. Keşif görüşmesinde kapsam netleştirilip buna göre net bir ücret paylaşılır.",
+    },
+    {
+      heading: "Sonuçlar nasıl ölçülüyor",
+      body: "Takipçi sayısı tek başına bir hedef değildir. Erişim, etkileşim oranı, profile gelen trafik ve oradan siteye/WhatsApp'a geçen tıklamalar birlikte izlenir. Hangi içerik türünün gerçekten iş sonucuna (mesaj, randevu, satış) katkı sağladığı aylık raporda ayrıca belirtilir.",
+    },
   ],
   process: [
     {
@@ -79,6 +87,11 @@ export const sosyalMedyaYonetimi: Service = {
       question: "Reklam bütçesi yönetiyor musunuz?",
       answer:
         "Organik yönetim ve içerik bu hizmetin özü. Meta/TikTok reklam yönetimi ihtiyacınız varsa görüşmede değerlendirilir.",
+    },
+    {
+      question: "Hangi platformda olmamız gerektiğine nasıl karar veriliyor?",
+      answer:
+        "Hedef kitlenin nerede olduğuna ve iş modeline bakılır — B2B için LinkedIn, görsel/ürün odaklı işler için Instagram, genç kitleye erişim için TikTok. Keşif görüşmesinde mevcut durum ve hedef birlikte değerlendirilip 1-2 platform önerilir; her platformda birden olmak zorunlu değildir.",
     },
   ],
   relatedPosts: [
