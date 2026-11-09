@@ -13,7 +13,6 @@ import {
   buildMetadata,
   blogPostingSchema,
   breadcrumbSchema,
-  faqSchema,
 } from "@/lib/seo";
 import { routes, enRoutes } from "@/lib/routes";
 import { POST_SLUG_TR_TO_EN } from "@/lib/i18n-routes";
@@ -76,11 +75,7 @@ export default async function BlogPostPage({
   return (
     <>
       <JsonLd
-        data={[
-          blogPostingSchema(meta),
-          breadcrumbSchema(crumbs),
-          ...(meta.faq && meta.faq.length > 0 ? [faqSchema(meta.faq)] : []),
-        ]}
+        data={[blogPostingSchema(meta), breadcrumbSchema(crumbs)]}
       />
 
       <article>

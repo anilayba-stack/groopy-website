@@ -8,8 +8,7 @@ import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { FaqList } from "@/components/ui/FaqList";
-import { JsonLd } from "@/components/JsonLd";
-import { buildMetadata, faqSchema } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { enRoutes, routes } from "@/lib/routes";
 import type { Faq } from "@content/types";
 import { primaryServices } from "@content/en/services";
@@ -105,7 +104,6 @@ export default function EnHomePage() {
       </Section>
 
       <Section surface>
-        <JsonLd data={faqSchema(homeFaq)} />
         <div className="max-w-3xl">
           <FaqList items={homeFaq} title="Frequently asked questions" />
         </div>

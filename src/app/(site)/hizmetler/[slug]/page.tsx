@@ -16,7 +16,6 @@ import {
   buildMetadata,
   serviceSchema,
   breadcrumbSchema,
-  faqSchema,
 } from "@/lib/seo";
 import { routes, enRoutes } from "@/lib/routes";
 import { SERVICE_SLUG_TR_TO_EN } from "@/lib/i18n-routes";
@@ -71,11 +70,7 @@ export default async function ServiceDetailPage({
   return (
     <>
       <JsonLd
-        data={[
-          serviceSchema(service),
-          breadcrumbSchema(crumbs),
-          ...(service.faq && service.faq.length > 0 ? [faqSchema(service.faq)] : []),
-        ]}
+        data={[serviceSchema(service), breadcrumbSchema(crumbs)]}
       />
 
       <section className="service-hero relative isolate overflow-hidden border-b border-[var(--color-border)]">

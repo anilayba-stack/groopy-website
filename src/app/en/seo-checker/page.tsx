@@ -10,7 +10,6 @@ import { JsonLd } from "@/components/JsonLd";
 import {
   buildMetadata,
   breadcrumbSchema,
-  faqSchema,
   softwareApplicationSchema,
 } from "@/lib/seo";
 import { routes, enRoutes } from "@/lib/routes";
@@ -117,7 +116,6 @@ export default function SeoToolPage() {
       <JsonLd
         data={[
           breadcrumbSchema(crumbs),
-          faqSchema(faq),
           softwareApplicationSchema({
             name: "Groopy Free SEO Checker Tool",
             description:

@@ -16,7 +16,6 @@ import {
   buildMetadata,
   serviceSchema,
   breadcrumbSchema,
-  faqSchema,
 } from "@/lib/seo";
 import { enRoutes, routes } from "@/lib/routes";
 import { SERVICE_SLUG_EN_TO_TR } from "@/lib/i18n-routes";
@@ -75,7 +74,6 @@ export default async function EnServiceDetailPage({
         data={[
           serviceSchema(service, { path: enRoutes.service(service.slug), locale: "en" }),
           breadcrumbSchema(crumbs),
-          ...(service.faq && service.faq.length > 0 ? [faqSchema(service.faq)] : []),
         ]}
       />
 

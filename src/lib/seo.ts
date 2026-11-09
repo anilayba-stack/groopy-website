@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { SITE } from "./site-config";
-import type { Faq } from "@content/types";
 import type { BlogPostMeta, Service } from "@content/types";
 
 const BASE = SITE.url;
@@ -99,6 +98,27 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
 
 type JsonLd = Record<string, unknown>;
 
+/**
+ * Kurucu Person düğümü — tam/inline döner, yalnızca `@id` referansı DEĞİL.
+ * Google her sayfanın JSON-LD graph'ını AYRI değerlendirir; bir sayfada
+ * yalnızca `{ "@id": ".../#founder" }` verilip Person düğümü başka bir
+ * sayfada (ör. /hakkimizda) tanımlıysa, o referans o sayfanın dışında asılı
+ * kalır. Bu yüzden founder'ın göründüğü her yerde (Organization, blog
+ * yazarı, /hakkimizda) bu fonksiyon çağrılır — aynı `@id` ile tekrarlanan
+ * inline veri, Google için geçerli ve tutarlıdır.
+ */
+export function founderSchema(locale: "tr" | "en" = "tr"): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE}/#founder`,
+    name: SITE.founder.name,
+    jobTitle: locale === "en" ? SITE.founder.roleEn : SITE.founder.role,
+    worksFor: { "@id": `${BASE}/#organization` },
+    sameAs: [SITE.founder.linkedin],
+  };
+}
+
 export function organizationSchema(locale: "tr" | "en" = "tr"): JsonLd {
   return {
     "@context": "https://schema.org",
@@ -108,7 +128,12 @@ export function organizationSchema(locale: "tr" | "en" = "tr"): JsonLd {
     alternateName: SITE.alternateName,
     legalName: SITE.legalName,
     url: BASE,
-    logo: `${BASE}/icon.png`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${BASE}/icon.png`,
+      width: 512,
+      height: 512,
+    },
     description: locale === "en" ? SITE.descriptionEn : SITE.descriptionTr,
     inLanguage: locale === "en" ? "en" : "tr-TR",
     email: SITE.contact.email,
@@ -122,7 +147,7 @@ export function organizationSchema(locale: "tr" | "en" = "tr"): JsonLd {
       areaServed: SITE.areaServed,
       availableLanguage: ["Turkish", "English"],
     },
-    founder: { "@id": `${BASE}/#founder` },
+    founder: founderSchema(locale),
     sameAs: Object.values(SITE.social),
   };
 }
@@ -195,27 +220,16 @@ export function blogPostingSchema(
     headline: meta.title,
     description: meta.description,
     url,
+    image: meta.coverImage ? `${BASE}${meta.coverImage.src}` : `${BASE}/icon.png`,
     datePublished: meta.publishedAt,
     dateModified: meta.updatedAt ?? meta.publishedAt,
     author:
       meta.author === SITE.founder.name
-        ? { "@id": `${BASE}/#founder` }
+        ? founderSchema(locale)
         : { "@type": "Person", name: meta.author },
     publisher: { "@id": `${BASE}/#organization` },
     inLanguage: locale === "en" ? "en" : "tr-TR",
     mainEntityOfPage: url,
-  };
-}
-
-export function faqSchema(faqs: Faq[]): JsonLd {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.question,
-      acceptedAnswer: { "@type": "Answer", text: f.answer },
-    })),
   };
 }
 

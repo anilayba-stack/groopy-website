@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
-import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
+import { buildMetadata, breadcrumbSchema, founderSchema } from "@/lib/seo";
 import { enRoutes, routes } from "@/lib/routes";
-import { SITE } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata({
   title: "About: Istanbul-Based Software Company",
@@ -17,16 +17,6 @@ export const metadata: Metadata = buildMetadata({
   alternatePath: routes.about,
 });
 
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": `${SITE.url}/#founder`,
-  name: SITE.founder.name,
-  jobTitle: SITE.founder.roleEn,
-  worksFor: { "@id": `${SITE.url}/#organization` },
-  sameAs: [SITE.founder.linkedin],
-};
-
 export default function EnAboutPage() {
   const crumbs = [
     { name: "Home", path: enRoutes.home },
@@ -35,7 +25,7 @@ export default function EnAboutPage() {
 
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(crumbs), personSchema]} />
+      <JsonLd data={[breadcrumbSchema(crumbs), founderSchema("en")]} />
       <Container className="pt-10">
         <Breadcrumbs ariaLabel="Breadcrumb" items={crumbs} />
       </Container>
@@ -74,6 +64,25 @@ export default function EnAboutPage() {
               management — each offered independently.
             </li>
           </ul>
+
+          <h2>Who we work with</h2>
+          <p>
+            Groopy isn&apos;t limited to one industry. We run website,
+            SEO&nbsp;+&nbsp;GEO, Google Ads Management, and social media
+            management projects for dentists and dental clinics, doctors and
+            healthcare providers, e-commerce sites, restaurants, and
+            businesses across many other sectors. Search behavior and the
+            customer journey differ by industry, so each project is built
+            around that business&apos;s actual needs rather than a
+            one-size-fits-all template.
+          </p>
+          <p>
+            You can see some of our real projects on the{" "}
+            <Link href={enRoutes.work} className="underline underline-offset-2">
+              case studies
+            </Link>{" "}
+            page.
+          </p>
         </div>
       </Section>
 

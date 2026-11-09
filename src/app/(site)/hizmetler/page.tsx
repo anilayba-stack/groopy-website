@@ -7,7 +7,7 @@ import { ServiceCards } from "@/components/sections/ServiceCards";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FaqList } from "@/components/ui/FaqList";
 import { JsonLd } from "@/components/JsonLd";
-import { buildMetadata, breadcrumbSchema, faqSchema } from "@/lib/seo";
+import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { routes, enRoutes } from "@/lib/routes";
 import { primaryServices } from "@content/services";
 import type { Faq } from "@content/types";
@@ -52,7 +52,6 @@ export default function ServicesPage() {
             { name: "Ana sayfa", path: "/" },
             { name: "Hizmetler", path: routes.services },
           ]),
-          faqSchema(faq),
         ]}
       />
       <Container className="pt-10">

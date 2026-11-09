@@ -13,7 +13,6 @@ import {
   buildMetadata,
   blogPostingSchema,
   breadcrumbSchema,
-  faqSchema,
 } from "@/lib/seo";
 import { enRoutes, routes } from "@/lib/routes";
 import { POST_SLUG_EN_TO_TR } from "@/lib/i18n-routes";
@@ -80,7 +79,6 @@ export default async function EnBlogPostPage({
         data={[
           blogPostingSchema(meta, { path: enRoutes.post(meta.slug), locale: "en" }),
           breadcrumbSchema(crumbs),
-          ...(meta.faq && meta.faq.length > 0 ? [faqSchema(meta.faq)] : []),
         ]}
       />
 

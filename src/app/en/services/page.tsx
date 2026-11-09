@@ -7,7 +7,7 @@ import { ServiceCards } from "@/components/sections/ServiceCards";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FaqList } from "@/components/ui/FaqList";
 import { JsonLd } from "@/components/JsonLd";
-import { buildMetadata, breadcrumbSchema, faqSchema } from "@/lib/seo";
+import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { enRoutes, routes } from "@/lib/routes";
 import { primaryServices } from "@content/en/services";
 import type { Faq } from "@content/types";
@@ -53,7 +53,6 @@ export default function EnServicesPage() {
             { name: "Home", path: enRoutes.home },
             { name: "Services", path: enRoutes.services },
           ]),
-          faqSchema(faq),
         ]}
       />
       <Container className="pt-10">

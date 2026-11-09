@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
-import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
+import { buildMetadata, breadcrumbSchema, founderSchema } from "@/lib/seo";
 import { routes, enRoutes } from "@/lib/routes";
-import { SITE } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata({
   title: "İstanbul Merkezli Yazılım Şirketi Hakkımızda",
@@ -16,16 +16,6 @@ export const metadata: Metadata = buildMetadata({
   alternatePath: enRoutes.about,
 });
 
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": `${SITE.url}/#founder`,
-  name: SITE.founder.name,
-  jobTitle: SITE.founder.role,
-  worksFor: { "@id": `${SITE.url}/#organization` },
-  sameAs: [SITE.founder.linkedin],
-};
-
 export default function AboutPage() {
   const crumbs = [
     { name: "Ana sayfa", path: "/" },
@@ -34,7 +24,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(crumbs), personSchema]} />
+      <JsonLd data={[breadcrumbSchema(crumbs), founderSchema()]} />
       <Container className="pt-10">
         <Breadcrumbs items={crumbs} />
       </Container>
@@ -72,6 +62,24 @@ export default function AboutPage() {
               yönetimi — ve her biri bağımsız olarak sunulur.
             </li>
           </ul>
+
+          <h2>Kimlerle çalışıyoruz</h2>
+          <p>
+            Groopy, sektör sınırlaması olmadan çalışır. Diş hekimleri ve diş
+            klinikleri, doktorlar ve sağlık kuruluşları, e-ticaret siteleri,
+            restoranlar ve daha pek çok sektörden işletmeyle web sitesi,
+            SEO&nbsp;+&nbsp;GEO, Google Reklam Yönetimi ve sosyal medya
+            yönetimi projeleri yürütülür. Her sektörün arama davranışı ve
+            müşteri yolculuğu farklıdır; bu yüzden hazır bir şablon değil, o
+            işletmenin gerçek ihtiyacına göre kurulmuş bir çözüm sunulur.
+          </p>
+          <p>
+            Birlikte çalıştığımız gerçek projelerden bazılarını{" "}
+            <Link href={routes.work} className="underline underline-offset-2">
+              çalışmalar
+            </Link>{" "}
+            sayfasında görebilirsiniz.
+          </p>
         </div>
       </Section>
 
