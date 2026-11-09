@@ -3,10 +3,8 @@ import { SITE } from "@/lib/site-config";
 import { routes, enRoutes } from "@/lib/routes";
 import { serviceSlugs } from "@content/services";
 import { sortedPosts } from "@content/blog";
-import { caseStudySlugs } from "@content/case-studies";
 import { serviceSlugs as enServiceSlugs } from "@content/en/services";
 import { sortedPosts as enSortedPosts } from "@content/en/blog";
-import { caseStudySlugs as enCaseStudySlugs } from "@content/en/case-studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
@@ -33,15 +31,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...enServiceSlugs().map((slug) => ({ path: enRoutes.service(slug), priority: 0.8 })),
   ];
 
-  const casePaths = [
-    ...caseStudySlugs().map((slug) => ({ path: routes.caseStudy(slug), priority: 0.5 })),
-    ...enCaseStudySlugs().map((slug) => ({ path: enRoutes.caseStudy(slug), priority: 0.4 })),
-  ];
-
   const entries: MetadataRoute.Sitemap = [
     ...staticPaths,
     ...servicePaths,
-    ...casePaths,
   ].map((e) => ({
     url: `${base}${e.path === "/" ? "" : e.path}`,
     changeFrequency: "monthly",

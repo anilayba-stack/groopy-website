@@ -74,18 +74,6 @@ export interface BlogPost {
   Body: ComponentType;
 }
 
-export interface CaseStudy {
-  slug: string;
-  title: string;
-  description: string;
-  client: string;
-  publishedAt: string;
-  /** İlgili hizmet hattı */
-  serviceLine: string;
-  /** Doğrulanabilir sonuçlar — yoksa vaka yayımlanmaz */
-  results: { label: string; value: string }[];
-  Body: ComponentType;
-}
 
 /**
  * Müşteri bazlı gerçek çalışma kanıtı — sonuç/rakam iddiası TAŞIMAZ.
