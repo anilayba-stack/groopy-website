@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, Phone, MessageCircle, Star } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -70,6 +70,17 @@ export default function EnContactPage() {
                   className="text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
                 >
                   WhatsApp
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Star className="size-4 text-[var(--color-accent)]" aria-hidden />
+                <a
+                  href={SITE.social.googleBusiness}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+                >
+                  View on Google
                 </a>
               </div>
             </div>

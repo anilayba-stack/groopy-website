@@ -46,6 +46,7 @@ export const SITE = {
   social: {
     instagram: "https://instagram.com/groopy_agency",
     linkedin: "https://www.linkedin.com/company/groopy-agency/",
+    googleBusiness: "https://share.google/9nXutldXyw11TXrWV",
   } as Record<string, string>,
 
   /** E-E-A-T — Article yazarı ve Hakkımızda. */
