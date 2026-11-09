@@ -12,11 +12,14 @@ export const workGallery: WorkEntry[] = [
     services: ["Website development", "SEO and GEO strategy", "Google Ads management", "Social media management"],
     summary: "We run website development, SEO+GEO strategy, and Google Ads management for Tike Zekeriyaköy; a frame from a shoot day under our social media management service.",
     website: { url: "https://tikezekeriyakoy.com/", label: "tikezekeriyakoy.com" },
+    logo: { src: "/logos/tike-zekeriyakoy.png", w: 2000, h: 988 },
     rawPhoto: true,
     photos: [
       {
         src: "/images/work/tike-zekeriyakoy-urun-cekimi.jpg",
         alt: "Studio lighting and camera setup during a product photo shoot for Tike in Zekeriyaköy",
+        w: 900,
+        h: 1600,
       },
     ],
     date: "2026-10-25",
@@ -28,11 +31,14 @@ export const workGallery: WorkEntry[] = [
     services: ["Website development", "SEO and GEO strategy", "Google Ads management", "Social media management"],
     summary: "We run website development, SEO+GEO strategy, and Google Ads management for Dt. Büşra Kayan; a frame from her clinic under our social media management service.",
     website: { url: "https://dtbusrakayan.com/", label: "dtbusrakayan.com" },
+    logo: { src: "/logos/dt-busra-kayan.png", w: 1400, h: 780 },
     rawPhoto: true,
     photos: [
       {
         src: "/images/work/busra-kayan-klinik.jpg",
         alt: "A portrait of Dt. Büşra Kayan wearing dental loupes and a surgical mask in her clinic",
+        w: 900,
+        h: 1600,
       },
     ],
     date: "2026-10-28",
@@ -44,11 +50,14 @@ export const workGallery: WorkEntry[] = [
     services: ["Website development", "SEO and GEO strategy"],
     summary: "We run website development and SEO+GEO strategy for Kozmoz724; a screenshot from the live site.",
     website: { url: "https://kozmoz724.com/", label: "kozmoz724.com" },
+    logo: { src: "/logos/kozmoz.png", w: 2000, h: 430 },
     rawPhoto: true,
     photos: [
       {
         src: "/images/work/kozmoz724-site-ekrani.jpg",
         alt: "Homepage screenshot from Kozmoz724's live website, presenting its shopping and health categories",
+        w: 863,
+        h: 691,
       },
     ],
     date: "2026-11-09",
@@ -60,11 +69,14 @@ export const workGallery: WorkEntry[] = [
     services: ["Website development", "SEO and GEO strategy"],
     summary: "We run website development and SEO+GEO strategy for Fzt. Mevlüt Bilgin; a screenshot from the live site.",
     website: { url: "https://fztmevlutbilgin.com/", label: "fztmevlutbilgin.com" },
+    logo: { src: "/logos/mevlut-bilgin.png", w: 600, h: 144 },
     rawPhoto: true,
     photos: [
       {
         src: "/images/work/mevlut-bilgin-site-ekrani.jpg",
         alt: "Homepage screenshot from Fzt. Mevlüt Bilgin's live website, showing a manual therapy session",
+        w: 300,
+        h: 400,
       },
     ],
     date: "2026-11-09",

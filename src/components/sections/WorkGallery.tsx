@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import type { WorkEntry } from "@content/types";
+import { WorkPhotoLightbox } from "./WorkPhotoLightbox";
 
 const dateFmtTr = new Intl.DateTimeFormat("tr-TR", { year: "numeric", month: "long" });
 const dateFmtEn = new Intl.DateTimeFormat("en-US", { year: "numeric", month: "long" });
@@ -32,18 +32,12 @@ export function WorkGallery({ entries, locale = "tr" }: WorkGalleryProps) {
         return (
           <li key={entry.slug} className={`${layout.span} ${layout.offset}`}>
             <figure>
-              {entry.photos[0] && (
-                <div className={`relative w-full ${layout.aspect}`}>
-                  <Image
-                    src={entry.photos[0].src}
-                    alt={entry.photos[0].alt}
-                    priority={i === 0}
-                    fill
-                    sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover grayscale brightness-95 transition-[filter] duration-500 ease-out hover:grayscale-0 hover:brightness-100"
-                  />
-                </div>
-              )}
+              <WorkPhotoLightbox
+                entry={entry}
+                aspect={layout.aspect}
+                priority={i === 0}
+                locale={locale}
+              />
               <figcaption className="mt-5 max-w-sm">
                 <div className="flex flex-wrap gap-x-3 gap-y-1">
                   {entry.services.map((service) => (

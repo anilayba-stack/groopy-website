@@ -89,9 +89,12 @@ export interface WorkEntry {
   /** Kısa, somut açıklama — abartılı/pazarlama dili ve sonuç iddiası yok */
   summary: string;
   website?: { url: string; label: string };
+  /** Galeri kartında varsayılan olarak gösterilen müşteri logosu — tıklanınca gerçek fotoğraf açılır. */
+  logo: { src: string; w: number; h: number };
   /** true = görsel olduğu gibi gösterilir (filtre yok); varsayılan false — sıcak ton filtresi uygulanır */
   rawPhoto?: boolean;
-  photos: { src: string; alt: string }[];
+  /** w/h — lightbox'ta doğru en-boy oranıyla göstermek için gerçek piksel boyutu. */
+  photos: { src: string; alt: string; w: number; h: number }[];
   /** ISO tarih */
   date: string;
 }
