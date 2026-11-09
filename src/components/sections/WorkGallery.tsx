@@ -10,58 +10,75 @@ interface WorkGalleryProps {
   locale?: "tr" | "en";
 }
 
+/**
+ * İkili ritim: büyük/küçük, ofsetli/ofsetsiz, dikey/yatay kadraj — editoryal
+ * bir galeri hissi için art arda gelen girişler hizalı bir ızgaraya değil,
+ * hafif asimetrik bir düzene oturur. Yeni girişler eklendikçe desen tekrar eder.
+ */
+const LAYOUT = [
+  { span: "lg:col-span-6", aspect: "aspect-[5/4]", offset: "" },
+  { span: "lg:col-span-5 lg:col-start-8", aspect: "aspect-[3/4]", offset: "lg:mt-20" },
+] as const;
+
 export function WorkGallery({ entries, locale = "tr" }: WorkGalleryProps) {
   if (entries.length === 0) return null;
 
   const dateFmt = locale === "en" ? dateFmtEn : dateFmtTr;
 
   return (
-    <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {entries.map((entry) => (
-        <li key={entry.slug}>
-          <figure className="flex h-full flex-col overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]">
-            {entry.photos[0] && (
-              <div className="relative aspect-[4/5] w-full">
-                <Image
-                  src={entry.photos[0].src}
-                  alt={entry.photos[0].alt}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className={`object-cover brightness-75 transition-[filter] duration-300 ease-out hover:brightness-100 ${
-                    entry.rawPhoto ? "" : "sepia-[.45] saturate-150 contrast-[1.05]"
-                  }`}
-                />
-              </div>
-            )}
-            <figcaption className="flex flex-1 flex-col p-4">
-              <div className="flex flex-wrap gap-1.5">
-                {entry.services.map((service) => (
-                  <span
-                    key={service}
-                    className="rounded-full border border-[var(--color-border)] px-2 py-0.5 text-xs text-[var(--color-text-muted)]"
-                  >
-                    {service}
-                  </span>
-                ))}
-              </div>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--color-text)]">{entry.summary}</p>
-              <p className="mt-2 text-xs text-[var(--color-text-faint)]">
-                {entry.client} · {entry.location} · {dateFmt.format(new Date(entry.date))}
-              </p>
-              {entry.website && (
-                <a
-                  href={entry.website.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
-                >
-                  {entry.website.label} <ExternalLink className="size-3.5" aria-hidden />
-                </a>
+    <ul className="grid grid-cols-1 gap-x-6 gap-y-16 lg:grid-cols-12 lg:gap-y-24">
+      {entries.map((entry, i) => {
+        const layout = LAYOUT[i % LAYOUT.length];
+        return (
+          <li key={entry.slug} className={`${layout.span} ${layout.offset}`}>
+            <figure>
+              {entry.photos[0] && (
+                <div className={`relative w-full ${layout.aspect}`}>
+                  <Image
+                    src={entry.photos[0].src}
+                    alt={entry.photos[0].alt}
+                    priority={i === 0}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover grayscale brightness-95 transition-[filter] duration-500 ease-out hover:grayscale-0 hover:brightness-100"
+                  />
+                </div>
               )}
-            </figcaption>
-          </figure>
-        </li>
-      ))}
+              <figcaption className="mt-5 max-w-sm">
+                <div className="flex flex-wrap gap-x-3 gap-y-1">
+                  {entry.services.map((service) => (
+                    <span
+                      key={service}
+                      className="text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--color-text-faint)]"
+                    >
+                      {service}
+                    </span>
+                  ))}
+                </div>
+                <h2 className="mt-3 text-2xl font-semibold leading-[1.1] tracking-tight text-[var(--color-text)] sm:text-3xl">
+                  {entry.client}
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                  {entry.summary}
+                </p>
+                <p className="mt-3 text-xs text-[var(--color-text-faint)]">
+                  {entry.location} · {dateFmt.format(new Date(entry.date))}
+                </p>
+                {entry.website && (
+                  <a
+                    href={entry.website.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
+                  >
+                    {entry.website.label} <ExternalLink className="size-3.5" aria-hidden />
+                  </a>
+                )}
+              </figcaption>
+            </figure>
+          </li>
+        );
+      })}
     </ul>
   );
 }

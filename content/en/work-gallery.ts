@@ -37,4 +37,36 @@ export const workGallery: WorkEntry[] = [
     ],
     date: "2026-10-28",
   },
+  {
+    slug: "kozmoz724",
+    client: "Kozmoz724",
+    location: "Istanbul",
+    services: ["Website development", "SEO and GEO strategy"],
+    summary: "We run website development and SEO+GEO strategy for Kozmoz724; a screenshot from the live site.",
+    website: { url: "https://kozmoz724.com/", label: "kozmoz724.com" },
+    rawPhoto: true,
+    photos: [
+      {
+        src: "/images/work/kozmoz724-site-ekrani.jpg",
+        alt: "Homepage screenshot from Kozmoz724's live website, presenting its shopping and health categories",
+      },
+    ],
+    date: "2026-11-09",
+  },
+  {
+    slug: "mevlut-bilgin",
+    client: "Fzt. Mevlüt Bilgin",
+    location: "Istanbul",
+    services: ["Website development", "SEO and GEO strategy"],
+    summary: "We run website development and SEO+GEO strategy for Fzt. Mevlüt Bilgin; a screenshot from the live site.",
+    website: { url: "https://fztmevlutbilgin.com/", label: "fztmevlutbilgin.com" },
+    rawPhoto: true,
+    photos: [
+      {
+        src: "/images/work/mevlut-bilgin-site-ekrani.jpg",
+        alt: "Homepage screenshot from Fzt. Mevlüt Bilgin's live website, showing a manual therapy session",
+      },
+    ],
+    date: "2026-11-09",
+  },
 ];
