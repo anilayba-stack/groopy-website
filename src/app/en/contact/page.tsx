@@ -80,7 +80,7 @@ export default function EnContactPage() {
                   rel="noopener noreferrer"
                   className="text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
                 >
-                  View on Google
+                  Google Reviews
                 </a>
               </div>
             </div>

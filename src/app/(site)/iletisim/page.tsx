@@ -79,7 +79,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
                 >
-                  Google&apos;da görüntüle
+                  Google&apos;da inceleyin
                 </a>
               </div>
             </div>
