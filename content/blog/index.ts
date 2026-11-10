@@ -1,5 +1,9 @@
 import type { BlogPost } from "../types";
 import {
+  meta as aiSohbetBotlariMarkaTakibiMeta,
+  Body as AiSohbetBotlariMarkaTakibiBody,
+} from "./ai-sohbet-botlarinda-marka-takibi/post";
+import {
   meta as webSitesiMaliyeti2026Meta,
   Body as WebSitesiMaliyeti2026Body,
 } from "./web-sitesi-maliyeti-2026/post";
@@ -115,6 +119,10 @@ export const posts: BlogPost[] = [
   { meta: googleAdsMiSeoMuMeta, Body: GoogleAdsMiSeoMuBody },
   { meta: seoAjansiSecerkenMeta, Body: SeoAjansiSecerkenBody },
   { meta: webSitesiMaliyeti2026Meta, Body: WebSitesiMaliyeti2026Body },
+  {
+    meta: aiSohbetBotlariMarkaTakibiMeta,
+    Body: AiSohbetBotlariMarkaTakibiBody,
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

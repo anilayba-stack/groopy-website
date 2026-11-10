@@ -142,6 +142,15 @@ export function Body() {
           Log the results with the date; repeat monthly to track change.
         </li>
       </ol>
+      <p>
+        If you&apos;d like to run this test across Perplexity, Gemini, and
+        Claude too, not just ChatGPT, see our{" "}
+        <Link href="/en/blog/ai-chatbot-brand-tracking">
+          article with ready-to-use prompts and a logging template for all
+          four platforms
+        </Link>
+        .
+      </p>
 
       <h2 id="off-site">Why off-site visibility matters</h2>
       <p>

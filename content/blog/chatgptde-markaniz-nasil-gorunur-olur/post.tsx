@@ -139,6 +139,15 @@ export function Body() {
           değişimi takip edin.
         </li>
       </ol>
+      <p>
+        Bu testi yalnızca ChatGPT&apos;de değil Perplexity, Gemini ve
+        Claude&apos;da da birlikte yürütmek isterseniz,{" "}
+        <Link href="/blog/ai-sohbet-botlarinda-marka-takibi">
+          dört platform için hazır promptlar ve bir kayıt şablonu
+          hazırladığımız yazımıza
+        </Link>{" "}
+        bakabilirsiniz.
+      </p>
 
       <h2 id="site-disi">Site-dışı görünürlük neden önemli</h2>
       <p>

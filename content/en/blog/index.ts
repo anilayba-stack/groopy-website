@@ -1,4 +1,8 @@
 import type { BlogPost } from "../../types";
+import {
+  meta as aiChatbotBrandTrackingMeta,
+  Body as AiChatbotBrandTrackingBody,
+} from "./ai-chatbot-brand-tracking/post";
 import { meta as websiteCost2026Meta, Body as WebsiteCost2026Body } from "./website-cost-2026/post";
 import {
   meta as howToChooseAnSeoAgencyMeta,
@@ -121,6 +125,10 @@ export const posts: BlogPost[] = [
   { meta: googleAdsOrSeoMeta, Body: GoogleAdsOrSeoBody },
   { meta: howToChooseAnSeoAgencyMeta, Body: HowToChooseAnSeoAgencyBody },
   { meta: websiteCost2026Meta, Body: WebsiteCost2026Body },
+  {
+    meta: aiChatbotBrandTrackingMeta,
+    Body: AiChatbotBrandTrackingBody,
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
