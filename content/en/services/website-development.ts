@@ -7,9 +7,9 @@ export const websiteDevelopment: Service = {
   featured: true,
   navLabel: "Website & Software Development",
   title: "Website & Software Development",
-  metaTitle: "Website & Software Development",
+  metaTitle: "Website & Software Development in Istanbul",
   metaDescription:
-    "We build fast, findable, easy-to-maintain websites and custom software for your business. Next.js-based, Core Web Vitals-compliant, built around a measurable outcome.",
+    "Our Istanbul-based team builds fast, findable, easy-to-maintain websites and custom software for your business. Next.js-based, Core Web Vitals-compliant, built around a measurable outcome.",
   summary:
     "A fast-loading website your customers find through Google and AI search.",
   tldr: "Groopy builds websites and internal software from scratch with Next.js. The priorities: fast loading (Core Web Vitals), a structure that's readable by search engines and AI, and clean code that's easy to hand over. No off-the-shelf themes — every project is tied to a measurable business goal.",

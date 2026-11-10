@@ -6,9 +6,9 @@ export const seoVeGeo: Service = {
   tier: "primary",
   navLabel: "SEO ve GEO Stratejisi",
   title: "SEO ve GEO (Yapay Zeka Arama) Stratejisi",
-  metaTitle: "SEO ve GEO Stratejisi",
+  metaTitle: "İstanbul'da SEO ve GEO Stratejisi",
   metaDescription:
-    "Google aramasında ve yapay zeka yanıtlarında (ChatGPT, Perplexity, AI Overviews) bulunur olmak için tek bir strateji. Teknik SEO, içerik mimarisi ve GEO altyapısı.",
+    "İstanbul'daki işletmeler için Google aramasında ve yapay zeka yanıtlarında (ChatGPT, Perplexity, AI Overviews) bulunur olmak üzere tek bir strateji. Teknik SEO, içerik mimarisi ve GEO altyapısı.",
   summary:
     "Sitenizi Google sıralamasında yükselten teknik SEO, içerik ve GEO çalışması.",
   tldr: "SEO (Arama Motoru Optimizasyonu), sayfanızın Google'da sıralanmasını hedefler; GEO (Generative Engine Optimization) ise ChatGPT, Perplexity, Gemini ve Google AI Overviews gibi yapay zeka yanıtlarının içinde kaynak olarak gösterilmesini hedefler. İkisi birbirinin yerine geçmez — birlikte kurulur. Groopy teknik temeli, içerik mimarisini ve yapılandırılmış veriyi tek planda toplar.",

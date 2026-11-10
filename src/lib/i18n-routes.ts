@@ -11,6 +11,7 @@ export const SEGMENT_TR_TO_EN: Record<string, string> = {
   calismalar: "case-studies",
   blog: "blog",
   "seo-analiz-araci": "seo-checker",
+  "ai-gorunurluk-testi": "ai-visibility-check",
 };
 
 export const SEGMENT_EN_TO_TR: Record<string, string> = Object.fromEntries(

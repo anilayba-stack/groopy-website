@@ -7,9 +7,9 @@ export const webSitesiGelistirme: Service = {
   featured: true,
   navLabel: "Web Sitesi ve Yazılım Geliştirme",
   title: "Web Sitesi ve Yazılım Geliştirme",
-  metaTitle: "Web Sitesi ve Yazılım Geliştirme",
+  metaTitle: "İstanbul'da Web Sitesi ve Yazılım Geliştirme",
   metaDescription:
-    "İşletmeniz için hızlı, bulunabilir ve bakımı kolay web siteleri ve özel yazılım geliştiriyoruz. Next.js tabanlı, Core Web Vitals'a uygun, ölçülebilir sonuç odaklı.",
+    "İstanbul merkezli ekibimiz, işletmeniz için hızlı, bulunabilir ve bakımı kolay web siteleri ve özel yazılım geliştiriyor. Next.js tabanlı, Core Web Vitals'a uygun, ölçülebilir sonuç odaklı.",
   summary:
     "Müşterinizin sizi Google ve yapay zekâ aramalarında bulduğu, hızlı açılan bir web sitesi.",
   tldr: "Groopy, işletmelerin web sitelerini ve iç yazılımlarını Next.js ile sıfırdan geliştirir. Öncelik: hızlı yüklenme (Core Web Vitals), arama motorları ve yapay zekâ için okunabilir yapı, ve devralması kolay temiz kod. Hazır tema kullanılmaz; her proje ölçülebilir bir iş hedefine bağlanır.",

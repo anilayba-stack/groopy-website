@@ -135,7 +135,12 @@ export function Body() {
       <p>
         Gemini is tied into Google&apos;s search infrastructure, so your
         visibility here can be related to your classic Google SEO
-        fundamentals too.
+        fundamentals too. Instead of asking these manually, you can test
+        your brand in Gemini instantly with{" "}
+        <Link href="/en/ai-visibility-check">
+          our free AI visibility check
+        </Link>
+        .
       </p>
 
       <h3 id="claude">

@@ -38,13 +38,13 @@ export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
         <Logo priority href={home} />
 
         {/* Masaüstü */}
-        <nav className="hidden items-center gap-1 md:flex" aria-label={t.navLabel}>
+        <nav className="hidden items-center gap-1 lg:flex" aria-label={t.navLabel}>
           {nav.map((group) =>
             group.children ? (
               <div key={group.label} className="group relative">
                 <Link
                   href={group.href ?? "#"}
-                  className="inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
+                  className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
                 >
                   {group.label}
                   <ChevronDown className="size-3.5" aria-hidden />
@@ -66,7 +66,7 @@ export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
                 key={group.href}
                 href={group.href ?? "#"}
                 aria-current={pathname === group.href ? "page" : undefined}
-                className="rounded-md px-3 py-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[current=page]:text-[var(--color-text)]"
+                className="whitespace-nowrap rounded-md px-3 py-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[current=page]:text-[var(--color-text)]"
               >
                 {group.label}
               </Link>
@@ -74,7 +74,7 @@ export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
           )}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <LangSwitcher locale={locale} />
           <ButtonLink href={cta.href}>{cta.label}</ButtonLink>
         </div>
@@ -83,7 +83,7 @@ export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md p-2 text-[var(--color-text)] md:hidden"
+          className="rounded-md p-2 text-[var(--color-text)] lg:hidden"
           aria-expanded={open}
           aria-label={open ? t.closeMenu : t.openMenu}
         >
@@ -93,7 +93,7 @@ export function Header({ locale = "tr" }: { locale?: "tr" | "en" }) {
 
       {/* Mobil menü */}
       {open ? (
-        <div className="border-t border-[var(--color-border)] bg-[var(--color-surface)] md:hidden">
+        <div className="border-t border-[var(--color-border)] bg-[var(--color-surface)] lg:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {nav.map((group) =>
               group.children ? (

@@ -134,7 +134,11 @@ export function Body() {
       <p>
         Gemini, Google&apos;ın arama altyapısıyla bağlantılı çalışıyor;
         bu yüzden burada görünürlüğünüz klasik Google SEO temelinizle de
-        ilişkili olabilir.
+        ilişkili olabilir. Bu soruları manuel sormak yerine,{" "}
+        <Link href="/ai-gorunurluk-testi">
+          ücretsiz AI görünürlük testimizle
+        </Link>{" "}
+        markanızı Gemini&apos;de anında test edebilirsiniz.
       </p>
 
       <h3 id="claude">

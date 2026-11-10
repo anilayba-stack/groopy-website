@@ -40,6 +40,7 @@ export const mainNav: NavGroup[] = [
   },
   { label: "Hakkımızda", href: routes.about },
   { label: "Ücretsiz SEO Analizi", href: routes.seoTool },
+  { label: "AI Görünürlük Testi", href: routes.aiVisibility },
   { label: "İletişim", href: routes.contact },
 ];
 
@@ -62,7 +63,10 @@ export const footerNav: NavGroup[] = [
   },
   {
     label: "Kaynaklar",
-    children: [{ label: "Ücretsiz SEO Analiz Aracı", href: routes.seoTool }],
+    children: [
+      { label: "Ücretsiz SEO Analiz Aracı", href: routes.seoTool },
+      { label: "Ücretsiz AI Görünürlük Testi", href: routes.aiVisibility },
+    ],
   },
 ];
 
@@ -93,6 +97,7 @@ export const enMainNav: NavGroup[] = [
   },
   { label: "About", href: enRoutes.about },
   { label: "Free SEO Check", href: enRoutes.seoTool },
+  { label: "AI Visibility Check", href: enRoutes.aiVisibility },
   { label: "Contact", href: enRoutes.contact },
 ];
 
@@ -115,6 +120,9 @@ export const enFooterNav: NavGroup[] = [
   },
   {
     label: "Resources",
-    children: [{ label: "Free SEO Checker Tool", href: enRoutes.seoTool }],
+    children: [
+      { label: "Free SEO Checker Tool", href: enRoutes.seoTool },
+      { label: "Free AI Visibility Check", href: enRoutes.aiVisibility },
+    ],
   },
 ];

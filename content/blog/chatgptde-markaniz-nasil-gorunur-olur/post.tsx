@@ -8,6 +8,7 @@ export const meta: BlogPostMeta = {
   description:
     "ChatGPT markanız hakkında bilgiyi nereden alıyor, görünürlüğünüzü nasıl test edersiniz ve hangi site-dışı sinyaller gerçekten önemli. Uygulamalı rehber.",
   publishedAt: "2026-09-28",
+  updatedAt: "2026-11-10",
   tldr: "ChatGPT'nin markanız hakkında iki farklı bilgi katmanı var: dondurulmuş eğitim verisi (markanız orada hiç geçmiyorsa arama açık olmadan hiç bahsedilmez) ve OpenAI'nin 31 Ekim 2024'te duyurduğu canlı web arama özelliği. OpenAI'nin resmi dokümanına göre GPTBot eğitim verisi topluyor, OAI-SearchBot ise ChatGPT'nin arama sonuçlarında sitenizi göstermek için kullanılıyor; ikisi ayrı, robots.txt'te ayrı ayrı yönetilebilir. Markanızın şu an ne kadar görünür olduğunu test etmenin resmi bir aracı yok; tek güvenilir yöntem, gizli sekmede search açık/kapalı aynı soruları düzenli sormak. \"X kat daha çok atıf alır\" gibi kaynaksız istatistiklere güvenmeyin; bunlar doğrulanamıyor.",
   author: "Anıl Ay",
   hubService: "seo-ve-geo",
@@ -146,7 +147,11 @@ export function Body() {
           dört platform için hazır promptlar ve bir kayıt şablonu
           hazırladığımız yazımıza
         </Link>{" "}
-        bakabilirsiniz.
+        bakabilirsiniz. Gemini için bu adımları manuel yapmadan,{" "}
+        <Link href="/ai-gorunurluk-testi">
+          ücretsiz AI görünürlük testimizle
+        </Link>{" "}
+        markanızı anında test edebilirsiniz.
       </p>
 
       <h2 id="site-disi">Site-dışı görünürlük neden önemli</h2>

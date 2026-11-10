@@ -6,9 +6,9 @@ export const sosyalMedyaYonetimi: Service = {
   tier: "primary",
   navLabel: "Sosyal Medya Yönetimi",
   title: "Sosyal Medya Yönetimi",
-  metaTitle: "Sosyal Medya Yönetimi",
+  metaTitle: "İstanbul'da Sosyal Medya Yönetimi",
   metaDescription:
-    "İşletmeniz için içerik planı, fotoğraf–video prodüksiyon ve topluluk yönetimi. Instagram, LinkedIn ve TikTok'ta tutarlı, marka diline uygun bir varlık — ölçülebilir hedeflerle.",
+    "İstanbul'daki işletmeler için içerik planı, fotoğraf–video prodüksiyon ve topluluk yönetimi. Instagram, LinkedIn ve TikTok'ta tutarlı, marka diline uygun bir varlık — ölçülebilir hedeflerle.",
   summary:
     "İçerik planı, fotoğraf–video prodüksiyon ve topluluk yönetimi — tutarlı ve ölçülebilir.",
   tldr: "Groopy, işletmelerin sosyal medya hesaplarını içerik takvimi, fotoğraf ve video prodüksiyon ile topluluk yönetimi olarak bütün halde yürütür. Platform seçimi ve içerik tonu iş hedefine göre belirlenir; her ay ne yayımlandığı, neyin işe yaradığı ve bir sonraki ayın planı raporlanır.",

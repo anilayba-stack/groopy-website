@@ -6,9 +6,9 @@ export const socialMediaManagement: Service = {
   tier: "primary",
   navLabel: "Social Media Management",
   title: "Social Media Management",
-  metaTitle: "Social Media Management",
+  metaTitle: "Social Media Management in Istanbul",
   metaDescription:
-    "Content planning, photo–video production, and community management for your business. A consistent, on-brand presence on Instagram, LinkedIn, and TikTok — with measurable goals.",
+    "Our Istanbul-based team handles content planning, photo–video production, and community management for your business. A consistent, on-brand presence on Instagram, LinkedIn, and TikTok — with measurable goals.",
   summary:
     "Content planning, photo–video production, and community management — consistent and measurable.",
   tldr: "Groopy runs a business's social accounts as one system: content calendar, photo and video production, and community management. Platform choice and content tone are set around the business goal; each month reports what was published, what worked, and the plan for the next month.",

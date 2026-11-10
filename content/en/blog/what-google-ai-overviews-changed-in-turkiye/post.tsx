@@ -8,6 +8,7 @@ export const meta: BlogPostMeta = {
   description:
     "AI Overviews launched in Türkiye on February 18, 2026. How click behavior has shifted globally, and how to check your own visibility.",
   publishedAt: "2026-10-01",
+  updatedAt: "2026-11-10",
   tldr: "Google rolled out AI Mode and AI Overviews (AI Bakışı) in Türkiye on February 18, 2026, gradually, powered by the Gemini 3 model family. There's no independent Turkey-specific click data, but Pew Research Center's study of 900 U.S. adults and 68,879 searches in March 2025 found that when an AI summary appears, users click a traditional result link in only 8% of visits, versus 15% without one; the share of visits that end the session entirely is 26% versus 16%. Google's own official documentation states no extra optimization is needed to appear in AI Overviews. Search Console has a separate \"Generative AI performance report\" that shows impressions only, no clicks or query breakdown. We tried to pull this data through the API on our own account and got an empty result.",
   author: "Anıl Ay",
   hubService: "seo-and-geo-strategy",
@@ -180,6 +181,17 @@ export function Body() {
         data is only accessible through the Search Console interface; we
         couldn&apos;t separate the two with certainty. For a clear answer
         on your own site, check the interface directly.
+      </p>
+      <p>
+        This report shows your impressions within Google&apos;s AI
+        Overviews. If you want a quick read on how well your brand is
+        known to the Gemini model (Google&apos;s AI) specifically, you can
+        try{" "}
+        <Link href="/en/ai-visibility-check">
+          our free AI visibility check
+        </Link>{" "}
+        — note that this measures something different from the live AI
+        Overviews data in GSC; it tests the model&apos;s raw knowledge.
       </p>
 
       <h2 id="practical-meaning">The practical implication for your business</h2>

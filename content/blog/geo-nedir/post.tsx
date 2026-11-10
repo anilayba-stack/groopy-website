@@ -8,6 +8,7 @@ export const meta: BlogPostMeta = {
   description:
     "GEO nedir, SEO'dan farkı ne, ve ChatGPT, Gemini ile Google AI Overviews'te kaynak gösterilmek için neler yapılmalı — somut adımlarla.",
   publishedAt: "2026-10-03",
+  updatedAt: "2026-11-10",
   tldr: "GEO (Generative Engine Optimization / yapay zekâ arama optimizasyonu), içeriğinizin ChatGPT, Gemini ve Google AI Overviews gibi araçların ürettiği yanıtların içinde kaynak olarak gösterilmesi için yapılan çalışmadır. SEO'nun yerine geçmez, tamamlar. Temel gereksinimler: yapay zekâ tarayıcılarına açık robots.txt, cevap-önce içerik formatı, doğru yapılandırılmış veri ve tutarlı marka/varlık bilgisi.",
   author: "Anıl Ay",
   hubService: "seo-ve-geo",
@@ -241,7 +242,16 @@ export function Body() {
         aylık olarak ChatGPT, Perplexity ve Google AI Overviews&apos;e tek
         tek sorup markanızın kaynak gösterilip gösterilmediğini,
         gösteriliyorsa hangi cümleyle alıntılandığını manuel olarak
-        kaydetmek. Yorucu ama şu an için tek güvenilir sinyal bu.
+        kaydetmek. Yorucu ama şu an için tek güvenilir sinyal bu. Gemini
+        için bu adımı manuel yapmak yerine{" "}
+        <Link href="/ai-gorunurluk-testi">
+          ücretsiz AI görünürlük testimizle
+        </Link>{" "}
+        markanızı anında test edebilirsiniz; diğer platformlar için{" "}
+        <Link href="/blog/ai-sohbet-botlarinda-marka-takibi">
+          hazır promptlar ve takip şablonu sunduğumuz yazımıza
+        </Link>{" "}
+        bakabilirsiniz.
       </p>
       <p>
         Google Search Console&apos;un &quot;Generative AI performansı&quot;

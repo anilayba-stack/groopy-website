@@ -28,3 +28,8 @@ export function trackGenerateLead(
 export function trackSeoToolUsed(score: number, locale: Locale) {
   sendGAEvent("event", "seo_tool_used", { score, locale });
 }
+
+/** Ücretsiz AI görünürlük testi (Gemini) başarıyla bir sonuç döndürdüğünde. */
+export function trackAiVisibilityToolUsed(mentioned: boolean, locale: Locale) {
+  sendGAEvent("event", "ai_visibility_tool_used", { mentioned, locale });
+}

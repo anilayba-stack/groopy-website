@@ -4,7 +4,6 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { TldrBox } from "@/components/ui/TldrBox";
 import { FaqList } from "@/components/ui/FaqList";
-import { CtaBand } from "@/components/sections/CtaBand";
 import { SeoAnalyzerTool } from "@/components/tools/SeoAnalyzerTool";
 import { JsonLd } from "@/components/JsonLd";
 import {
@@ -203,8 +202,6 @@ export default function SeoToolPage() {
           <FaqList items={faq} title="Frequently asked questions" />
         </div>
       </Section>
-
-      <CtaBand locale="en" />
     </>
   );
 }

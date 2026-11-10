@@ -6,9 +6,9 @@ export const seoAndGeoStrategy: Service = {
   tier: "primary",
   navLabel: "SEO & GEO Strategy",
   title: "SEO & GEO (AI Search) Strategy",
-  metaTitle: "SEO & GEO Strategy",
+  metaTitle: "SEO & GEO Strategy in Istanbul",
   metaDescription:
-    "One strategy to be found in Google search and cited in AI answers (ChatGPT, Perplexity, AI Overviews). Technical SEO, content architecture, and GEO infrastructure.",
+    "Our Istanbul-based team builds one strategy to be found in Google search and cited in AI answers (ChatGPT, Perplexity, AI Overviews). Technical SEO, content architecture, and GEO infrastructure.",
   summary:
     "Technical SEO, content, and GEO work that moves your site up in Google rankings.",
   tldr: "SEO (Search Engine Optimization) aims to rank your page in Google; GEO (Generative Engine Optimization) aims to get your brand cited as a source inside AI answers from tools like ChatGPT, Perplexity, Gemini, and Google AI Overviews. Neither replaces the other — they're built together. Groopy brings technical foundation, content architecture, and structured data into one plan.",

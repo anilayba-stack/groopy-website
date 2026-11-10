@@ -6,9 +6,9 @@ export const googleAdsManagement: Service = {
   tier: "primary",
   navLabel: "Google Ads Management",
   title: "Google Ads Management",
-  metaTitle: "Google Ads Management",
+  metaTitle: "Google Ads Management in Istanbul",
   metaDescription:
-    "We set up and manage your Google Ads search, shopping, and display campaigns. The ad account is yours; transparent budget and monthly reporting.",
+    "Our Istanbul-based team sets up and manages your Google Ads search, shopping, and display campaigns. The ad account is yours; transparent budget and monthly reporting.",
   summary:
     "We set up, manage, and report on Google Ads campaigns — the ad account stays yours.",
   tldr: "Google Ads Management covers setting up, optimizing, and reporting on search, shopping, and display campaigns in your business's own Google Ads account. The account and budget are yours; we run campaigns with manager-level access. The difference from SEO + GEO: SEO targets organic, long-term visibility; this service delivers paid, immediate visibility — neither replaces the other.",

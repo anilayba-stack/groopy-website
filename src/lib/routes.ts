@@ -12,6 +12,7 @@ export const routes = {
   about: "/hakkimizda",
   contact: "/iletisim",
   seoTool: "/seo-analiz-araci",
+  aiVisibility: "/ai-gorunurluk-testi",
 } as const;
 
 /** Tek birincil CTA — tüm sitede aynı (karar: 2026-09-02). */
@@ -31,6 +32,7 @@ export const enRoutes = {
   about: "/en/about",
   contact: "/en/contact",
   seoTool: "/en/seo-checker",
+  aiVisibility: "/en/ai-visibility-check",
 } as const;
 
 export const EN_PRIMARY_CTA = {

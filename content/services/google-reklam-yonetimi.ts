@@ -6,9 +6,9 @@ export const googleReklamYonetimi: Service = {
   tier: "primary",
   navLabel: "Google Reklam Yönetimi",
   title: "Google Reklam Yönetimi",
-  metaTitle: "Google Reklam Yönetimi",
+  metaTitle: "İstanbul'da Google Reklam Yönetimi",
   metaDescription:
-    "Google Ads arama, alışveriş ve görüntülü reklam kampanyalarınızı kurar ve yönetiriz. Reklam hesabı size aittir; şeffaf bütçe ve aylık raporlama.",
+    "İstanbul'daki işletmeler için Google Ads arama, alışveriş ve görüntülü reklam kampanyalarınızı kurar ve yönetiriz. Reklam hesabı size aittir; şeffaf bütçe ve aylık raporlama.",
   summary:
     "Google Ads kampanyalarını kurar, yönetir ve raporlarız — reklam hesabı size ait kalır.",
   tldr: "Google Reklam Yönetimi, işletmenizin Google Ads hesabında arama, alışveriş ve görüntülü reklam kampanyalarını kurmayı, optimize etmeyi ve raporlamayı kapsar. Reklam hesabı ve bütçe size aittir; kampanyaları yönetici erişimiyle yürütürüz. SEO + GEO'dan farkı: SEO organik ve uzun vadeli görünürlük içindir, bu hizmet ücretli ve anlık görünürlük sağlar — birbirinin yerine geçmez.",
