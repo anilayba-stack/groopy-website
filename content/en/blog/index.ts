@@ -144,3 +144,14 @@ export function sortedPosts(): BlogPost[] {
     (a, b) => +new Date(b.meta.publishedAt) - +new Date(a.meta.publishedAt),
   );
 }
+
+/** Other posts tagged with the same hubService — newest first. */
+export function relatedPosts(slug: string, limit = 3): BlogPost[] {
+  const current = getPost(slug);
+  if (!current?.meta.hubService) return [];
+  return sortedPosts()
+    .filter(
+      (p) => p.meta.slug !== slug && p.meta.hubService === current.meta.hubService,
+    )
+    .slice(0, limit);
+}

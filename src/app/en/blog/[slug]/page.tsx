@@ -17,7 +17,7 @@ import {
 import { enRoutes, routes } from "@/lib/routes";
 import { POST_SLUG_EN_TO_TR } from "@/lib/i18n-routes";
 import { SITE } from "@/lib/site-config";
-import { getPost, postSlugs } from "@content/en/blog";
+import { getPost, postSlugs, relatedPosts } from "@content/en/blog";
 import { getService } from "@content/en/services";
 
 export function generateStaticParams() {
@@ -63,6 +63,7 @@ export default async function EnBlogPostPage({
 
   const { meta, Body } = post;
   const hub = meta.hubService ? getService(meta.hubService) : undefined;
+  const related = relatedPosts(meta.slug);
   const authorByline =
     meta.author === SITE.founder.name
       ? `${meta.author} — Founder at Groopy`
@@ -184,6 +185,26 @@ export default async function EnBlogPostPage({
               >
                 {hub.navLabel} →
               </Link>
+            </div>
+          ) : null}
+
+          {related.length > 0 ? (
+            <div className="mt-8 max-w-3xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6">
+              <p className="text-sm text-[var(--color-text-muted)]">
+                Related articles:
+              </p>
+              <ul className="mt-2 space-y-1">
+                {related.map((p) => (
+                  <li key={p.meta.slug}>
+                    <Link
+                      href={enRoutes.post(p.meta.slug)}
+                      className="inline-block text-[1.0625rem] font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
+                    >
+                      {p.meta.title} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           ) : null}
 

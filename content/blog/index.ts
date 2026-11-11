@@ -140,3 +140,14 @@ export function sortedPosts(): BlogPost[] {
       new Date(a.meta.publishedAt).getTime(),
   );
 }
+
+/** Aynı hizmete (hubService) etiketli diğer yazılar — en yeniden eskiye. */
+export function relatedPosts(slug: string, limit = 3): BlogPost[] {
+  const current = getPost(slug);
+  if (!current?.meta.hubService) return [];
+  return sortedPosts()
+    .filter(
+      (p) => p.meta.slug !== slug && p.meta.hubService === current.meta.hubService,
+    )
+    .slice(0, limit);
+}

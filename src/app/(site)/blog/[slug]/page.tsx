@@ -17,7 +17,7 @@ import {
 import { routes, enRoutes } from "@/lib/routes";
 import { POST_SLUG_TR_TO_EN } from "@/lib/i18n-routes";
 import { SITE } from "@/lib/site-config";
-import { getPost, postSlugs } from "@content/blog";
+import { getPost, postSlugs, relatedPosts } from "@content/blog";
 import { getService } from "@content/services";
 
 export function generateStaticParams() {
@@ -62,6 +62,7 @@ export default async function BlogPostPage({
 
   const { meta, Body } = post;
   const hub = meta.hubService ? getService(meta.hubService) : undefined;
+  const related = relatedPosts(meta.slug);
   const authorByline =
     meta.author === SITE.founder.name
       ? `${meta.author} — Groopy Kurucusu`
@@ -180,6 +181,26 @@ export default async function BlogPostPage({
               >
                 {hub.navLabel} →
               </Link>
+            </div>
+          ) : null}
+
+          {related.length > 0 ? (
+            <div className="mt-8 max-w-3xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6">
+              <p className="text-sm text-[var(--color-text-muted)]">
+                İlgili yazılar:
+              </p>
+              <ul className="mt-2 space-y-1">
+                {related.map((p) => (
+                  <li key={p.meta.slug}>
+                    <Link
+                      href={routes.post(p.meta.slug)}
+                      className="inline-block text-[1.0625rem] font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
+                    >
+                      {p.meta.title} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           ) : null}
 
