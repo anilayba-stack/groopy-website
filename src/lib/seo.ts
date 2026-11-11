@@ -254,7 +254,11 @@ export function softwareApplicationSchema(input: {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     inLanguage: locale === "en" ? "en" : "tr-TR",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: locale === "en" ? "USD" : "TRY",
+    },
     provider: { "@id": `${BASE}/#organization` },
   };
 }

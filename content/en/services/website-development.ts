@@ -44,6 +44,10 @@ export const websiteDevelopment: Service = {
       heading: "Handover and independence",
       body: "The code is yours. You get repository access, architecture decisions are documented, and you're free to continue with another team if you choose. A way of working that resolves lock-in rather than creating it.",
     },
+    {
+      heading: "How pricing is decided",
+      body: "There's no fixed price list; the main cost drivers are the number of pages/screens, custom integration needs (payments, booking, inventory systems), whether content is ready, and whether a more complex structure like e-commerce is required. See [our website cost article](/en/blog/website-cost-2026) for general price ranges; a firm number is shared after the discovery call.",
+    },
   ],
   process: [
     {
@@ -64,7 +68,7 @@ export const websiteDevelopment: Service = {
     {
       title: "Launch and measurement",
       description:
-        "Google Search Console, Analytics, and Business Profile are set up; Core Web Vitals, search visibility, and conversion are measured. Ongoing management after setup falls under the SEO + GEO service.",
+        "Google Search Console, Analytics, and Business Profile are set up; Core Web Vitals, search visibility, and conversion are measured. Ongoing management after setup falls under the [SEO + GEO](/en/services/seo-and-geo-strategy) service.",
     },
   ],
   faq: [
@@ -87,6 +91,11 @@ export const websiteDevelopment: Service = {
       question: "Can we update the site ourselves after launch?",
       answer:
         "Content areas are built so you can manage them yourself. For structural changes, it's either a maintenance agreement with us or handing off to your own team — your choice.",
+    },
+    {
+      question: "Does this service include SEO?",
+      answer:
+        "No, they're separate services. Website development builds a fast, technically solid foundation (Core Web Vitals, clean structure) — that's a prerequisite for SEO, not SEO itself. Search ranking, content production, and GEO work fall under our [SEO + GEO Strategy](/en/services/seo-and-geo-strategy) service.",
     },
   ],
   relatedPosts: [

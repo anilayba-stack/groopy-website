@@ -13,6 +13,11 @@ export const seoAndGeoStrategy: Service = {
     "Technical SEO, content, and GEO work that moves your site up in Google rankings.",
   tldr: "SEO (Search Engine Optimization) aims to rank your page in Google; GEO (Generative Engine Optimization) aims to get your brand cited as a source inside AI answers from tools like ChatGPT, Perplexity, Gemini, and Google AI Overviews. Neither replaces the other — they're built together. Groopy brings technical foundation, content architecture, and structured data into one plan.",
   icon: Search,
+  relatedTool: {
+    label: "Try the free AI Visibility Check",
+    path: "/en/ai-visibility-check",
+    description: "Test instantly, for free, whether your brand is mentioned by Gemini.",
+  },
   sections: [
     {
       heading: "SEO vs. GEO",
@@ -52,6 +57,10 @@ export const seoAndGeoStrategy: Service = {
         "Google Business Profile: posts, updates, and review management",
         "A monthly manual check for citations in AI answers on target queries",
       ],
+    },
+    {
+      heading: "How pricing is decided",
+      body: "There's no fixed package price; the main cost drivers are the site's current technical state (starting from scratch vs. fixing existing problems), the targeted content volume, how competitive the space is, and whether the scope covers technical SEO only or content production too. A firm number is shared after a short audit.",
     },
   ],
   process: [
@@ -95,7 +104,12 @@ export const seoAndGeoStrategy: Service = {
     {
       question: "Do you manage Google Ads or paid advertising?",
       answer:
-        "This service is focused on organic visibility. Paid advertising management is offered as a separate service — see Google Ads Management.",
+        "This service is focused on organic visibility. Paid advertising management is offered as a separate service — see [Google Ads Management](/en/services/google-ads-management).",
+    },
+    {
+      question: "Is there a minimum term or contract?",
+      answer:
+        "No, there's no lock-in. We work month to month; you can stop whenever you'd like.",
     },
   ],
   relatedPosts: [

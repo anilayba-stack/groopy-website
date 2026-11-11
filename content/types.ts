@@ -45,6 +45,8 @@ export interface Service {
   sections: ServiceSection[];
   process?: ProcessStep[];
   faq?: Faq[];
+  /** Bu hizmetle doğrudan ilgili ücretsiz araç (varsa) — ör. SEO+GEO için AI görünürlük testi */
+  relatedTool?: { label: string; path: string; description: string };
   /** İlgili blog yazısı slug'ları (iç linkleme) */
   relatedPosts?: string[];
 }
@@ -96,4 +98,6 @@ export interface WorkEntry {
   photos: { src: string; alt: string }[];
   /** ISO tarih */
   date: string;
+  /** Gerçek, doğrulanabilir sonuç satırları (varsa) — kaynağı (Search Console, Analytics vb.) belirtilir, uydurma rakam yok */
+  results?: string[];
 }

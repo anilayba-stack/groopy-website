@@ -44,6 +44,10 @@ export const webSitesiGelistirme: Service = {
       heading: "Devir ve bağımsızlık",
       body: "Kod sizindir. Depoya erişiminiz olur, mimari kararlar belgelenir, dilerseniz başka bir ekiple devam edebilirsiniz. Bağımlılık yaratan değil, çözen bir çalışma biçimi.",
     },
+    {
+      heading: "Fiyat neye göre belirleniyor",
+      body: "Sabit bir fiyat listesi yoktur; maliyeti belirleyen temel etkenler sayfa/ekran sayısı, özel entegrasyon ihtiyacı (ödeme, rezervasyon, stok sistemi gibi), içeriğin hazır olup olmadığı ve e-ticaret gibi daha karmaşık bir yapı gerekip gerekmediğidir. Genel fiyat aralıkları için [web sitesi maliyeti yazımıza](/blog/web-sitesi-maliyeti-2026) bakabilirsiniz; net rakam keşif görüşmesinden sonra paylaşılır.",
+    },
   ],
   process: [
     {
@@ -64,7 +68,7 @@ export const webSitesiGelistirme: Service = {
     {
       title: "Yayın ve ölçüm",
       description:
-        "Google Arama Konsolu, Analytics ve İşletme Profili kurulur; Core Web Vitals, arama görünürlüğü ve dönüşüm ölçülür. Kurulumun ardından sürekli yönetim, SEO + GEO hizmeti kapsamındadır.",
+        "Google Arama Konsolu, Analytics ve İşletme Profili kurulur; Core Web Vitals, arama görünürlüğü ve dönüşüm ölçülür. Kurulumun ardından sürekli yönetim, [SEO + GEO](/hizmetler/seo-ve-geo) hizmeti kapsamındadır.",
     },
   ],
   faq: [
@@ -87,6 +91,11 @@ export const webSitesiGelistirme: Service = {
       question: "Yayından sonra siteyi kendimiz güncelleyebilir miyiz?",
       answer:
         "İçerik alanları sizin yönetebileceğiniz şekilde kurgulanır. Yapısal değişiklikler için bakım anlaşması ya da kendi ekibinizle devam — seçim sizin.",
+    },
+    {
+      question: "Bu hizmete SEO de dahil mi?",
+      answer:
+        "Hayır, ayrı hizmetlerdir. Web sitesi geliştirme hızlı ve teknik olarak sağlam bir temel kurar (Core Web Vitals, temiz yapı) — bu SEO'nun ön koşuludur ama SEO'nun kendisi değildir. Arama sıralaması, içerik üretimi ve GEO çalışması [SEO ve GEO Stratejisi](/hizmetler/seo-ve-geo) hizmetimiz kapsamındadır.",
     },
   ],
   relatedPosts: [

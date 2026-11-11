@@ -74,6 +74,18 @@ export function WorkGallery({ entries, locale = "tr" }: WorkGalleryProps) {
                 <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-muted)]">
                   {entry.summary}
                 </p>
+                {entry.results && entry.results.length > 0 ? (
+                  <ul className="mt-3 space-y-1.5">
+                    {entry.results.map((r) => (
+                      <li
+                        key={r}
+                        className="text-xs leading-relaxed text-[var(--color-text-muted)]"
+                      >
+                        {r}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
                 <p className="mt-3 text-xs text-[var(--color-text-faint)]">
                   {entry.location} · {dateFmt.format(new Date(entry.date))}
                 </p>

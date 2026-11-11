@@ -45,24 +45,16 @@ const faq: Faq[] = [
 ];
 
 export default function EnServicesPage() {
+  const crumbs = [
+    { name: "Home", path: enRoutes.home },
+    { name: "Services", path: enRoutes.services },
+  ];
+
   return (
     <>
-      <JsonLd
-        data={[
-          breadcrumbSchema([
-            { name: "Home", path: enRoutes.home },
-            { name: "Services", path: enRoutes.services },
-          ]),
-        ]}
-      />
+      <JsonLd data={[breadcrumbSchema(crumbs)]} />
       <Container className="pt-10">
-        <Breadcrumbs
-          ariaLabel="Breadcrumb"
-          items={[
-            { name: "Home", path: enRoutes.home },
-            { name: "Services", path: enRoutes.services },
-          ]}
-        />
+        <Breadcrumbs ariaLabel="Breadcrumb" items={crumbs} />
       </Container>
 
       <Section className="!border-t-0 !pt-2">

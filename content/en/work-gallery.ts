@@ -1,8 +1,11 @@
 import type { WorkEntry } from "../types";
 
 /**
- * Real client work — carries no result or metric claim, NOT a case study.
- * Only shows the service delivered and (if any) real visual proof.
+ * Real client work — NOT a case study, no heavy metrics dashboard. Only
+ * shows the service delivered and (if any) real visual proof. The `results`
+ * field is used only for verified, sourced results directly attributable to
+ * our own work (e.g. a new website) — not the general performance of assets
+ * the client already had before us (e.g. their GBP).
  */
 export const workGallery: WorkEntry[] = [
   {
@@ -21,6 +24,10 @@ export const workGallery: WorkEntry[] = [
       },
     ],
     date: "2026-10-25",
+    results: [
+      "Two weeks after launch: ranks at an average position of 1 in Google for the \"Tike Zekeriyaköy\" brand search, with 2,325 impressions / 82 clicks (Search Console)",
+      "Already getting organic visits from AI assistants (ChatGPT, Gemini, etc.) (Google Analytics)",
+    ],
   },
   {
     slug: "busra-kayan-kemerburgaz",

@@ -1,4 +1,5 @@
 import type { Faq } from "@content/types";
+import { RichText } from "./RichText";
 
 /** JavaScript'siz açılır-kapanır FAQ (native details/summary). */
 export function FaqList({ items, title = "Sık sorulan sorular" }: { items: Faq[]; title?: string }) {
@@ -21,7 +22,7 @@ export function FaqList({ items, title = "Sık sorulan sorular" }: { items: Faq[
               </span>
             </summary>
             <p className="mt-3 text-[1.0625rem] leading-relaxed text-[var(--color-text-muted)]">
-              {item.answer}
+              <RichText text={item.answer} />
             </p>
           </details>
         ))}

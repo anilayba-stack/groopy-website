@@ -42,7 +42,7 @@ export const googleAdsManagement: Service = {
     },
     {
       heading: "Relationship to SEO + GEO",
-      body: "This service delivers paid, not organic, visibility. Planned together with SEO + GEO strategy, it covers both the paid and organic areas of search results; it can also be taken as a standalone service.",
+      body: "This service delivers paid, not organic, visibility. Planned together with [SEO + GEO strategy](/en/services/seo-and-geo-strategy), it covers both the paid and organic areas of search results; it can also be taken as a standalone service.",
     },
   ],
   process: [

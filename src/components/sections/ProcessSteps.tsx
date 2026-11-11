@@ -1,4 +1,5 @@
 import type { ProcessStep } from "@content/types";
+import { RichText } from "@/components/ui/RichText";
 
 export function ProcessSteps({ steps }: { steps: ProcessStep[] }) {
   return (
@@ -16,7 +17,7 @@ export function ProcessSteps({ steps }: { steps: ProcessStep[] }) {
             {step.title}
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-            {step.description}
+            <RichText text={step.description} />
           </p>
         </li>
       ))}

@@ -13,6 +13,11 @@ export const seoVeGeo: Service = {
     "Sitenizi Google sıralamasında yükselten teknik SEO, içerik ve GEO çalışması.",
   tldr: "SEO (Arama Motoru Optimizasyonu), sayfanızın Google'da sıralanmasını hedefler; GEO (Generative Engine Optimization) ise ChatGPT, Perplexity, Gemini ve Google AI Overviews gibi yapay zeka yanıtlarının içinde kaynak olarak gösterilmesini hedefler. İkisi birbirinin yerine geçmez — birlikte kurulur. Groopy teknik temeli, içerik mimarisini ve yapılandırılmış veriyi tek planda toplar.",
   icon: Search,
+  relatedTool: {
+    label: "Ücretsiz AI Görünürlük Testi'ni deneyin",
+    path: "/ai-gorunurluk-testi",
+    description: "Markanızın Gemini'de bahsedilip bahsedilmediğini anında, ücretsiz test edin.",
+  },
   sections: [
     {
       heading: "SEO ve GEO farkı",
@@ -52,6 +57,10 @@ export const seoVeGeo: Service = {
         "Google İşletme Profili: gönderi, güncelleme ve yorum yönetimi",
         "Hedef sorgularda yapay zeka yanıtlarında alıntı kontrolü için aylık manuel panel",
       ],
+    },
+    {
+      heading: "Ücret neye göre belirleniyor",
+      body: "Sabit bir paket fiyatı yoktur; maliyeti belirleyen temel etkenler sitenin mevcut teknik durumu (sıfırdan mı kuruluyor, yoksa var olan sorunlar mı çözülüyor), hedeflenen içerik hacmi, rekabetin yoğunluğu ve kapsamın yalnızca teknik SEO'yu mu yoksa içerik üretimini de mi içerdiğidir. Net rakam, kısa bir denetimin ardından paylaşılır.",
     },
   ],
   process: [
@@ -95,7 +104,12 @@ export const seoVeGeo: Service = {
     {
       question: "Google Ads / reklam yönetiyor musunuz?",
       answer:
-        "Bu hizmet organik görünürlüğe odaklıdır. Ücretli reklam yönetimi ayrı bir hizmet olarak sunulur — bkz. Google Reklam Yönetimi.",
+        "Bu hizmet organik görünürlüğe odaklıdır. Ücretli reklam yönetimi ayrı bir hizmet olarak sunulur — bkz. [Google Reklam Yönetimi](/hizmetler/google-reklam-yonetimi).",
+    },
+    {
+      question: "Minimum süre ya da taahhüt var mı?",
+      answer:
+        "Hayır, taahhüt yok. Ay be ay çalışırız; istediğiniz zaman sonlandırabilirsiniz.",
     },
   ],
   relatedPosts: [

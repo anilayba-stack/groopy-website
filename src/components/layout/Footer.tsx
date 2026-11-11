@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { InstagramIcon, LinkedInIcon } from "@/components/icons/BrandIcons";
 import { Container } from "@/components/ui/Container";
+import { GoogleRatingLink } from "@/components/ui/GoogleRatingLink";
 import { Logo } from "./Logo";
 import { footerNav, enFooterNav } from "@/lib/navigation";
 import { SITE } from "@/lib/site-config";
@@ -61,6 +62,7 @@ export function Footer({ locale = "tr" }: { locale?: "tr" | "en" }) {
                   <LinkedInIcon className="size-4" /> LinkedIn
                 </a>
               ) : null}
+              <GoogleRatingLink locale={locale} />
             </div>
           </div>
 

@@ -1,8 +1,12 @@
 import type { WorkEntry } from "./types";
 
 /**
- * Gerçek müşteri çalışmaları — sonuç/rakam iddiası taşımaz, vaka çalışması
- * DEĞİLDİR. Yalnızca verilen hizmeti ve (varsa) gerçek görsel kanıtı gösterir.
+ * Gerçek müşteri çalışmaları — vaka çalışması DEĞİLDİR, ağır bir metrik
+ * sunumu yapılmaz. Yalnızca verilen hizmeti ve (varsa) gerçek görsel kanıtı
+ * gösterir. `results` alanı yalnızca doğrulanmış, kaynağı belirtilmiş ve
+ * doğrudan bizim işimize (ör. yeni web sitesi) atfedilebilir sonuçlar için
+ * kullanılır — müşterinin bizden önce var olan varlıklarının (ör. GBP)
+ * genel performansı buraya yazılmaz.
  */
 export const workGallery: WorkEntry[] = [
   {
@@ -21,6 +25,10 @@ export const workGallery: WorkEntry[] = [
       },
     ],
     date: "2026-10-25",
+    results: [
+      "Yayından 2 hafta sonra: \"Tike Zekeriyaköy\" marka aramasında Google'da ortalama 1. sırada, 2.325 gösterim / 82 tıklama (Search Console)",
+      "Yapay zekâ asistanlarından (ChatGPT, Gemini vb.) organik ziyaret almaya başladı (Google Analytics)",
+    ],
   },
   {
     slug: "busra-kayan-kemerburgaz",

@@ -7,6 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { TldrBox } from "@/components/ui/TldrBox";
 import { FaqList } from "@/components/ui/FaqList";
+import { RichText } from "@/components/ui/RichText";
 import Image from "next/image";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { serviceImage } from "@/components/sections/services/ServiceVisual";
@@ -117,7 +118,9 @@ export default async function EnServiceDetailPage({
           {service.sections.map((sec) => (
             <div key={sec.heading}>
               <h2>{sec.heading}</h2>
-              <p>{sec.body}</p>
+              <p>
+                <RichText text={sec.body} />
+              </p>
               {sec.bullets ? (
                 <ul>
                   {sec.bullets.map((b) => (
@@ -172,6 +175,36 @@ export default async function EnServiceDetailPage({
           </ul>
         </Section>
       ) : null}
+
+      {service.relatedTool ? (
+        <Section>
+          <div className="max-w-3xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6">
+            <p className="text-sm text-[var(--color-text-muted)]">
+              {service.relatedTool.description}
+            </p>
+            <Link
+              href={service.relatedTool.path}
+              className="mt-1 inline-block text-[1.0625rem] font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
+            >
+              {service.relatedTool.label} →
+            </Link>
+          </div>
+        </Section>
+      ) : null}
+
+      <Section>
+        <div className="max-w-3xl rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6">
+          <p className="text-sm text-[var(--color-text-muted)]">
+            Related to this service
+          </p>
+          <Link
+            href={enRoutes.work}
+            className="mt-1 inline-block text-[1.0625rem] font-semibold text-[var(--color-accent)] hover:text-[var(--color-accent-hover)]"
+          >
+            See our past work →
+          </Link>
+        </div>
+      </Section>
 
       <CtaBand locale="en" />
     </>

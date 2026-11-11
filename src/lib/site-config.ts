@@ -49,6 +49,15 @@ export const SITE = {
     googleBusiness: "https://share.google/9nXutldXyw11TXrWV",
   } as Record<string, string>,
 
+  /**
+   * Google İşletme Profili puanı — gerçek, elle güncellenen değer.
+   * Yorum sayısı arttıkça GBP panelinden kontrol edip burayı güncelle.
+   */
+  googleRating: {
+    value: 5.0,
+    count: 1,
+  },
+
   /** E-E-A-T — Article yazarı ve Hakkımızda. */
   founder: {
     name: "Anıl Ay",

@@ -44,23 +44,16 @@ const faq: Faq[] = [
 ];
 
 export default function ServicesPage() {
+  const crumbs = [
+    { name: "Ana sayfa", path: "/" },
+    { name: "Hizmetler", path: routes.services },
+  ];
+
   return (
     <>
-      <JsonLd
-        data={[
-          breadcrumbSchema([
-            { name: "Ana sayfa", path: "/" },
-            { name: "Hizmetler", path: routes.services },
-          ]),
-        ]}
-      />
+      <JsonLd data={[breadcrumbSchema(crumbs)]} />
       <Container className="pt-10">
-        <Breadcrumbs
-          items={[
-            { name: "Ana sayfa", path: "/" },
-            { name: "Hizmetler", path: routes.services },
-          ]}
-        />
+        <Breadcrumbs items={crumbs} />
       </Container>
 
       <Section className="!border-t-0 !pt-2">

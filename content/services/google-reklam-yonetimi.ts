@@ -42,7 +42,7 @@ export const googleReklamYonetimi: Service = {
     },
     {
       heading: "SEO + GEO ile ilişkisi",
-      body: "Bu hizmet organik değil, ücretli görünürlük sağlar. SEO + GEO stratejisiyle birlikte planlandığında arama sonuçlarının hem ücretli hem organik alanında yer kaplanır; ayrı bir hizmet olarak da alınabilir.",
+      body: "Bu hizmet organik değil, ücretli görünürlük sağlar. [SEO + GEO stratejisiyle](/hizmetler/seo-ve-geo) birlikte planlandığında arama sonuçlarının hem ücretli hem organik alanında yer kaplanır; ayrı bir hizmet olarak da alınabilir.",
     },
   ],
   process: [
