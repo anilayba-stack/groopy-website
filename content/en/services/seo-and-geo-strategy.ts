@@ -116,6 +116,7 @@ export const seoAndGeoStrategy: Service = {
     "what-google-ai-overviews-changed-in-turkiye",
     "how-to-make-your-brand-visible-in-chatgpt",
     "ai-chatbot-brand-tracking",
+    "seo-agency-vs-geo-agency",
     "local-seo-guide",
     "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",

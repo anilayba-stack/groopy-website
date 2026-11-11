@@ -101,5 +101,7 @@ export const googleReklamYonetimi: Service = {
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "google-ads-ajansi-secerken-nelere-dikkat-edilmeli",
     "google-ads-mi-seo-mu",
+    "google-ads-butcesi-ne-kadar-olmali",
+    "kampanya-turu-secim-rehberi",
   ],
 };

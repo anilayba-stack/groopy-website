@@ -32,6 +32,14 @@ export const SERVICE_SLUG_EN_TO_TR: Record<string, string> = Object.fromEntries(
 
 /** Blog yazısı slug eşlemesi. */
 export const POST_SLUG_TR_TO_EN: Record<string, string> = {
+  "seo-ajansi-mi-geo-ajansi-mi": "seo-agency-vs-geo-agency",
+  "google-ads-butcesi-ne-kadar-olmali": "google-ads-budget-guide",
+  "kampanya-turu-secim-rehberi": "campaign-type-selection-guide",
+  "icerik-takvimi-nasil-hazirlanir": "content-calendar-for-small-business",
+  "sosyal-medya-yapay-zeka-aramalarinda-gorunur-mu":
+    "is-social-media-content-visible-to-ai-search",
+  "google-instagram-yorumlari-marka-itibarini-nasil-etkiler":
+    "how-do-google-and-instagram-reviews-affect-brand-reputation",
   "ai-sohbet-botlarinda-marka-takibi": "ai-chatbot-brand-tracking",
   "web-sitesi-maliyeti-2026": "website-cost-2026",
   "seo-ajansi-secerken-nelere-dikkat-edilmeli": "how-to-choose-an-seo-agency",

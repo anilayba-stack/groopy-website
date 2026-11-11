@@ -1,5 +1,29 @@
 import type { BlogPost } from "../../types";
 import {
+  meta as googleAdsBudgetGuideMeta,
+  Body as GoogleAdsBudgetGuideBody,
+} from "./google-ads-budget-guide/post";
+import {
+  meta as campaignTypeSelectionGuideMeta,
+  Body as CampaignTypeSelectionGuideBody,
+} from "./campaign-type-selection-guide/post";
+import {
+  meta as contentCalendarForSmallBusinessMeta,
+  Body as ContentCalendarForSmallBusinessBody,
+} from "./content-calendar-for-small-business/post";
+import {
+  meta as isSocialMediaContentVisibleToAiSearchMeta,
+  Body as IsSocialMediaContentVisibleToAiSearchBody,
+} from "./is-social-media-content-visible-to-ai-search/post";
+import {
+  meta as howDoGoogleAndInstagramReviewsAffectBrandReputationMeta,
+  Body as HowDoGoogleAndInstagramReviewsAffectBrandReputationBody,
+} from "./how-do-google-and-instagram-reviews-affect-brand-reputation/post";
+import {
+  meta as seoAgencyVsGeoAgencyMeta,
+  Body as SeoAgencyVsGeoAgencyBody,
+} from "./seo-agency-vs-geo-agency/post";
+import {
   meta as aiChatbotBrandTrackingMeta,
   Body as AiChatbotBrandTrackingBody,
 } from "./ai-chatbot-brand-tracking/post";
@@ -128,6 +152,21 @@ export const posts: BlogPost[] = [
   {
     meta: aiChatbotBrandTrackingMeta,
     Body: AiChatbotBrandTrackingBody,
+  },
+  { meta: seoAgencyVsGeoAgencyMeta, Body: SeoAgencyVsGeoAgencyBody },
+  { meta: googleAdsBudgetGuideMeta, Body: GoogleAdsBudgetGuideBody },
+  { meta: campaignTypeSelectionGuideMeta, Body: CampaignTypeSelectionGuideBody },
+  {
+    meta: contentCalendarForSmallBusinessMeta,
+    Body: ContentCalendarForSmallBusinessBody,
+  },
+  {
+    meta: isSocialMediaContentVisibleToAiSearchMeta,
+    Body: IsSocialMediaContentVisibleToAiSearchBody,
+  },
+  {
+    meta: howDoGoogleAndInstagramReviewsAffectBrandReputationMeta,
+    Body: HowDoGoogleAndInstagramReviewsAffectBrandReputationBody,
   },
 ];
 

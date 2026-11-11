@@ -101,5 +101,7 @@ export const googleAdsManagement: Service = {
     "dentist-digital-marketing-guide",
     "how-to-choose-a-google-ads-agency",
     "google-ads-or-seo",
+    "google-ads-budget-guide",
+    "campaign-type-selection-guide",
   ],
 };

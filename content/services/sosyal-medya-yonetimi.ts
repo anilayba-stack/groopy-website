@@ -99,5 +99,8 @@ export const sosyalMedyaYonetimi: Service = {
     "fizyoterapistler-dijital-pazarlama-rehberi",
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "sosyal-medya-yonetimi-fiyatlari-2026",
+    "icerik-takvimi-nasil-hazirlanir",
+    "sosyal-medya-yapay-zeka-aramalarinda-gorunur-mu",
+    "google-instagram-yorumlari-marka-itibarini-nasil-etkiler",
   ],
 };

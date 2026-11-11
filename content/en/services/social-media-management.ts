@@ -99,5 +99,8 @@ export const socialMediaManagement: Service = {
     "physiotherapist-digital-marketing-guide",
     "dentist-digital-marketing-guide",
     "social-media-management-pricing-2026",
+    "content-calendar-for-small-business",
+    "is-social-media-content-visible-to-ai-search",
+    "how-do-google-and-instagram-reviews-affect-brand-reputation",
   ],
 };

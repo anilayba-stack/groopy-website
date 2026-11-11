@@ -116,6 +116,7 @@ export const seoVeGeo: Service = {
     "google-ai-overviews-turkiyede-ne-degistirdi",
     "chatgptde-markaniz-nasil-gorunur-olur",
     "ai-sohbet-botlarinda-marka-takibi",
+    "seo-ajansi-mi-geo-ajansi-mi",
     "yerel-seo-rehberi",
     "fizyoterapistler-dijital-pazarlama-rehberi",
     "dis-hekimleri-dijital-pazarlama-rehberi",

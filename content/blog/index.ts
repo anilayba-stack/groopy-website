@@ -1,5 +1,29 @@
 import type { BlogPost } from "../types";
 import {
+  meta as googleAdsButcesiNeKadarOlmaliMeta,
+  Body as GoogleAdsButcesiNeKadarOlmaliBody,
+} from "./google-ads-butcesi-ne-kadar-olmali/post";
+import {
+  meta as kampanyaTuruSecimRehberiMeta,
+  Body as KampanyaTuruSecimRehberiBody,
+} from "./kampanya-turu-secim-rehberi/post";
+import {
+  meta as icerikTakvimiNasilHazirlanirMeta,
+  Body as IcerikTakvimiNasilHazirlanirBody,
+} from "./icerik-takvimi-nasil-hazirlanir/post";
+import {
+  meta as sosyalMedyaYapayZekaAramalarindaGorunurMuMeta,
+  Body as SosyalMedyaYapayZekaAramalarindaGorunurMuBody,
+} from "./sosyal-medya-yapay-zeka-aramalarinda-gorunur-mu/post";
+import {
+  meta as googleInstagramYorumlariMarkaItibariniNasilEtkilerMeta,
+  Body as GoogleInstagramYorumlariMarkaItibariniNasilEtkilerBody,
+} from "./google-instagram-yorumlari-marka-itibarini-nasil-etkiler/post";
+import {
+  meta as seoAjansiMiGeoAjansiMiMeta,
+  Body as SeoAjansiMiGeoAjansiMiBody,
+} from "./seo-ajansi-mi-geo-ajansi-mi/post";
+import {
   meta as aiSohbetBotlariMarkaTakibiMeta,
   Body as AiSohbetBotlariMarkaTakibiBody,
 } from "./ai-sohbet-botlarinda-marka-takibi/post";
@@ -122,6 +146,27 @@ export const posts: BlogPost[] = [
   {
     meta: aiSohbetBotlariMarkaTakibiMeta,
     Body: AiSohbetBotlariMarkaTakibiBody,
+  },
+  { meta: seoAjansiMiGeoAjansiMiMeta, Body: SeoAjansiMiGeoAjansiMiBody },
+  {
+    meta: googleAdsButcesiNeKadarOlmaliMeta,
+    Body: GoogleAdsButcesiNeKadarOlmaliBody,
+  },
+  {
+    meta: kampanyaTuruSecimRehberiMeta,
+    Body: KampanyaTuruSecimRehberiBody,
+  },
+  {
+    meta: icerikTakvimiNasilHazirlanirMeta,
+    Body: IcerikTakvimiNasilHazirlanirBody,
+  },
+  {
+    meta: sosyalMedyaYapayZekaAramalarindaGorunurMuMeta,
+    Body: SosyalMedyaYapayZekaAramalarindaGorunurMuBody,
+  },
+  {
+    meta: googleInstagramYorumlariMarkaItibariniNasilEtkilerMeta,
+    Body: GoogleInstagramYorumlariMarkaItibariniNasilEtkilerBody,
   },
 ];
 
