@@ -20,6 +20,19 @@ import {
   Body as HowDoGoogleAndInstagramReviewsAffectBrandReputationBody,
 } from "./how-do-google-and-instagram-reviews-affect-brand-reputation/post";
 import {
+  meta as whatDoYouNeedToBuildAWebsiteMeta,
+  Body as WhatDoYouNeedToBuildAWebsiteBody,
+} from "./what-do-you-need-to-build-a-website/post";
+import {
+  meta as websiteVsWebApplicationMeta,
+  Body as WebsiteVsWebApplicationBody,
+} from "./website-vs-web-application-whats-the-difference/post";
+import { meta as whatIsSeoMeta, Body as WhatIsSeoBody } from "./what-is-seo/post";
+import {
+  meta as howDoesGoogleRankSearchResultsMeta,
+  Body as HowDoesGoogleRankSearchResultsBody,
+} from "./how-does-google-rank-search-results/post";
+import {
   meta as seoAgencyVsGeoAgencyMeta,
   Body as SeoAgencyVsGeoAgencyBody,
 } from "./seo-agency-vs-geo-agency/post";
@@ -167,6 +180,19 @@ export const posts: BlogPost[] = [
   {
     meta: howDoGoogleAndInstagramReviewsAffectBrandReputationMeta,
     Body: HowDoGoogleAndInstagramReviewsAffectBrandReputationBody,
+  },
+  {
+    meta: whatDoYouNeedToBuildAWebsiteMeta,
+    Body: WhatDoYouNeedToBuildAWebsiteBody,
+  },
+  {
+    meta: websiteVsWebApplicationMeta,
+    Body: WebsiteVsWebApplicationBody,
+  },
+  { meta: whatIsSeoMeta, Body: WhatIsSeoBody },
+  {
+    meta: howDoesGoogleRankSearchResultsMeta,
+    Body: HowDoesGoogleRankSearchResultsBody,
   },
 ];
 

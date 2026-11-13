@@ -20,6 +20,22 @@ import {
   Body as GoogleInstagramYorumlariMarkaItibariniNasilEtkilerBody,
 } from "./google-instagram-yorumlari-marka-itibarini-nasil-etkiler/post";
 import {
+  meta as webSitesiKurmakIcinNelerGerekliMeta,
+  Body as WebSitesiKurmakIcinNelerGerekliBody,
+} from "./web-sitesi-kurmak-icin-neler-gerekli/post";
+import {
+  meta as webSitesiIleWebUygulamasiArasindakiFarkNedirMeta,
+  Body as WebSitesiIleWebUygulamasiArasindakiFarkNedirBody,
+} from "./web-sitesi-ile-web-uygulamasi-arasindaki-fark-nedir/post";
+import {
+  meta as seoAramaMotoruOptimizasyonuNedirMeta,
+  Body as SeoAramaMotoruOptimizasyonuNedirBody,
+} from "./seo-arama-motoru-optimizasyonu-nedir/post";
+import {
+  meta as googleAramaSonuclariniNasilSiralarMeta,
+  Body as GoogleAramaSonuclariniNasilSiralarBody,
+} from "./google-arama-sonuclarini-nasil-siralar/post";
+import {
   meta as seoAjansiMiGeoAjansiMiMeta,
   Body as SeoAjansiMiGeoAjansiMiBody,
 } from "./seo-ajansi-mi-geo-ajansi-mi/post";
@@ -167,6 +183,22 @@ export const posts: BlogPost[] = [
   {
     meta: googleInstagramYorumlariMarkaItibariniNasilEtkilerMeta,
     Body: GoogleInstagramYorumlariMarkaItibariniNasilEtkilerBody,
+  },
+  {
+    meta: webSitesiKurmakIcinNelerGerekliMeta,
+    Body: WebSitesiKurmakIcinNelerGerekliBody,
+  },
+  {
+    meta: webSitesiIleWebUygulamasiArasindakiFarkNedirMeta,
+    Body: WebSitesiIleWebUygulamasiArasindakiFarkNedirBody,
+  },
+  {
+    meta: seoAramaMotoruOptimizasyonuNedirMeta,
+    Body: SeoAramaMotoruOptimizasyonuNedirBody,
+  },
+  {
+    meta: googleAramaSonuclariniNasilSiralarMeta,
+    Body: GoogleAramaSonuclariniNasilSiralarBody,
   },
 ];
 

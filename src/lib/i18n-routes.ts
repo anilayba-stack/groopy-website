@@ -40,6 +40,11 @@ export const POST_SLUG_TR_TO_EN: Record<string, string> = {
     "is-social-media-content-visible-to-ai-search",
   "google-instagram-yorumlari-marka-itibarini-nasil-etkiler":
     "how-do-google-and-instagram-reviews-affect-brand-reputation",
+  "web-sitesi-kurmak-icin-neler-gerekli": "what-do-you-need-to-build-a-website",
+  "web-sitesi-ile-web-uygulamasi-arasindaki-fark-nedir":
+    "website-vs-web-application-whats-the-difference",
+  "seo-arama-motoru-optimizasyonu-nedir": "what-is-seo",
+  "google-arama-sonuclarini-nasil-siralar": "how-does-google-rank-search-results",
   "ai-sohbet-botlarinda-marka-takibi": "ai-chatbot-brand-tracking",
   "web-sitesi-maliyeti-2026": "website-cost-2026",
   "seo-ajansi-secerken-nelere-dikkat-edilmeli": "how-to-choose-an-seo-agency",

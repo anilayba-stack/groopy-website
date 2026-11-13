@@ -109,5 +109,7 @@ export const webSitesiGelistirme: Service = {
     "wordpress-mi-nextjs-mi",
     "dis-hekimleri-dijital-pazarlama-rehberi",
     "web-sitesi-maliyeti-2026",
+    "web-sitesi-kurmak-icin-neler-gerekli",
+    "web-sitesi-ile-web-uygulamasi-arasindaki-fark-nedir",
   ],
 };

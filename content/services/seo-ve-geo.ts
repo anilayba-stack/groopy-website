@@ -125,5 +125,7 @@ export const seoVeGeo: Service = {
     "google-ads-mi-seo-mu",
     "seo-ajansi-secerken-nelere-dikkat-edilmeli",
     "web-sitesi-maliyeti-2026",
+    "seo-arama-motoru-optimizasyonu-nedir",
+    "google-arama-sonuclarini-nasil-siralar",
   ],
 };

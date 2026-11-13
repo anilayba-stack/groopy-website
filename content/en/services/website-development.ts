@@ -109,5 +109,7 @@ export const websiteDevelopment: Service = {
     "wordpress-vs-nextjs",
     "dentist-digital-marketing-guide",
     "website-cost-2026",
+    "what-do-you-need-to-build-a-website",
+    "website-vs-web-application-whats-the-difference",
   ],
 };

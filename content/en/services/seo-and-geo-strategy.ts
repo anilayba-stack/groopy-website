@@ -125,5 +125,7 @@ export const seoAndGeoStrategy: Service = {
     "google-ads-or-seo",
     "how-to-choose-an-seo-agency",
     "website-cost-2026",
+    "what-is-seo",
+    "how-does-google-rank-search-results",
   ],
 };
